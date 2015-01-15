@@ -485,9 +485,20 @@ header
 			height 37px
 			color #737c99
 			border-top 3px solid transparent
+			position relative
 		li.slick-active button
 			color #fff
 			border-top 3px solid light_blue
+			&:before
+				content ""
+				position absolute
+				width 11px
+				height 6px
+				background url(../img/sprite.png) right -311px no-repeat
+				top - 9px
+				left 0
+				right 0
+				margin auto
 .slick-prev,
 .slick-next
 	&:hover

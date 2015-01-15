@@ -402,10 +402,22 @@ header {
   height: 37px;
   color: #737c99;
   border-top: 3px solid transparent;
+  position: relative;
 }
 .main_slider .slick-dots li.slick-active button {
   color: #fff;
   border-top: 3px solid #0061c2;
+}
+.main_slider .slick-dots li.slick-active button:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 6px;
+  background: url("../img/sprite.png") right -311px no-repeat;
+  top: -9px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .slick-prev:hover,
 .slick-next:hover {
