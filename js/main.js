@@ -59,11 +59,15 @@ $(document).ready(function(){
 
 
 
+window.my_last_y = 0;
+
+
+
 
 
 window.onscroll = function() {
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-	// console.log(scrolled);
+	console.log(scrolled);
 
 	if(scrolled>= 100){
 		$('.scroll').css({
@@ -72,7 +76,24 @@ window.onscroll = function() {
 		});
 		$('.main_menu').css({
 			background: '#f2f2f2'
-		})
+		});
+
+
+		if(scrolled > window.my_last_y){
+			$('.scroll').css({
+				position:'fixed',
+				top: '-100px',
+			});
+		}
+		else{
+			$('.scroll').css({
+				position:'fixed',
+				top: '0px',
+			});
+		}
+
+		// текущее состояние
+		window.my_last_y = scrolled;
 	}
 	else{
 		$('.scroll').css({

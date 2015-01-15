@@ -171,6 +171,7 @@ header
 	left 0
 	display inline-block
 	z-index 2
+	transition: top 0.3s ease-out 0.3s;
 .main_wrap
 	max-width 1600px
 	min-width 1280px
@@ -512,18 +513,19 @@ header
 	.slick-next
 		span
 			position absolute
-			color #000
+			color #fff
 			width 150px 
 			height 20px
 			display inline-block
 			font-size 16px
 			line-height 1
+			font-family: 'AvenirNextCyrLight';
 			top 6px
 	.slick-prev span
-		left -15px
+		left -22px
 		transform:rotate(270deg);
 	.slick-next span
-		right -15px
+		right -22px
 		transform:rotate(90deg);
 			
 .slick-prev,
@@ -739,7 +741,7 @@ header
 	margin-top 40px
 	position relative
 	// background url(../img/sprite.png) center -310px no-repeat
-	background url(../sourse/icon/Logo_numbs.png) center center no-repeat
+	background url(../img/icon/Logo_numbs.png) center center no-repeat
 	&:after,
 	&:before
 		content ""
@@ -787,7 +789,7 @@ footer
 	padding 106px 0 100px 0
 	background-color foot_col
 	overflow hidden
-
+	position relative
 
 .flogo
 	width 23%
@@ -822,3 +824,9 @@ footer
 		a
 			color #000
 			
+.fsocial
+	position absolute
+	left 22%
+	top 80px
+	li
+		padding 0 10px

@@ -96,6 +96,7 @@ header {
   left: 0;
   display: inline-block;
   z-index: 2;
+  transition: top 0.3s ease-out 0.3s;
 }
 .main_wrap {
   max-width: 1600px;
@@ -433,22 +434,23 @@ header {
 .main_slider .slick-prev span,
 .main_slider .slick-next span {
   position: absolute;
-  color: #000;
+  color: #fff;
   width: 150px;
   height: 20px;
   display: inline-block;
   font-size: 16px;
   line-height: 1;
+  font-family: 'AvenirNextCyrLight';
   top: 6px;
 }
 .main_slider .slick-prev span {
-  left: -15px;
+  left: -22px;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
 }
 .main_slider .slick-next span {
-  right: -15px;
+  right: -22px;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -662,7 +664,7 @@ row2 {
   margin: auto;
   margin-top: 40px;
   position: relative;
-  background: url("../sourse/icon/Logo_numbs.png") center center no-repeat;
+  background: url("../img/icon/Logo_numbs.png") center center no-repeat;
 }
 .llogo:after,
 .llogo:before {
@@ -704,6 +706,7 @@ footer {
   padding: 106px 0 100px 0;
   background-color: #edf1f5;
   overflow: hidden;
+  position: relative;
 }
 .flogo {
   width: 23%;
@@ -738,4 +741,12 @@ footer {
 }
 .f_menu li a {
   color: #000;
+}
+.fsocial {
+  position: absolute;
+  left: 22%;
+  top: 80px;
+}
+.fsocial li {
+  padding: 0 10px;
 }
