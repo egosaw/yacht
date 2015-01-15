@@ -50,6 +50,11 @@ $(document).ready(function(){
 
 
 	// initialize();
+	$('.scroll').scroll(function(){
+		if($(this).scrollTop){
+			console.log('top')
+		}
+	})
 });
 
 
@@ -58,16 +63,24 @@ $(document).ready(function(){
 
 window.onscroll = function() {
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	// console.log(scrolled);
+
 	if(scrolled>= 100){
-		$('.main_menu').css({
+		$('.scroll').css({
 			position:'fixed',
-			top: 0,
+			top: '-100px',
 		});
+		$('.main_menu').css({
+			background: '#f2f2f2'
+		})
 	}
 	else{
-		$('.main_menu').css({
+		$('.scroll').css({
 			position: 'absolute',
-			top: '100px'
+			top: '0',
 		});
+		$('.main_menu').css({
+			background: '#fff'
+		})
 	}
 };

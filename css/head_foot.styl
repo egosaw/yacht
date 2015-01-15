@@ -162,8 +162,15 @@ body
 // ============================ MAIN PAGE =============================
 header
 	position relative
+	height 150px
 
-
+.scroll
+	position absolute
+	width 100%
+	top 0
+	left 0
+	display inline-block
+	z-index 2
 .main_wrap
 	max-width 1600px
 	min-width 1280px
@@ -480,11 +487,13 @@ header
 			width auto
 			padding 0 25px
 		button
-			font-size txt13
+			font-size 12px
+			font-family: 'AvenirNextCyrRegular';
 			width auto
 			height 37px
 			color #737c99
 			border-top 3px solid transparent
+			text-transform uppercase
 			position relative
 		li.slick-active button
 			color #fff

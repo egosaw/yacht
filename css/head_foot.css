@@ -87,6 +87,15 @@ body {
 }
 header {
   position: relative;
+  height: 150px;
+}
+.scroll {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  z-index: 2;
 }
 .main_wrap {
   max-width: 1600px;
@@ -397,11 +406,13 @@ header {
   padding: 0 25px;
 }
 .main_slider .slick-dots button {
-  font-size: 1.083em;
+  font-size: 12px;
+  font-family: 'AvenirNextCyrRegular';
   width: auto;
   height: 37px;
   color: #737c99;
   border-top: 3px solid transparent;
+  text-transform: uppercase;
   position: relative;
 }
 .main_slider .slick-dots li.slick-active button {
