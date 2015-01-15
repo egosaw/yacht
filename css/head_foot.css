@@ -55,29 +55,6 @@ input {
   font-weight: 700;
   margin-left: 10px;
 }
-.btn.apply,
-.btn.private {
-  padding: 9px 9px 8px 30px;
-}
-.btn.private {
-  background: col_red;
-  border-color: col_red;
-  color: #fff;
-}
-.btn.private:before {
-  width: 11px;
-  height: 13px;
-  top: 9px;
-  left: 8px;
-  background-position: 0 -39px;
-}
-.btn.apply:before {
-  width: 10px;
-  height: 13px;
-  top: 9px;
-  left: 9px;
-  background-position: 0 -23px;
-}
 @font-face {
   font-family: 'AvenirNextCyrRegular';
   src: url("../fonts/AvenirNextCyrRegular.eot");
@@ -94,6 +71,11 @@ input {
   src: url("../fonts/BanderaPro.eot") format('embedded-opentype'), url("../fonts/BanderaPro.woff2") format('woff2'), url("../fonts/BanderaPro.woff") format('woff'), url("../fonts/BanderaPro.ttf") format('truetype'), url("../fonts/BanderaPro.svg#BanderaPro") format('svg');
 }
 @font-face {
+  font-family: 'BanderaProBold';
+  src: url("../fonts/BanderaProBold.eot");
+  src: url("../fonts/BanderaProBold.eot") format('embedded-opentype'), url("../fonts/BanderaProBold.woff2") format('woff2'), url("../fonts/BanderaProBold.woff") format('woff'), url("../fonts/BanderaProBold.ttf") format('truetype'), url("../fonts/BanderaProBold.svg#BanderaProBold") format('svg');
+}
+@font-face {
   font-family: 'AvenirNextCyrBold';
   src: url("../fonts/AvenirNextCyrBold.eot");
   src: url("../fonts/AvenirNextCyrBold.eot") format('embedded-opentype'), url("../fonts/AvenirNextCyrBold.woff2") format('woff2'), url("../fonts/AvenirNextCyrBold.woff") format('woff'), url("../fonts/AvenirNextCyrBold.ttf") format('truetype'), url("../fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold") format('svg');
@@ -101,7 +83,6 @@ input {
 body {
   font-size: 12px;
   color: txt_main;
-  background: #ccc;
   font-family: 'AvenirNextCyrRegular', Arial, Helvetica, sans-serif;
 }
 .main_wrap {
@@ -154,10 +135,17 @@ body {
   font-weight: 900;
   font-family: 'AvenirNextCyrBold' Arial, Helvetica, sans-serif;
 }
-.fs6 {
-  font-size: 2.416em;
+.fs6,
+.fs61 {
   color: #020722;
   font-weight: 700;
+}
+.fs6 {
+  font-size: 2.416em;
+}
+.fs61 {
+  font-size: 1.666em;
+  margin-top: 10px;
 }
 .fs7 {
   font-size: 1.166em;
@@ -165,6 +153,12 @@ body {
   text-transform: uppercase;
   font-family: 'BanderaPro';
   color: #020722;
+}
+.fs8 {
+  font-size: 1.666em;
+  font-family: 'BanderaPro';
+  color: #020722;
+  font-weight: 900;
 }
 .tac {
   text-align: center;
@@ -297,6 +291,9 @@ body {
   font-size: inherit;
   color: inherit;
 }
+.main_menu li a:hover {
+  color: #0061c2;
+}
 .main_menu .search {
   position: absolute;
   width: 16px;
@@ -401,6 +398,10 @@ body {
   width: 520px;
   text-align: left;
 }
+.big_title.tac1 {
+  width: 820px;
+  text-align: left;
+}
 .big_title.tal {
   padding-left: 7%;
 }
@@ -412,7 +413,8 @@ body {
   border-left: 2px solid #e3e6ec;
 }
 .row,
-.row1 {
+.row1,
+row2 {
   display: block;
   width: 100%;
   overflow: hidden;
@@ -425,11 +427,21 @@ body {
 .row1 .yacht_img {
   height: 380px;
 }
-.cell50 {
-  width: 50%;
+.row2 .box,
+.row2 .yacht_img {
+  height: 600px;
+}
+.cell50,
+.cell100 {
   display: inline-block;
   margin: 0;
   float: left;
+}
+.cell50 {
+  width: 50%;
+}
+.cell100 {
+  width: 100%;
 }
 .banner {
   width: 100%;
@@ -460,12 +472,203 @@ body {
 .box {
   width: 100%;
   height: 420px;
+  position: relative;
 }
 .yacht_img {
   width: 56%;
+  position: relative;
   float: left;
 }
 .yacht_param {
   width: 44%;
   float: left;
+  padding: 0 4%;
+  background-color: #fffffd;
+  box-sizing: border-box;
+}
+.yacht_param .pic {
+  width: 100%;
+}
+.yacht_param .pic img {
+  width: 100%;
+}
+.yacht_param .name {
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.yacht_param table {
+  font-size: 1.083em;
+  line-height: 18.5px;
+}
+.yacht_param td:last-of-type {
+  color: #87898c;
+  font-weight: 100;
+  font-family: 'AvenirNextCyrLight';
+  padding-left: 20%;
+}
+.s1,
+.s2 {
+  position: absolute;
+  background-color: #fff;
+  display: inline-block;
+}
+.s1:before,
+.s2:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("../img/mini.png") center center no-repeat;
+  background-size: contain;
+}
+.s1 {
+  width: 80px;
+  height: 80px;
+}
+.s1:before {
+  width: 16px;
+  height: 23px;
+}
+.s2 {
+  width: 50px;
+  height: 50px;
+}
+.s2:before {
+  width: 13px;
+  height: 20px;
+}
+.p1 {
+  top: 0;
+  left: 22%;
+}
+.p2 {
+  bottom: 0;
+  right: 0;
+}
+.list_mater {
+  padding: 154px 0 0 0;
+  text-align: center;
+}
+.list_mater li {
+  width: 8%;
+  padding: 0 5%;
+  position: relative;
+}
+.list_mater li:after {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.3);
+}
+.list_mater li:last-of-type:after {
+  display: none;
+}
+.list_mater .num {
+  font-family: 'BanderaProBold';
+  font-size: 67px;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+}
+.list_mater .num_init {
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.333em;
+  color: #0061c2;
+}
+.llogo {
+  width: 100%;
+  height: 105px;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  background: url("../sourse/icon/Logo_numbs.png") center center no-repeat;
+}
+.llogo:after,
+.llogo:before {
+  content: "";
+  position: absolute;
+  width: 31%;
+  height: 1px;
+  background-color: rgba(255,255,255,0.3);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.llogo:after {
+  right: 15%;
+}
+.llogo:before {
+  left: 15%;
+}
+.message {
+  color: #fff;
+  opacity: 0.3;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 100;
+}
+.message a {
+  text-decoration: underline;
+}
+#map-canvas {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  width: 100%;
+  margin-top: 55px;
+  padding: 106px 0 100px 0;
+  background-color: #edf1f5;
+  overflow: hidden;
+}
+.flogo {
+  width: 23%;
+  float: left;
+  display: inline-block;
+  height: 200px;
+  background: url("../img/sprite.png") center -94px no-repeat;
+}
+.info_block {
+  display: inline-block;
+  width: 77%;
+  float: left;
+  margin-top: 63px;
+}
+.contact {
+  width: 150px;
+  display: inline-block;
+  font-size: 1.166em;
+}
+.f_menu {
+  display: inline-block;
+  padding: 0 0 0 5%;
+}
+.f_menu p {
+  font-family: 'AvenirNextCyrBold';
+  font-size: 1.333em;
+  margin: 0 0 10px 0;
+}
+.f_menu li {
+  display: block;
+  margin: 0 0 10px 0;
+}
+.f_menu li a {
+  color: #000;
 }
