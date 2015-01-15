@@ -499,6 +499,24 @@ header
 				left 0
 				right 0
 				margin auto
+	.slick-prev,
+	.slick-next
+		span
+			position absolute
+			color #000
+			width 150px 
+			height 20px
+			display inline-block
+			font-size 16px
+			line-height 1
+			top 6px
+	.slick-prev span
+		left -15px
+		transform:rotate(270deg);
+	.slick-next span
+		right -15px
+		transform:rotate(90deg);
+			
 .slick-prev,
 .slick-next
 	&:hover

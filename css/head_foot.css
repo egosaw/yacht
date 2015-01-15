@@ -419,6 +419,29 @@ header {
   right: 0;
   margin: auto;
 }
+.main_slider .slick-prev span,
+.main_slider .slick-next span {
+  position: absolute;
+  color: #000;
+  width: 150px;
+  height: 20px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  top: 6px;
+}
+.main_slider .slick-prev span {
+  left: -15px;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.main_slider .slick-next span {
+  right: -15px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
 .slick-prev:hover,
 .slick-next:hover {
   opacity: 1;

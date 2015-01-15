@@ -28,7 +28,9 @@ $(document).ready(function(){
 
 
 
-	var slide_text = [], dots = $('.main_slider .slick-dots li');
+	var slide_text = [], dots = $('.main_slider .slick-dots li'),
+	lBut = $('.main_slider .slick-prev'),
+	rBut = $('.main_slider .slick-next');
 
 	$('.main_slider .slick-slide:not(.slick-cloned) .l_h1').each(function(){
 		slide_text.push($(this).text());
@@ -38,7 +40,13 @@ $(document).ready(function(){
 		dots.eq(i).children('button').text(slide_text[i]);
 	}
 
+
+	rBut.append('<span>'+slide_text[1]+'</span>');
+	lBut.append('<span>'+slide_text[slide_text.length-1]+'</span>');
+
+
 	console.log(slide_text);
+	console.log($('.main_slider').slickCurrentSlide());
 
 
 	// initialize();
