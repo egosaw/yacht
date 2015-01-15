@@ -25,6 +25,22 @@ $(document).ready(function(){
 		infinite: true,
 		arrows: true
 	});
+
+
+
+	var slide_text = [], dots = $('.main_slider .slick-dots li');
+
+	$('.main_slider .slick-slide:not(.slick-cloned) .l_h1').each(function(){
+		slide_text.push($(this).text());
+
+	})
+	for(var i = 0; i<slide_text.length; i++){
+		dots.eq(i).children('button').text(slide_text[i]);
+	}
+
+	console.log(slide_text);
+
+
 	// initialize();
 });
 

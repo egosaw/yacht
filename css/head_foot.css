@@ -328,6 +328,7 @@ header {
 .main_slider .slick-slide {
   position: relative;
   height: 811px;
+  margin-bottom: 40px;
 }
 .main_slider .img {
   width: 100%;
@@ -391,12 +392,24 @@ header {
   height: 200%;
   border-left: 2px solid #647585;
 }
+.main_slider .slick-dots li {
+  width: auto;
+  padding: 0 25px;
+}
+.main_slider .slick-dots button {
+  font-size: 1.083em;
+  width: auto;
+  height: 37px;
+  color: #737c99;
+  border-top: 3px solid transparent;
+}
+.main_slider .slick-dots li.slick-active button {
+  color: #fff;
+  border-top: 3px solid #0061c2;
+}
 .slick-prev:hover,
 .slick-next:hover {
   opacity: 1;
-}
-.slick-slider.main_slider {
-  margin-bottom: 40px;
 }
 .big_title {
   padding-top: 59px;

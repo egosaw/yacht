@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'BanderaProBold';
-    src: url('fonts/BanderaProBold.eot');
-    src: url('fonts/BanderaProBold.eot') format('embedded-opentype'),
-         url('fonts/BanderaProBold.woff2') format('woff2'),
-         url('fonts/BanderaProBold.woff') format('woff'),
-         url('fonts/BanderaProBold.ttf') format('truetype'),
-         url('fonts/BanderaProBold.svg#BanderaProBold') format('svg');
-}
