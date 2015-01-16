@@ -11,11 +11,10 @@ function initialize() {
 
 
 
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 $(document).ready(function(){
-	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
 	$('.main_slider').height(h-150);
 
 
@@ -72,7 +71,7 @@ $(document).ready(function(){
 	
 
 
-	initialize();
+	// initialize();
 });
 
 
@@ -88,7 +87,7 @@ window.onscroll = function() {
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 	// console.log(scrolled);
 
-	if(scrolled>= 100){
+	if(scrolled>= h-50){
 		$('.scroll').css({
 			position:'fixed',
 			top: '-100px',

@@ -1,7 +1,9 @@
 .main_slider {
   width: 100%;
+  max-width: 1920px;
   display: block;
-  margin: 0 0 40px 0;
+  margin: auto;
+  margin-bottom: 40px;
   overflow: hidden;
 }
 .main_slider .slick-slide {
@@ -131,6 +133,9 @@
   text-transform: uppercase;
   position: relative;
 }
+.main_slider .slick-dots button:hover {
+  color: #fff;
+}
 .main_slider .slick-dots li.slick-active button {
   color: #fff;
   border-top: 3px solid #0061c2;
@@ -146,6 +151,23 @@
   right: 0;
   margin: auto;
 }
+.main_slider .slick-prev,
+.main_slider .slick-next {
+  width: 60px;
+  height: 60px;
+}
+.main_slider .slick-prev:before,
+.main_slider .slick-next:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url("../img/sprite.png");
+}
 .main_slider .slick-prev span,
 .main_slider .slick-next span {
   position: absolute;
@@ -156,35 +178,10 @@
   font-size: 16px;
   line-height: 1;
   font-family: 'AvenirNextCyrLight';
-  top: 6px;
-  transition: top 0.3s ease-out 0.3s;
-}
-.main_slider .slick-prev span {
-  left: -45px;
-  -webkit-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-.main_slider .slick-next span {
-  right: -45px;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-.main_slider .slick-prev,
-.main_slider .slick-next {
-  width: 60px;
-  height: 30px;
-}
-.main_slider .slick-prev:before,
-.main_slider .slick-next:before {
-  content: '';
-  position: absolute;
   top: 0;
-  width: 20px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-image: url("../img/sprite.png");
+  bottom: 0;
+  margin: auto;
+  transition: top 0.3s ease-out 0.3s;
 }
 .main_slider .slick-prev:hover,
 .main_slider .slick-next:hover {
@@ -211,6 +208,18 @@
 }
 .main_slider .slick-prev:hover span {
   font-size: 18px;
+}
+.main_slider .slick-prev span {
+  left: -45px;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.main_slider .slick-next span {
+  right: -45px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .big_title {
   padding-top: 59px;
@@ -302,14 +311,16 @@ row2 {
   float: left;
 }
 .yacht_param {
+  height: 100%;
   width: 44%;
   float: left;
   padding: 0 4%;
-  background-color: #fffffd;
+  background-color: #edf1f5;
   box-sizing: border-box;
 }
 .yacht_param .pic {
   width: 100%;
+  max-height: 172px;
 }
 .yacht_param .pic img {
   width: 100%;
@@ -321,6 +332,7 @@ row2 {
   margin-bottom: 20px;
 }
 .yacht_param table {
+  width: 100%;
   font-size: 1.083em;
   line-height: 18.5px;
 }
@@ -328,7 +340,55 @@ row2 {
   color: #87898c;
   font-weight: 100;
   font-family: 'AvenirNextCyrLight';
-  padding-left: 20%;
+  padding-left: 12%;
+}
+.yacth_arend {
+  padding: 10% 14%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.yacth_arend .f_line {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+.yacth_arend select {
+  height: 56px;
+  display: inline-block;
+  border: 2px solid rgba(255,255,255,0.6);
+  color: #fff;
+  background-color: transparent;
+  font-size: 1.416em;
+  border-radius: 0;
+}
+.yacth_arend .cl_country,
+.yacth_arend .model {
+  width: 100%;
+}
+.yacth_arend .year,
+.yacth_arend .period {
+  width: 37.27%;
+}
+.yacth_arend .month,
+.yacth_arend .day {
+  width: 27%;
+  margin-left: 4%;
+}
+.yacth_arend .day,
+.yacth_arend .month,
+.yacth_arend .f_find {
+  float: right;
+}
+.yacth_arend .f_find {
+  width: 58.18%;
+  height: 56px;
+  background-color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'AvenirNextCyrBold';
+  font-size: 1.416em;
 }
 .s1,
 .s2 {

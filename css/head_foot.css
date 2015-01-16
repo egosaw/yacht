@@ -99,7 +99,7 @@ header {
   transition: top 0.3s ease-out 0.3s;
 }
 .main_wrap {
-  max-width: 1600px;
+  max-width: 100%;
   min-width: 1280px;
   display: block;
   margin: auto;
@@ -110,13 +110,13 @@ header {
   padding: 0 3.125%;
 }
 .header {
-  width: 100%;
   background-color: #020622;
   position: relative;
   background-repeat: no-repeat;
   height: 100px;
   margin-bottom: 50px;
 }
+header,
 .header,
 .main_slider {
   width: 100%;
@@ -184,13 +184,17 @@ header {
   text-align: left;
 }
 .content {
+  width: 100%;
   max-width: 1600px;
   display: block;
   margin: auto;
   background-color: #fff;
 }
-.b_line:hover {
+.b_line {
   border-bottom: 2px solid #0061c2;
+}
+.b_line:hover {
+  border-bottom: 2px solid transparent;
 }
 .login_in {
   display: inline-block;
@@ -297,7 +301,7 @@ header {
   bottom: 0;
   margin: auto;
   right: 28px;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 .phone:hover {
   padding: 9px 46px 9px 10px;

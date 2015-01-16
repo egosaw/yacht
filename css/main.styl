@@ -39,8 +39,10 @@ txt40 = 3.333em
 .main_slider
 	// height 811px
 	width 100%
+	max-width 1920px
 	display block
-	margin 0 0 40px 0
+	margin auto
+	margin-bottom 40px
 	overflow hidden
 	.slick-slide
 		position relative
@@ -155,6 +157,8 @@ txt40 = 3.333em
 			border-top 3px solid transparent
 			text-transform uppercase
 			position relative
+			&:hover
+				color #fff
 		li.slick-active button
 			color #fff
 			border-top 3px solid light_blue
@@ -170,6 +174,18 @@ txt40 = 3.333em
 				margin auto
 	.slick-prev,
 	.slick-next
+		width 60px
+		height 60px
+		&:before
+			content ''
+			position absolute
+			top 0
+			bottom 0
+			margin auto
+			width: 20px;
+			height: 32px;
+			background-repeat: no-repeat;
+			background-image: url(../img/sprite.png);
 		span
 			position absolute
 			color #fff
@@ -179,39 +195,10 @@ txt40 = 3.333em
 			font-size 16px
 			line-height 1
 			font-family: 'AvenirNextCyrLight';
-			top 6px
-			transition: top 0.3s ease-out 0.3s;
-	.slick-prev span
-		left -45px
-		transform:rotate(270deg);
-	.slick-next span
-		right -45px
-		transform:rotate(90deg);
-
-
-@keyframes leftAnim {
-    from {right: 0px;}
-    to {right: -10px;}
-}
-@keyframes rightAnim {
-    from {left: 0px;}
-    to {left: -10px;}
-}
-
-.main_slider
-	.slick-prev,
-	.slick-next
-		width 60px
-		height 30px
-		&:before
-			content ''
-			position absolute
 			top 0
-			width: 20px;
-			height: 32px;
-			background-repeat: no-repeat;
-			background-image: url(../img/sprite.png);
-
+			bottom 0
+			margin auto
+			transition: top 0.3s ease-out 0.3s;
 		&:hover
 			opacity 1
 	.slick-next:before
@@ -232,6 +219,25 @@ txt40 = 3.333em
 			animation: rightAnim 1s infinite;
 		span
 			font-size 18px
+		
+	.slick-prev span
+		left -45px
+		transform:rotate(270deg);
+	.slick-next span
+		right -45px
+		transform:rotate(90deg);
+
+
+@keyframes leftAnim {
+    from {right: 0px;}
+    to {right: -10px;}
+}
+@keyframes rightAnim {
+    from {left: 0px;}
+    to {left: -10px;}
+}
+
+
 
 
 
@@ -315,13 +321,15 @@ txt40 = 3.333em
 	position relative
 	float left
 .yacht_param
+	height 100%
 	width 44%
 	float left
 	padding 0 4%
-	background-color grey
+	background-color #edf1f5
 	box-sizing border-box
 	.pic
 		width 100%
+		max-height 172px
 		img
 			width 100%
 	.name
@@ -331,13 +339,15 @@ txt40 = 3.333em
 		margin-bottom 20px
 		// text-align center
 	table
+		width 100%
+		
 		font-size txt13
 		line-height 18.5px
 	td:last-of-type
 		color grey_txt
 		font-weight 100
 		font-family: 'AvenirNextCyrLight';
-		padding-left 20%
+		padding-left 12%
 		
 
 
@@ -345,10 +355,49 @@ txt40 = 3.333em
 
 
 
+.yacth_arend
+	padding 10% 14%
+	width 100%
+	height 100%
+	box-sizing border-box
+	.f_line
+		width 100%
+		display block
+		margin-bottom 20px
+	select
+		height 56px
+		display inline-block
+		border 2px solid rgba(255,255,255, 0.6)
+		color #fff
+		background-color transparent
+		font-size txt17
+		border-radius 0
+	.cl_country,
+	.model
+		width 100%
+		
+	.year,
+	.period
+		width 37.27%
+		
+	.month,
+	.day
+		width 27%
+		margin-left 4%
 
-
-
-
+	.day,
+	.month,
+	.f_find
+		float right
+	.f_find
+		width 58.18%
+		height 56px
+		background-color #fff
+		text-align center
+		text-transform uppercase
+		color #000
+		font-family: 'AvenirNextCyrBold';
+		font-size txt17
 
 
 // LINK WITH ARROWS

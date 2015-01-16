@@ -173,7 +173,7 @@ header
 	z-index 2
 	transition: top 0.3s ease-out 0.3s;
 .main_wrap
-	max-width 1600px
+	max-width 100%
 	min-width 1280px
 	display block
 	margin auto
@@ -187,7 +187,6 @@ header
 
 
 .header
-	width 100%
 	background-color dark_blue
 	position relative
 	background-repeat no-repeat
@@ -195,7 +194,7 @@ header
 	margin-bottom 50px
 	
 
-
+header,
 .header,
 .main_slider
 	width 100%
@@ -287,6 +286,7 @@ header
 
 
 .content
+	width 100%
 	max-width 1600px
 	display block
 	margin auto
@@ -295,8 +295,10 @@ header
 
 
 
-.b_line:hover
+.b_line
 	border-bottom 2px solid light_blue
+	&:hover
+		border-bottom 2px solid transparent
 .login_in
 	display inline-block
 	padding-left 49px
@@ -394,7 +396,7 @@ header
 		bottom 0
 		margin auto
 		right 28px
-		transition 0.7s
+		transition 0.5s
 	&:hover
 		padding: 9px 46px 9px 10px
 		&:before
