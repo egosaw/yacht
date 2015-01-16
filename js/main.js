@@ -24,6 +24,7 @@ $(document).ready(function(){
 		dots: true,
 		infinite: true,
 		arrows: true,
+		initialSlide: 1,
 		prevArrow: '<button type = "button" class = "slick-prev"><span>Клуб</span></button>',
 		nextArrow: '<button type = "button" class = "slick-next"><span>Аренда яхт</span></button>',
 		onAfterChange: function(slider, index){
@@ -71,7 +72,7 @@ $(document).ready(function(){
 	
 
 
-	// initialize();
+	initialize();
 });
 
 

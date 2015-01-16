@@ -1,0 +1,464 @@
+.main_slider {
+  width: 100%;
+  display: block;
+  margin: 0 0 40px 0;
+  overflow: hidden;
+}
+.main_slider .slick-slide {
+  position: relative;
+  margin-bottom: 40px;
+}
+.main_slider .slick-list,
+.main_slider .slick-track,
+.main_slider .slick-slide {
+  height: 100%;
+}
+.main_slider .img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.main_slider .slick-dots {
+  height: 40px;
+  bottom: 0;
+  background-color: #0b0b0b;
+}
+.main_slider .slide_cont,
+.main_slider .slide_cont2 {
+  width: 1000px;
+  margin: auto;
+}
+.main_slider .s_left,
+.main_slider .s_right {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.main_slider .tit_link {
+  width: 100%;
+}
+.main_slider .tit_link li {
+  width: 100%;
+  margin-bottom: 2px;
+}
+.main_slider .tit_link li a {
+  font-size: 1.25em;
+  font-family: 'AvenirNextCyrBold';
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fff;
+}
+.main_slider .tit_link li a:hover {
+  border-bottom: 1px solid #fff;
+}
+.main_slider .s_left {
+  float: left;
+  padding-left: 15%;
+}
+.main_slider .s_right {
+  float: right;
+  padding-left: 6%;
+}
+.main_slider .l_h1 {
+  color: #fff;
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 16%;
+  margin-bottom: 7%;
+  position: relative;
+}
+.main_slider .l_h1:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  top: -111px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url("../img/sprite.png") 0 -440px no-repeat;
+}
+.main_slider .title {
+  font-size: 2.166em;
+  line-height: 35px;
+  color: #fff;
+  font-family: 'BanderaPro';
+  text-transform: uppercase;
+  padding: 0 0 5% 20px;
+  margin-bottom: 25px;
+  height: 200%;
+  opacity: 0.8;
+  border-left: 2px solid #647585;
+}
+.main_slider .slick-dots li {
+  width: auto;
+  padding: 0 25px;
+}
+.main_slider .slick-dots button {
+  font-size: 12px;
+  font-family: 'AvenirNextCyrRegular';
+  width: auto;
+  height: 37px;
+  color: #737c99;
+  border-top: 3px solid transparent;
+  text-transform: uppercase;
+  position: relative;
+}
+.main_slider .slick-dots li.slick-active button {
+  color: #fff;
+  border-top: 3px solid #0061c2;
+}
+.main_slider .slick-dots li.slick-active button:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 6px;
+  background: url("../img/sprite.png") right -311px no-repeat;
+  top: -9px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.main_slider .slick-prev span,
+.main_slider .slick-next span {
+  position: absolute;
+  color: #fff;
+  width: 200px;
+  height: 20px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'AvenirNextCyrLight';
+  top: 6px;
+  transition: top 0.3s ease-out 0.3s;
+}
+.main_slider .slick-prev span {
+  left: -45px;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.main_slider .slick-next span {
+  right: -45px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.main_slider .slick-prev,
+.main_slider .slick-next {
+  width: 60px;
+  height: 30px;
+}
+.main_slider .slick-prev:before,
+.main_slider .slick-next:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url("../img/sprite.png");
+}
+.main_slider .slick-prev:hover,
+.main_slider .slick-next:hover {
+  opacity: 1;
+}
+.main_slider .slick-next:before {
+  right: 0;
+  background-position: right -477px;
+}
+.main_slider .slick-prev:before {
+  left: 0;
+  background-position: -105px -477px;
+}
+.main_slider .slick-next:hover:before {
+  -webkit-animation: leftAnim 1s infinite;
+          animation: leftAnim 1s infinite;
+}
+.main_slider .slick-next:hover span {
+  font-size: 18px;
+}
+.main_slider .slick-prev:hover:before {
+  -webkit-animation: rightAnim 1s infinite;
+          animation: rightAnim 1s infinite;
+}
+.main_slider .slick-prev:hover span {
+  font-size: 18px;
+}
+.big_title {
+  padding-top: 59px;
+  margin: auto;
+}
+.big_title.tac {
+  width: 520px;
+  text-align: left;
+}
+.big_title.tac1 {
+  width: 820px;
+  text-align: left;
+}
+.big_title.tal {
+  padding-left: 7%;
+}
+.big_title .fs4 {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  padding: 0 0 25px 10px;
+  border-left: 2px solid #e3e6ec;
+}
+.row,
+.row1,
+row2 {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.row .box,
+.row .yacht_img {
+  height: 420px;
+}
+.row1 .box,
+.row1 .yacht_img {
+  height: 380px;
+}
+.row2 .box,
+.row2 .yacht_img {
+  height: 600px;
+}
+.cell50,
+.cell100 {
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+.cell50 {
+  width: 50%;
+}
+.cell100 {
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  max-height: 71px;
+  padding: 0 0 15px 22%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.banner:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  width: 20%;
+  height: 1px;
+  background-color: #e3e6ec;
+}
+.banner .fs7 {
+  display: inline-block;
+  margin: 4px 0 0 2px;
+}
+.box {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+.yacht_img {
+  width: 56%;
+  position: relative;
+  float: left;
+}
+.yacht_param {
+  width: 44%;
+  float: left;
+  padding: 0 4%;
+  background-color: #fffffd;
+  box-sizing: border-box;
+}
+.yacht_param .pic {
+  width: 100%;
+}
+.yacht_param .pic img {
+  width: 100%;
+}
+.yacht_param .name {
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.yacht_param table {
+  font-size: 1.083em;
+  line-height: 18.5px;
+}
+.yacht_param td:last-of-type {
+  color: #87898c;
+  font-weight: 100;
+  font-family: 'AvenirNextCyrLight';
+  padding-left: 20%;
+}
+.s1,
+.s2 {
+  position: absolute;
+  background-color: #fff;
+  display: inline-block;
+}
+.s1:before,
+.s2:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("../img/mini.png") center center no-repeat;
+  background-size: contain;
+}
+.s1 {
+  width: 80px;
+  height: 80px;
+}
+.s1:before {
+  width: 16px;
+  height: 23px;
+}
+.s2 {
+  width: 50px;
+  height: 50px;
+}
+.s2:before {
+  width: 13px;
+  height: 20px;
+}
+.p1 {
+  top: 0;
+  left: 22%;
+}
+.p2 {
+  bottom: 0;
+  right: 0;
+}
+.list_mater {
+  padding: 154px 0 0 0;
+  text-align: center;
+}
+.list_mater li {
+  width: 8%;
+  padding: 0 5%;
+  position: relative;
+}
+.list_mater li:after {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.3);
+}
+.list_mater li:last-of-type:after {
+  display: none;
+}
+.list_mater .num {
+  font-family: 'BanderaProBold';
+  font-size: 67px;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+}
+.list_mater .num_init {
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.333em;
+  color: #0061c2;
+}
+.llogo {
+  width: 100%;
+  height: 105px;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  background: url("../img/icon/Logo_numbs.png") center center no-repeat;
+}
+.llogo:after,
+.llogo:before {
+  content: "";
+  position: absolute;
+  width: 31%;
+  height: 1px;
+  background-color: rgba(255,255,255,0.3);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.llogo:after {
+  right: 15%;
+}
+.llogo:before {
+  left: 15%;
+}
+.message {
+  color: #fff;
+  opacity: 0.3;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 100;
+}
+.message a {
+  text-decoration: underline;
+}
+#map-canvas {
+  width: 100%;
+  height: 100%;
+}
+@-webkit-keyframes leftAnim {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -10px;
+  }
+}
+@keyframes leftAnim {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -10px;
+  }
+}
+@-webkit-keyframes rightAnim {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -10px;
+  }
+}
+@keyframes rightAnim {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -10px;
+  }
+}
