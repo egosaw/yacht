@@ -84,8 +84,23 @@ txt40 = 3.333em
 				font-family: 'AvenirNextCyrBold';
 				padding-bottom 1px
 				border-bottom 1px solid #fff
+				position relative
 				&:hover 
 					border-bottom 1px solid #fff
+					&:after
+						opacity 1
+						padding-left 10px
+						transition 0.5s
+						right -30px
+				&:after
+					content ""
+					width 16px
+					height 13px
+					position absolute
+					right -20px
+					top 4px
+					background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
+					opacity 0.5
 	.s_left
 		float left
 		padding-left 15%
@@ -123,6 +138,10 @@ txt40 = 3.333em
 		height 200%
 		opacity 0.8
 		border-left 2px solid #647585
+		&.bg1
+			background: url(../img/icon/bg1.png) 30px bottom no-repeat
+		&.bg2
+			background: url(../img/icon/bg2.png) 30px bottom no-repeat
 	.slick-dots
 		li
 			width auto

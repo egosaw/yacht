@@ -50,9 +50,26 @@
   font-family: 'AvenirNextCyrBold';
   padding-bottom: 1px;
   border-bottom: 1px solid #fff;
+  position: relative;
 }
 .main_slider .tit_link li a:hover {
   border-bottom: 1px solid #fff;
+}
+.main_slider .tit_link li a:hover:after {
+  opacity: 1;
+  padding-left: 10px;
+  transition: 0.5s;
+  right: -30px;
+}
+.main_slider .tit_link li a:after {
+  content: "";
+  width: 16px;
+  height: 13px;
+  position: absolute;
+  right: -20px;
+  top: 4px;
+  background: url("../img/icon/arrow_link_OnMouse.png") center center no-repeat;
+  opacity: 0.5;
 }
 .main_slider .s_left {
   float: left;
@@ -93,6 +110,12 @@
   height: 200%;
   opacity: 0.8;
   border-left: 2px solid #647585;
+}
+.main_slider .title.bg1 {
+  background: url("../img/icon/bg1.png") 30px bottom no-repeat;
+}
+.main_slider .title.bg2 {
+  background: url("../img/icon/bg2.png") 30px bottom no-repeat;
 }
 .main_slider .slick-dots li {
   width: auto;
