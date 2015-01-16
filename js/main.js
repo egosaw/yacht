@@ -19,18 +19,41 @@ $(document).ready(function(){
 	$('.main_slider').height(h-150);
 
 
-
+	
 	$('.main_slider').slick({
 		dots: true,
 		infinite: true,
-		arrows: true
+		arrows: true,
+		prevArrow: '<button type = "button" class = "slick-prev"><span>Клуб</span></button>',
+		nextArrow: '<button type = "button" class = "slick-next"><span>Аренда яхт</span></button>',
+		onAfterChange: function(slider, index){
+							var lButs = $('.main_slider .slick-prev span'),
+								rButs = $('.main_slider .slick-next span'),
+								count = slider.slideCount -1;
+							if(index == 0){
+								lButs.text(slide_text[count])
+								rButs.text(slide_text[index+1])
+							}
+							else if(index == count){
+								lButs.text(slide_text[index -1])
+								rButs.text(slide_text[0])
+							}
+							else{
+								lButs.text(slide_text[index-1]);
+								rButs.text(slide_text[index+1])
+							}
+						}
 	});
 
 
 
-	var slide_text = [], dots = $('.main_slider .slick-dots li'),
-	lBut = $('.main_slider .slick-prev'),
-	rBut = $('.main_slider .slick-next');
+
+	var slide_text = [],
+		lgth = slide_text.length,
+		dots = $('.main_slider .slick-dots li'),
+		lBut = $('.main_slider .slick-prev'),
+		rBut = $('.main_slider .slick-next');
+		
 
 	$('.main_slider .slick-slide:not(.slick-cloned) .l_h1').each(function(){
 		slide_text.push($(this).text());
@@ -41,33 +64,28 @@ $(document).ready(function(){
 	}
 
 
-	rBut.append('<span>'+slide_text[1]+'</span>');
-	lBut.append('<span>'+slide_text[slide_text.length-1]+'</span>');
+	// rBut.append('<span>'+slide_text[1]+'</span>');
+	// lBut.append('<span>'+slide_text[slide_text.length-1]+'</span>');
 
 
-	console.log(slide_text);
-	console.log($('.main_slider').slickCurrentSlide());
+	
 
 
 	// initialize();
-	$('.scroll').scroll(function(){
-		if($(this).scrollTop){
-			console.log('top')
-		}
-	})
 });
+
+
+
+
+
 
 
 
 window.my_last_y = 0;
 
-
-
-
-
 window.onscroll = function() {
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-	console.log(scrolled);
+	// console.log(scrolled);
 
 	if(scrolled>= 100){
 		$('.scroll').css({
@@ -77,6 +95,7 @@ window.onscroll = function() {
 		$('.main_menu').css({
 			background: '#f2f2f2'
 		});
+
 
 
 		if(scrolled > window.my_last_y){
@@ -91,8 +110,6 @@ window.onscroll = function() {
 				top: '0px',
 			});
 		}
-
-		// текущее состояние
 		window.my_last_y = scrolled;
 	}
 	else{

@@ -283,6 +283,12 @@ header {
   border-radius: 3px;
   float: right;
   cursor: pointer;
+  transition: top 1s ease-out 1s;
+}
+.phone:hover {
+  padding: 9px 46px 9px 10px;
+  -webkit-animation: phone 1s infinite;
+          animation: phone 1s infinite;
 }
 .head_left {
   width: 50%;
@@ -329,7 +335,6 @@ header {
   background-position: center center;
 }
 .main_slider {
-  height: 811px;
   width: 100%;
   display: block;
   margin: 0 0 40px 0;
@@ -337,8 +342,12 @@ header {
 }
 .main_slider .slick-slide {
   position: relative;
-  height: 811px;
   margin-bottom: 40px;
+}
+.main_slider .slick-list,
+.main_slider .slick-track,
+.main_slider .slick-slide {
+  height: 100%;
 }
 .main_slider .img {
   width: 100%;
@@ -354,20 +363,22 @@ header {
   bottom: 0;
   background-color: #0b0b0b;
 }
-.main_slider .slide_cont {
+.main_slider .slide_cont,
+.main_slider .slide_cont2 {
   width: 1000px;
   margin: auto;
 }
-.main_slider .slide_cont a {
+.main_slider .slide_cont a,
+.main_slider .slide_cont2 a {
   display: block;
 }
 .main_slider .s_left,
 .main_slider .s_right {
+  width: 50%;
   display: inline-block;
 }
 .main_slider .s_left {
   float: left;
-  margin-left: 110px;
 }
 .main_slider .s_right {
   float: right;
@@ -435,29 +446,67 @@ header {
 .main_slider .slick-next span {
   position: absolute;
   color: #fff;
-  width: 150px;
+  width: 200px;
   height: 20px;
   display: inline-block;
   font-size: 16px;
   line-height: 1;
   font-family: 'AvenirNextCyrLight';
   top: 6px;
+  transition: top 0.3s ease-out 0.3s;
 }
 .main_slider .slick-prev span {
-  left: -22px;
+  left: -45px;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
 }
 .main_slider .slick-next span {
-  right: -22px;
+  right: -45px;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-.slick-prev:hover,
-.slick-next:hover {
+.main_slider .slick-prev,
+.main_slider .slick-next {
+  width: 60px;
+  height: 30px;
+}
+.main_slider .slick-prev:before,
+.main_slider .slick-next:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url("../img/sprite.png");
+}
+.main_slider .slick-prev:hover,
+.main_slider .slick-next:hover {
   opacity: 1;
+}
+.main_slider .slick-next:before {
+  right: 0;
+  background-position: right -477px;
+}
+.main_slider .slick-prev:before {
+  left: 0;
+  background-position: -105px -477px;
+}
+.main_slider .slick-next:hover:before {
+  -webkit-animation: leftAnim 1s infinite;
+          animation: leftAnim 1s infinite;
+}
+.main_slider .slick-next:hover span {
+  font-size: 18px;
+}
+.main_slider .slick-prev:hover:before {
+  -webkit-animation: rightAnim 1s infinite;
+          animation: rightAnim 1s infinite;
+}
+.main_slider .slick-prev:hover span {
+  font-size: 18px;
 }
 .big_title {
   padding-top: 59px;
@@ -749,4 +798,52 @@ footer {
 }
 .fsocial li {
   padding: 0 10px;
+}
+@-webkit-keyframes phone {
+  from {
+    padding: 9px 28px;
+  }
+  to {
+    padding: 9px 46px 9px 10px;
+  }
+}
+@keyframes phone {
+  from {
+    padding: 9px 28px;
+  }
+  to {
+    padding: 9px 46px 9px 10px;
+  }
+}
+@-webkit-keyframes leftAnim {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -10px;
+  }
+}
+@keyframes leftAnim {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -10px;
+  }
+}
+@-webkit-keyframes rightAnim {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -10px;
+  }
+}
+@keyframes rightAnim {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -10px;
+  }
 }
