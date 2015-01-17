@@ -33,7 +33,7 @@ $(document).ready(function(){
 		dots: true,
 		infinite: true,
 		arrows: true,
-		initialSlide: 3,
+		initialSlide: 0,
 		prevArrow: '<button type = "button" class = "slick-prev"><span>Клуб</span></button>',
 		nextArrow: '<button type = "button" class = "slick-next"><span>Аренда яхт</span></button>',
 		onAfterChange: function(slider, index){
@@ -79,7 +79,7 @@ $(document).ready(function(){
 			new SelectFx(el);
 		} );
 	})();
-	// initialize();
+	initialize();
 
 
 
