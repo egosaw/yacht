@@ -7,7 +7,7 @@ title_col = #96A0B6
 tit_bor = #E3E6EC
 grey = #fffffd
 grey_txt = #87898c
-
+select_dark = #020622
 foot_col = #edf1f5
 
 inner_text = 12px
@@ -39,6 +39,7 @@ txt40 = 3.333em
 .main_slider
 	// height 811px
 	width 100%
+	// min-height 768px
 	max-width 1920px
 	display block
 	margin auto
@@ -66,43 +67,25 @@ txt40 = 3.333em
 		bottom 0
 		background-color #0B0B0B
 		
-	.slide_cont,
-	.slide_cont2
+	.slide_cont
 		width 1000px
 		margin auto
+		.title
+			padding-left 20px
+			margin-left 10%
+		.tit_link
+			margin-left 10%
+			a
+				font-size txt21
 	.s_left,
 	.s_right
 		width 50%
 		display inline-block
 		box-sizing border-box
-		
-	.tit_link
-		width: 100%
-		li
-			width 100%
-			margin-bottom 2px
+		.tit_link
 			a
-				font-size txt15
-				font-family: 'AvenirNextCyrBold';
-				padding-bottom 1px
-				border-bottom 1px solid #fff
-				position relative
-				&:hover 
-					border-bottom 1px solid #fff
-					&:after
-						opacity 1
-						padding-left 10px
-						transition 0.5s
-						right -30px
-				&:after
-					content ""
-					width 16px
-					height 13px
-					position absolute
-					right -20px
-					top 4px
-					background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
-					opacity 0.5
+				font-size txt18
+
 	.s_left
 		float left
 		padding-left 15%
@@ -116,8 +99,8 @@ txt40 = 3.333em
 		display block
 		margin auto
 		text-align center
-		margin-top 16%
-		margin-bottom 7%
+		margin-top 14%
+		margin-bottom 5%
 		position relative
 		&:before
 			content ""
@@ -139,11 +122,22 @@ txt40 = 3.333em
 		margin-bottom 25px
 		height 200%
 		opacity 0.8
-		border-left 2px solid #647585
+		// border-left 2px solid #647585
+		border-left 2px solid rgba(255,255,255, 0.5)
+		&.m18
+			margin-left 18%
 		&.bg1
 			background: url(../img/icon/bg1.png) 30px bottom no-repeat
 		&.bg2
 			background: url(../img/icon/bg2.png) 30px bottom no-repeat
+		&.bg3
+			background: url(../img/icon/bg3.png) 30px bottom no-repeat
+		&.bg4
+			background: url(../img/icon/bg4.png) 30px bottom no-repeat
+		&.bg5
+			background: url(../img/icon/bg5.png) 30px bottom no-repeat
+		&.bg6
+			background: url(../img/icon/bg6.png) 30px bottom no-repeat
 	.slick-dots
 		li
 			width auto
@@ -237,7 +231,38 @@ txt40 = 3.333em
     to {left: -10px;}
 }
 
-
+.tit_link
+	width: 100%
+	li
+		width 100%
+		margin-bottom 12px
+		a
+			font-family: 'AvenirNextCyrBold';
+			padding-bottom 1px
+			border-bottom 1px solid #fff
+			position relative
+			&:hover 
+				border-bottom 1px solid #fff
+				&:after
+					opacity 1
+					padding-left 10px
+					transition 0.5s
+					right -30px
+			&:after
+				content ""
+				width 16px
+				height 13px
+				position absolute
+				right -20px
+				top 4px
+				background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
+				opacity 0.5
+		span
+			font-size txt13
+			color #fff
+			display inline-block 
+			width 100%
+			padding-top 5px
 
 
 
@@ -264,7 +289,12 @@ txt40 = 3.333em
 .row, .row1, row2
 	display block
 	width 100%
-	overflow hidden
+	// overflow auto
+	&:after
+		content ""
+		display block
+		height 0
+		clear both
 .row 
 	.box, .yacht_img
 		height 420px
@@ -355,6 +385,24 @@ txt40 = 3.333em
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// custom select
 .yacth_arend
 	padding 10% 14%
 	width 100%
@@ -364,7 +412,14 @@ txt40 = 3.333em
 		width 100%
 		display block
 		margin-bottom 20px
-	select
+		select
+			display none
+	.cl_country,
+	.model,
+	.year,
+	.month,
+	.day,
+	.period
 		height 56px
 		display inline-block
 		border 2px solid rgba(255,255,255, 0.6)
@@ -372,14 +427,15 @@ txt40 = 3.333em
 		background-color transparent
 		font-size txt17
 		border-radius 0
+		box-sizing border-box
 	.cl_country,
 	.model
 		width 100%
-		
+
 	.year,
 	.period
 		width 37.27%
-		
+
 	.month,
 	.day
 		width 27%
@@ -400,7 +456,154 @@ txt40 = 3.333em
 		font-size txt17
 
 
+.cs-select 
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	background: #fff;
+	z-index: 5;
+	width: 100%;
+	max-width: 500px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	span
+		display: block;
+		position: relative;
+		cursor: pointer;
+		padding: 1em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		box-sizing border-box
+	.cs-placeholder
+		width 100%
+		&:after
+			right: 1em;
+			width 16px
+			height 13px
+			background url(../img/icon/arrow_form_white.png) 0 0 no-repeat
+		&:hover:after
+			background url(../img/icon/arrow_form_blue.png) 0 0 no-repeat
+	.cs-options
+		max-height 220px
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		border 2px solid transparent
+		width: 100%;
+		display none
+		opacity: 1;
+		overflow: scroll;
+		background: transparent;
+		visibility: visible;
+		// padding-bottom: 1.25em;
+		pointer-events: none;
+		ul
+			width 100%
+			span
+				padding 1em
+				width 100%
+			li
+				width 100%
+				border-bottom 2px solid #fff
+				background: #020622
+				&:last-of-type
+					border-bottom 0
+				&:hover 
+					background #fff
+	&.cs-active
+		.cs-options
+			border 2px solid #fff
+.cs-select.cs-active .cs-options {
+	visibility: visible;
+	display block
+}
+
+.cs-select > .cs-placeholder:after,
+.cs-select .cs-selected span:after {
+	content ""
+	speak: none;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.cs-active
+	z-index 10
+
+
+
+.cs-select ul li.cs-focus span {
+	background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+	padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+	cursor: default;
+}
+
+.cs-placeholder:hover{
+	background: #fff;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // LINK WITH ARROWS
+div.select
+	&.cl_country,
+	&.model,
+	&.year,
+	&.month,
+	&.day
+		color #fff
+		background select_dark
+		padding 10px
 
 .s1, .s2
 	position absolute

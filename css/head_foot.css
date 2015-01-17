@@ -55,6 +55,14 @@ input {
   font-weight: 700;
   margin-left: 10px;
 }
+.us-sel {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 @font-face {
   font-family: 'AvenirNextCyrRegular';
   src: url("../fonts/AvenirNextCyrRegular.eot");
@@ -88,6 +96,7 @@ body {
 header {
   position: relative;
   height: 150px;
+  min-width: 1280px;
 }
 .scroll {
   position: absolute;
@@ -95,7 +104,7 @@ header {
   top: 0;
   left: 0;
   display: inline-block;
-  z-index: 2;
+  z-index: 20;
   transition: top 0.3s ease-out 0.3s;
 }
 .main_wrap {
@@ -108,6 +117,7 @@ header {
 .content {
   box-sizing: border-box;
   padding: 0 3.125%;
+  min-width: 1280px;
 }
 .header {
   background-color: #020622;
@@ -318,7 +328,7 @@ header,
 .main_menu {
   width: 100%;
   display: block;
-  background-color: #fff;
+  background-color: #f2f2f2;
   text-align: center;
   height: 50px;
   position: absolute;

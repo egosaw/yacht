@@ -12,12 +12,17 @@
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/slick.css">
-		<link rel="stylesheet" href="css/select-theme-default.css">
+
+		<link rel="stylesheet" href="css/cs-skin-elastic.css">
+
 		<link rel="stylesheet" href="css/head_foot.css">
 		<link rel="stylesheet" href="css/main.css">
+
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/classie.js"></script>
+		<script type="text/javascript" src="js/selectFx.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 	<body>
@@ -115,24 +120,26 @@
 
 			<div class="main_slider">
 				<div>
-					<div class="img" style = "background-image: url(img/yachta1.jpg)"></div>
+					<div class="img" style = "background-image: url(img/slid1.jpg)"></div>
 					<div class="slide_cont">
 						<p class="l_h1 fs3">Как это происходит</p>
 						
-						<!-- <p class="title">Более 40 собственных яхт</p>
+						<p class="title bg3">Часто задаваемые вопросы</p>
 
-						<a href="">Италия — Сардиния</a>
-						<a href="">Черногория</a>
-						<a href="">Испания — Майорка</a>
-						<a href="">Хорватия</a>
-						<a href="">Переход вокруг Европы</a>
-						<a href="">Ежегодная регата</a> -->
+						<ul class="tit_link">
+							<li><a href="">Как и где арендовать яхту со скидкой</a></li>
+							<li><a href="">Что включено в аренду яхт</a></li>
+							<li><a href="">Что такое аренда - документы и правила</a></li>
+							<li><a href="">Рассмотрим бюджет</a></li>
+							<li><a href="">Что такое катамаран, сравнение с однокорпусной яхтой</a></li>
+							<li><a href="">Страховка и техподдержка</a></li>
+						</ul>
 
 					</div>
 				</div>
 				<div>
 					<div class="img" style = "background-image: url(img/slid2.jpg)"></div>
-					<div class="slide_cont2">
+					<div class="slide_cont">
 						<p class="l_h1 fs3">Аренда яхт</p>
 						<div class="s_left">
 							<p class="title bg1">собственные <br> базы яхт</p>
@@ -159,14 +166,24 @@
 					</div>
 				</div>
 				<div>
-					<div class="img" style = "background-image: url(img/yachta1.jpg)"></div>
+					<div class="img" style = "background-image: url(img/slid3.jpg)"></div>
 					<div class="slide_cont">
-						<p class="l_h1 fs3">Семейный отдых</p>
+						<p class="l_h1 fs3">Отдых на море</p>
+						<p class="title bg5 m18">Подари себе настоящую свободу и комфорт</p>
 						<div class="s_left">
-							<p class="title"></p>
+							<ul class = "tit_link">
+								<li><a href="">Семейное путешествие</a></li>
+								<li><a href="">Молодежная тусовка</a></li>
+								<li><a href="">Яхтсменам и ученикам</a></li>
+								<li><a href="">Романтическое путешествие</a></li>
+							</ul>
 						</div>
 						<div class="s_right">
-							<p class="title"></p>
+							<ul class = "tit_link">
+								<li><a href="">Подарок новобрачным</a></li>
+								<li><a href="">Корпоративный яхтинг</a></li>
+								<li><a href="">Морское путешествие VIP</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -174,36 +191,49 @@
 					<div class="img" style = "background-image: url(img/slid4.jpg)"></div>
 					<div class="slide_cont">
 						<p class="l_h1 fs3">Купить яхту</p>
-						<div class="s_left">
-							<p class="title"></p>
-						</div>
-						<div class="s_right">
-							<p class="title"></p>
-						</div>
+
+						<p class="title bg4">Яхтвояж - эксклюзивный дистрибьютор <br> в россии и черногории</p>
+
+						<ul class = "tit_link">
+							<li><a href="">Парусные катамараны Privilege</a></li>
+							<li><a href="">Однокорпусные яхты  Feeling</a></li>
+							<li><a href="">Парусные катамараны Lagoon</a></li>
+							<li><a href="">Владельцам яхт</a>
+								<span>менеджмент яхт, тех сервис, юридическое <br>сопровождение купли продажи</span>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div>
-					<div class="img" style = "background-image: url(img/yachta1.jpg)"></div>
+					<div class="img" style = "background-image: url(img/slid5.jpg)"></div>
 					<div class="slide_cont">
-						<p class="l_h1 fs3">Регата Yacht Voyage Catamaran Cup</p>
-						<div class="s_left">
-							<p class="title"></p>
-						</div>
-						<div class="s_right">
-							<p class="title"></p>
-						</div>
+						<p class="l_h1 fs3">Парусная регата</p>
+
+						<p class="title bg2">Активный отдых в интересной компании <br> за небольшие деньги</p>
+
+						<ul class = "tit_link">
+							<li><a href="">О регате</a></li>
+							<li><a href="">Маршрут</a></li>
+							<li><a href="">Условия и цены</a></li>
+							<li><a href="">Спонсорам и рекламадателям</a></li>
+							<li><a href="">Фотоотчет прошлогоней регаты</a></li>
+						</ul>
 					</div>
 				</div>
 				<div>
 					<div class="img" style = "background-image: url(img/slid6.jpg)"></div>
 					<div class="slide_cont">
 						<p class="l_h1 fs3">Клуб</p>
-						<div class="s_left">
-							<p class="title"></p>
-						</div>
-						<div class="s_right">
-							<p class="title"></p>
-						</div>
+
+						<p class="title bg6">Модное, красивое место на берегу<br> где вам всегда рады</p>
+
+						<ul class = "tit_link">
+							<li><a href="">Как найти</a></li>
+							<li><a href="">Интерьер</a></li>
+							<li><a href="">Меню, Винная карта</a></li>
+							<li><a href="">События и Праздники</a></li>
+							<li><a href="">Фото/Видео</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -243,58 +273,119 @@
 							<form action="" class = "yacth_arend">
 
 								<div class="f_line">
-									<select name="conutry" id="contry" class = "cl_country">
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
+									<select name="conutry" id="contry" class = "cs-select cl_country">
+										<option value="" disabled selected>Выбор страны</option>
+										<option value="">Италия</option>
+										<option value="">Сардиния</option>
+										<option value="">Хорватия</option>
+										<option value="">Италия</option>
+										<option value="">Сардиния</option>
+										<option value="">Хорватия</option>
+										<option value="">Италия</option>
+										<option value="">Сардиния</option>
+										<option value="">Хорватия</option>
+										<option value="">Италия</option>
+										<option value="">Сардиния</option>
+										<option value="">Хорватия</option>
 									</select>
 								</div>
 
 
 								<div class="f_line">
-									<select name="model" id="model" class = "model">
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
+									<select name="model" id="model" class = "cs-select model">
+										<option value="" disabled selected>Модель</option>
+										<option value="">Lagoon 500</option>
+										<option value="">Lagoon 450</option>
+										<option value="">Lagoon 440</option>
+										<option value="">Lagoon 400</option>
+										<option value="">Lagoon 380</option>
+										<option value="">Lagoon 500</option>
+										<option value="">Lagoon 450</option>
+										<option value="">Lagoon 440</option>
+										<option value="">Lagoon 400</option>
+										<option value="">Lagoon 380</option>
 									</select>
 								</div>
 
 
 								<div class="f_line">
-									<select name="year" id="year" class = "year">
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
+									<select name="year" id="year" class = "cs-select year">
+										<option value="" disabled selected>Год</option>
+										<option value="">2001</option>
+										<option value="">2002</option>
+										<option value="">2003</option>
+										<option value="">2004</option>
+										<option value="">2005</option>
+										<option value="">2006</option>
+										<option value="">2007</option>
+										<option value="">2008</option>
+										<option value="">2009</option>
+										<option value="">20010</option>
+										<option value="">20011</option>
+										<option value="">20012</option>
+										<option value="">20013</option>
+										<option value="">20014</option>
 									</select>
-									<select name="month" id="month" class = "month">
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
+									<select name="month" id="month" class = "cs-select month">
+										<option value="" disabled selected>Месяц</option>
+										<option value="">01</option>
+										<option value="">02</option>
+										<option value="">03</option>
+										<option value="">04</option>
+										<option value="">05</option>
+										<option value="">06</option>
+										<option value="">07</option>
+										<option value="">08</option>
+										<option value="">09</option>
+										<option value="">10</option>
+										<option value="">11</option>
+										<option value="">12</option>
 									</select>
-									<select name="day" id="day" class = "day">
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
+									<select name="day" id="day" class = "cs-select day">
+										<option value="" disabled selected>День</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+										<option value="">7</option>
+										<option value="">8</option>
+										<option value="">9</option>
+										<option value="">10</option>
+										<option value="">11</option>
+										<option value="">12</option>
+										<option value="">13</option>
+										<option value="">14</option>
+										<option value="">15</option>
+										<option value="">16</option>
+										<option value="">17</option>
+										<option value="">18</option>
+										<option value="">19</option>
+										<option value="">20</option>
+										<option value="">21</option>
+										<option value="">22</option>
+										<option value="">23</option>
+										<option value="">24</option>
+										<option value="">25</option>
+										<option value="">26</option>
+										<option value="">27</option>
+										<option value="">28</option>
+										<option value="">29</option>
+										<option value="">30</option>
+										<option value="">31</option>
+
 									</select>
 								</div>
 
 
 								<div class="f_line">
-									<select name="period" id="period" class = "period">
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
-										<option value="">some txt</option>
+									<select name="period" id="period" class = "cs-select period">
+										<option value="" disabled selected>Период</option>
+										<option value="">7</option>
+										<option value="">14</option>
+										<option value="">21</option>
+										<option value="">28</option>
 									</select>
 									<button class = "f_find">Найти</button>
 								</div>

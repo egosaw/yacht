@@ -29,10 +29,19 @@
   bottom: 0;
   background-color: #0b0b0b;
 }
-.main_slider .slide_cont,
-.main_slider .slide_cont2 {
+.main_slider .slide_cont {
   width: 1000px;
   margin: auto;
+}
+.main_slider .slide_cont .title {
+  padding-left: 20px;
+  margin-left: 10%;
+}
+.main_slider .slide_cont .tit_link {
+  margin-left: 10%;
+}
+.main_slider .slide_cont .tit_link a {
+  font-size: 1.75em;
 }
 .main_slider .s_left,
 .main_slider .s_right {
@@ -40,38 +49,9 @@
   display: inline-block;
   box-sizing: border-box;
 }
-.main_slider .tit_link {
-  width: 100%;
-}
-.main_slider .tit_link li {
-  width: 100%;
-  margin-bottom: 2px;
-}
-.main_slider .tit_link li a {
-  font-size: 1.25em;
-  font-family: 'AvenirNextCyrBold';
-  padding-bottom: 1px;
-  border-bottom: 1px solid #fff;
-  position: relative;
-}
-.main_slider .tit_link li a:hover {
-  border-bottom: 1px solid #fff;
-}
-.main_slider .tit_link li a:hover:after {
-  opacity: 1;
-  padding-left: 10px;
-  transition: 0.5s;
-  right: -30px;
-}
-.main_slider .tit_link li a:after {
-  content: "";
-  width: 16px;
-  height: 13px;
-  position: absolute;
-  right: -20px;
-  top: 4px;
-  background: url("../img/icon/arrow_link_OnMouse.png") center center no-repeat;
-  opacity: 0.5;
+.main_slider .s_left .tit_link a,
+.main_slider .s_right .tit_link a {
+  font-size: 1.5em;
 }
 .main_slider .s_left {
   float: left;
@@ -86,8 +66,8 @@
   display: block;
   margin: auto;
   text-align: center;
-  margin-top: 16%;
-  margin-bottom: 7%;
+  margin-top: 14%;
+  margin-bottom: 5%;
   position: relative;
 }
 .main_slider .l_h1:before {
@@ -111,13 +91,28 @@
   margin-bottom: 25px;
   height: 200%;
   opacity: 0.8;
-  border-left: 2px solid #647585;
+  border-left: 2px solid rgba(255,255,255,0.5);
+}
+.main_slider .title.m18 {
+  margin-left: 18%;
 }
 .main_slider .title.bg1 {
   background: url("../img/icon/bg1.png") 30px bottom no-repeat;
 }
 .main_slider .title.bg2 {
   background: url("../img/icon/bg2.png") 30px bottom no-repeat;
+}
+.main_slider .title.bg3 {
+  background: url("../img/icon/bg3.png") 30px bottom no-repeat;
+}
+.main_slider .title.bg4 {
+  background: url("../img/icon/bg4.png") 30px bottom no-repeat;
+}
+.main_slider .title.bg5 {
+  background: url("../img/icon/bg5.png") 30px bottom no-repeat;
+}
+.main_slider .title.bg6 {
+  background: url("../img/icon/bg6.png") 30px bottom no-repeat;
 }
 .main_slider .slick-dots li {
   width: auto;
@@ -221,6 +216,45 @@
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
+.tit_link {
+  width: 100%;
+}
+.tit_link li {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.tit_link li a {
+  font-family: 'AvenirNextCyrBold';
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+.tit_link li a:hover {
+  border-bottom: 1px solid #fff;
+}
+.tit_link li a:hover:after {
+  opacity: 1;
+  padding-left: 10px;
+  transition: 0.5s;
+  right: -30px;
+}
+.tit_link li a:after {
+  content: "";
+  width: 16px;
+  height: 13px;
+  position: absolute;
+  right: -20px;
+  top: 4px;
+  background: url("../img/icon/arrow_link_OnMouse.png") center center no-repeat;
+  opacity: 0.5;
+}
+.tit_link li span {
+  font-size: 1.083em;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding-top: 5px;
+}
 .big_title {
   padding-top: 59px;
   margin: auto;
@@ -248,7 +282,14 @@
 row2 {
   display: block;
   width: 100%;
-  overflow: hidden;
+}
+.row:after,
+.row1:after,
+row2:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
 }
 .row .box,
 .row .yacht_img {
@@ -353,7 +394,15 @@ row2 {
   display: block;
   margin-bottom: 20px;
 }
-.yacth_arend select {
+.yacth_arend .f_line select {
+  display: none;
+}
+.yacth_arend .cl_country,
+.yacth_arend .model,
+.yacth_arend .year,
+.yacth_arend .month,
+.yacth_arend .day,
+.yacth_arend .period {
   height: 56px;
   display: inline-block;
   border: 2px solid rgba(255,255,255,0.6);
@@ -361,6 +410,7 @@ row2 {
   background-color: transparent;
   font-size: 1.416em;
   border-radius: 0;
+  box-sizing: border-box;
 }
 .yacth_arend .cl_country,
 .yacth_arend .model {
@@ -389,6 +439,121 @@ row2 {
   color: #000;
   font-family: 'AvenirNextCyrBold';
   font-size: 1.416em;
+}
+.cs-select {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  z-index: 5;
+  width: 100%;
+  max-width: 500px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cs-select span {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+.cs-select .cs-placeholder {
+  width: 100%;
+}
+.cs-select .cs-placeholder:after {
+  right: 1em;
+  width: 16px;
+  height: 13px;
+  background: url("../img/icon/arrow_form_white.png") 0 0 no-repeat;
+}
+.cs-select .cs-placeholder:hover:after {
+  background: url("../img/icon/arrow_form_blue.png") 0 0 no-repeat;
+}
+.cs-select .cs-options {
+  max-height: 220px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  border: 2px solid transparent;
+  width: 100%;
+  display: none;
+  opacity: 1;
+  overflow: scroll;
+  background: transparent;
+  visibility: visible;
+  pointer-events: none;
+}
+.cs-select .cs-options ul {
+  width: 100%;
+}
+.cs-select .cs-options ul span {
+  padding: 1em;
+  width: 100%;
+}
+.cs-select .cs-options ul li {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  background: #020622;
+}
+.cs-select .cs-options ul li:last-of-type {
+  border-bottom: 0;
+}
+.cs-select .cs-options ul li:hover {
+  background: #fff;
+}
+.cs-select.cs-active .cs-options {
+  border: 2px solid #fff;
+}
+.cs-select.cs-active .cs-options {
+  visibility: visible;
+  display: block;
+}
+.cs-select > .cs-placeholder:after,
+.cs-select .cs-selected span:after {
+  content: "";
+  speak: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cs-active {
+  z-index: 10;
+}
+.cs-select ul li.cs-focus span {
+  background-color: #ddd;
+}
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+  padding-left: 1em;
+}
+.cs-select li.cs-optgroup > span {
+  cursor: default;
+}
+.cs-placeholder:hover {
+  background: #fff;
+  color: #000;
+}
+div.select.cl_country,
+div.select.model,
+div.select.year,
+div.select.month,
+div.select.day {
+  color: #fff;
+  background: #020622;
+  padding: 10px;
 }
 .s1,
 .s2 {

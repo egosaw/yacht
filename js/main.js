@@ -15,15 +15,25 @@ var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 $(document).ready(function(){
-	$('.main_slider').height(h-150);
-
-
 	
+	if(h<768){
+		$('.main_slider').height(h-50);
+		$('html, body').animate({
+	        scrollTop: 100
+	    }, 100);
+	}
+	else{
+		$('html, body').animate({
+	        scrollTop: 0
+	    }, 100);
+		$('.main_slider').height(h-150);
+	}
+
 	$('.main_slider').slick({
 		dots: true,
 		infinite: true,
 		arrows: true,
-		initialSlide: 1,
+		initialSlide: 3,
 		prevArrow: '<button type = "button" class = "slick-prev"><span>Клуб</span></button>',
 		nextArrow: '<button type = "button" class = "slick-next"><span>Аренда яхт</span></button>',
 		onAfterChange: function(slider, index){
@@ -64,14 +74,15 @@ $(document).ready(function(){
 	}
 
 
-	// rBut.append('<span>'+slide_text[1]+'</span>');
-	// lBut.append('<span>'+slide_text[slide_text.length-1]+'</span>');
-
-
-	
-
-
+	(function() {
+		[].slice.call( document.querySelectorAll( '.f_line select' ) ).forEach( function(el) {	
+			new SelectFx(el);
+		} );
+	})();
 	// initialize();
+
+
+
 });
 
 
@@ -91,9 +102,6 @@ window.onscroll = function() {
 		$('.scroll').css({
 			position:'fixed',
 			top: '-100px',
-		});
-		$('.main_menu').css({
-			background: '#f2f2f2'
 		});
 
 
@@ -117,8 +125,5 @@ window.onscroll = function() {
 			position: 'absolute',
 			top: '0',
 		});
-		$('.main_menu').css({
-			background: '#fff'
-		})
 	}
 };
