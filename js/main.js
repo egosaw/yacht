@@ -57,7 +57,6 @@ $(document).ready(function(){
 
 
 
-
 	var slide_text = [],
 		lgth = slide_text.length,
 		dots = $('.main_slider .slick-dots li'),
@@ -79,9 +78,45 @@ $(document).ready(function(){
 			new SelectFx(el);
 		} );
 	})();
-	initialize();
+
+	$('.s1').hover(
+		function(){
+			$(this).children('span').css('display', 'inline-block').animate({
+				left: "100px",
+				opacity: '1'
+			}, 300)
+		},
+
+		function(){
+			$(this).children('span').css('display', 'none').animate({
+				left: "80px",
+				opacity: '0'
+			}, 300).finish();
+		});
+	$('.banner').hover(
+		function(){
+			$(this).next().children().children('span').css('display', 'inline-block').animate({
+				left: "100px",
+				opacity: '1'
+			}, 300)
+		},
+
+		function(){
+			$(this).next().children().children('span').css('display', 'none').animate({
+				left: "80px",
+				opacity: '0'
+			}, 300).finish();
+		});
 
 
+	$('.arrow_to_top').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+
+	// initialize();
+
+	// http://fsanano.github.io/yacht/
 
 });
 
@@ -93,7 +128,7 @@ $(document).ready(function(){
 
 
 window.my_last_y = 0;
-
+var arrow_top_pos = 500;
 window.onscroll = function() {
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 	// console.log(scrolled);
@@ -103,7 +138,13 @@ window.onscroll = function() {
 			position:'fixed',
 			top: '-100px',
 		});
+		$('.main_menu').css({
+			background: '#f2f2f2'
+		});
 
+		$('.arrow_to_top').css({
+			display: 'inline-block'
+		})
 
 
 		if(scrolled > window.my_last_y){
@@ -125,5 +166,12 @@ window.onscroll = function() {
 			position: 'absolute',
 			top: '0',
 		});
+		$('.main_menu').css({
+			background: '#fff'
+		});
+		$('.arrow_to_top').css({
+			display: 'none'
+		})
 	}
+
 };
