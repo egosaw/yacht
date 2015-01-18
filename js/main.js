@@ -114,7 +114,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	// initialize();
+	initialize();
 
 	// http://fsanano.github.io/yacht/
 
