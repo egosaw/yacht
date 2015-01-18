@@ -513,6 +513,11 @@ txt40 = 3.333em
 		width 100%
 		display block
 		margin-bottom 20px
+		&:after
+			content ""
+			display block
+			height 0
+			clear both
 		select
 			display none
 	.cl_country,
@@ -536,19 +541,22 @@ txt40 = 3.333em
 	.year,
 	.period
 		// width 37.27%
-		width 38%
+		width 36%
 
 	.month,
 	.day
 		width 28%
-		margin-left 3%
-
+	.year, .month
+		margin-right 4%
+	
 	.day,
 	.month,
+	.year
+		float left
 	.f_find
 		float right
 	.f_find
-		width 59%
+		width 60%
 		// width 58.18%
 		height 56px
 		background-color #fff
@@ -620,7 +628,8 @@ txt40 = 3.333em
 		width: 100%;
 		display none
 		opacity: 1;
-		overflow: scroll;
+		overflow-y: scroll;
+		overflow-x hidden
 		background: transparent;
 		visibility: visible;
 		// padding-bottom: 1.25em;

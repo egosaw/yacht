@@ -515,6 +515,12 @@ row2:after {
   display: block;
   margin-bottom: 20px;
 }
+.yacth_arend .f_line:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
 .yacth_arend .f_line select {
   display: none;
 }
@@ -539,20 +545,26 @@ row2:after {
 }
 .yacth_arend .year,
 .yacth_arend .period {
-  width: 38%;
+  width: 36%;
 }
 .yacth_arend .month,
 .yacth_arend .day {
   width: 28%;
-  margin-left: 3%;
+}
+.yacth_arend .year,
+.yacth_arend .month {
+  margin-right: 4%;
 }
 .yacth_arend .day,
 .yacth_arend .month,
+.yacth_arend .year {
+  float: left;
+}
 .yacth_arend .f_find {
   float: right;
 }
 .yacth_arend .f_find {
-  width: 59%;
+  width: 60%;
   height: 56px;
   background-color: #fff;
   text-align: center;
@@ -630,7 +642,8 @@ row2:after {
   width: 100%;
   display: none;
   opacity: 1;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background: transparent;
   visibility: visible;
   pointer-events: none;
