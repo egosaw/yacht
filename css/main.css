@@ -1239,7 +1239,7 @@ row2:after {
 }
 
 .box.new .popup1 {
-  background: rgba(0,110,217,0.6);
+  background: rgba(0,0,20,0.8);
 }
 
 .box.new .label:before {
@@ -1247,7 +1247,7 @@ row2:after {
 }
 
 .box.comm .popup1 {
-  background: rgba(0,0,20,0.6);
+  background: rgba(0,0,20,0.8);
 }
 
 .box.comm .label:before {
@@ -1309,6 +1309,7 @@ row2:after {
   width: 73%;
   height: 20px;
   font-size: 2.5em;
+  font-weight: 900;
 }
 
 .popup1 span:before {
