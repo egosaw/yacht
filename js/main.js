@@ -130,7 +130,7 @@ $(document).ready(function(){
 
 
 window.my_last_y = 0;
-var arrow_top_pos = 500;
+
 window.onscroll = function() {
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 	// console.log(scrolled);
@@ -164,16 +164,17 @@ window.onscroll = function() {
 		window.my_last_y = scrolled;
 	}
 	else{
-		$('.scroll').css({
-			position: 'absolute',
-			top: '0',
-		});
+
 		$('.main_menu').css({
 			background: '#fff'
 		});
 		$('.arrow_to_top').css({
 			display: 'none'
 		})
+		$('.scroll').css({
+			position: 'absolute',
+			top: '0',
+		});
 	}
 
 };
