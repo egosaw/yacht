@@ -35,9 +35,9 @@
 
 /*.slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 20px; line-height: 1; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }*/
 
-.slick-prev { left: 50px; }
+.slick-prev { left: 10px; }
 
-.slick-next { right: 50px; }
+.slick-next { right: 10px; }
 
 /* Dots */
 .slick-slider { margin-bottom: 30px; }

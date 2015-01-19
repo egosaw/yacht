@@ -144,7 +144,9 @@ cnt()
 	.slick-prev,
 	.slick-next
 		width 60px
-		height 60px
+		height 100px
+		padding 50px
+		box-sizing content-box
 		&:before
 			content ''
 			position absolute
@@ -171,39 +173,43 @@ cnt()
 		&:hover
 			opacity 1
 	.slick-next:before
-		right 0
+		right 40px
 		background-position: right -477px;
 
 	.slick-prev:before
-		left 0
+		left 40px
 		background-position: -105px -477px;
 
 	.slick-next:hover
 		&:before
-			animation: leftAnim 1s infinite;
+			animation: leftAnim 0.5s infinite;
+			animation-direction: alternate
+			animation-timing-function: ease-in
 		span
 			font-size 18px
 	.slick-prev:hover
 		&:before
-			animation: rightAnim 1s infinite;
+			animation: rightAnim 0.5s infinite;
+			animation-direction: alternate
+			animation-timing-function: ease-in
 		span
 			font-size 18px
 		
 	.slick-prev span
-		left -45px
+		left 5px
 		transform:rotate(270deg);
 	.slick-next span
-		right -45px
+		right 5px
 		transform:rotate(90deg);
 
 
 @keyframes leftAnim {
-    from {right: 0px;}
-    to {right: -10px;}
+    from {right: 40px;}
+    to {right: 30px;}
 }
 @keyframes rightAnim {
-    from {left: 0px;}
-    to {left: -10px;}
+    from {left: 40px;}
+    to {left: 30px;}
 }
 
 .tit_link

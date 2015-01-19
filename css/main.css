@@ -928,7 +928,11 @@ footer {
 .main_slider .slick-prev,
 .main_slider .slick-next {
   width: 60px;
-  height: 60px;
+  height: 100px;
+  padding: 50px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .main_slider .slick-prev:before,
@@ -967,18 +971,22 @@ footer {
 }
 
 .main_slider .slick-next:before {
-  right: 0;
+  right: 40px;
   background-position: right -477px;
 }
 
 .main_slider .slick-prev:before {
-  left: 0;
+  left: 40px;
   background-position: -105px -477px;
 }
 
 .main_slider .slick-next:hover:before {
-  -webkit-animation: leftAnim 1s infinite;
-  animation: leftAnim 1s infinite;
+  -webkit-animation: leftAnim 0.5s infinite;
+  animation: leftAnim 0.5s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
 }
 
 .main_slider .slick-next:hover span {
@@ -986,8 +994,12 @@ footer {
 }
 
 .main_slider .slick-prev:hover:before {
-  -webkit-animation: rightAnim 1s infinite;
-  animation: rightAnim 1s infinite;
+  -webkit-animation: rightAnim 0.5s infinite;
+  animation: rightAnim 0.5s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
 }
 
 .main_slider .slick-prev:hover span {
@@ -995,14 +1007,14 @@ footer {
 }
 
 .main_slider .slick-prev span {
-  left: -45px;
+  left: 5px;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
 .main_slider .slick-next span {
-  right: -45px;
+  right: 5px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -1939,60 +1951,60 @@ div.select.day {
 
 @-webkit-keyframes leftAnim {
   0% {
-    right: 0px;
+    right: 40px;
   }
 
   100% {
-    right: -10px;
+    right: 30px;
   }
 }
 
 @-ms-keyframes leftAnim {
   0% {
-    right: 0px;
+    right: 40px;
   }
 
   100% {
-    right: -10px;
+    right: 30px;
   }
 }
 
 @keyframes leftAnim {
   0% {
-    right: 0px;
+    right: 40px;
   }
 
   100% {
-    right: -10px;
+    right: 30px;
   }
 }
 
 @-webkit-keyframes rightAnim {
   0% {
-    left: 0px;
+    left: 40px;
   }
 
   100% {
-    left: -10px;
+    left: 30px;
   }
 }
 
 @-ms-keyframes rightAnim {
   0% {
-    left: 0px;
+    left: 40px;
   }
 
   100% {
-    left: -10px;
+    left: 30px;
   }
 }
 
 @keyframes rightAnim {
   0% {
-    left: 0px;
+    left: 40px;
   }
 
   100% {
-    left: -10px;
+    left: 30px;
   }
 }
