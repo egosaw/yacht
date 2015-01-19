@@ -186,22 +186,4 @@ window.onscroll = function() {
 
 };
 
-var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-window.onscroll = function() {
-	var h1 = $('#obzor').offset().top,
-		h2 = $('#programma').offset().top,
-		h3 = $('#about').offset().top,
-		h4 = $('#contacts').offset().top;
-	if(scrolled>h1){
-		console.log('h1');
-	}
-	if(scrolled>h2){
-		console.log('h2')
-	}
-	if(scrolled>h3){
-		console.log('h3')
-	}
-	if(scrolled>h4){
-		console.log('h4')
-	}
-}	
+
