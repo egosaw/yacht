@@ -33,7 +33,7 @@ $(document).ready(function(){
 		dots: true,
 		infinite: true,
 		arrows: true,
-		initialSlide: 0,
+		initialSlide: 3,
 		prevArrow: '<button type = "button" class = "slick-prev"><span>Клуб</span></button>',
 		nextArrow: '<button type = "button" class = "slick-next"><span>Аренда яхт</span></button>',
 		onAfterChange: function(slider, index){
@@ -133,7 +133,8 @@ window.my_last_y = 0;
 
 window.onscroll = function() {
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-	// console.log(scrolled);
+	if(window.my_last_y != scrolled)
+		console.log(window.my_last_y+'!='+scrolled);
 
 	if(scrolled>= h-50){
 		$('.scroll').css({
@@ -148,23 +149,25 @@ window.onscroll = function() {
 			display: 'inline-block'
 		})
 
-
-		if(scrolled > window.my_last_y){
-			$('.scroll').css({
-				position:'fixed',
-				top: '-100px',
-			});
-		}
-		else{
+		
+		if(scrolled < window.my_last_y){
 			$('.scroll').css({
 				position:'fixed',
 				top: '0px',
 			});
 		}
+		else{
+			$('.scroll').css({
+				position:'fixed',
+				top: '-100px',
+			});
+			
+		}
+
 		window.my_last_y = scrolled;
+		
 	}
 	else{
-
 		$('.main_menu').css({
 			background: '#fff'
 		});
