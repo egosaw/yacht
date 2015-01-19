@@ -140,7 +140,7 @@ window.onscroll = function() {
 	if(window.my_last_y != scrolled)
 
 
-	if(scrolled>= hght){
+	if(scrolled>= hght+40){
 		$('.scroll').css({
 			position:'fixed',
 			top: '-100px',
