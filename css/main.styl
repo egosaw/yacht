@@ -1,40 +1,15 @@
-bg_main = #FFF
-dark_blue = #020622
-light_blue = #0061C2
-dis_txt = #5A6682
-txt_grey = #808184
-title_col = #96A0B6
-tit_bor = #E3E6EC
-grey = #fffffd
-grey_txt = #87898c
-select_dark = #020622
-foot_col = #edf1f5
+@import normalize
+@import head_foot
+center()
+	top 0
+	left 0
+	right 0
+	bottom 0
+	margin auto 
+	position absolute
 
-inner_text = 12px
-txt11 = 0.916em
-txt13 = 1.083em
-txt14 = 1.166em
-txt15 = 1.250em
-txt16 = 1.333em
-txt17 = 1.416em
-txt18 = 1.500em
-txt19 = 1.583em
-txt20 = 1.666em
-txt21 = 1.750em
-txt22 = 1.833em
-txt23 = 1.916em
-txt24 = 2.000em
-txt25 = 2.083em
-txt26 = 2.166em
-txt27 = 2.250em
-txt28 = 2.333em
-txt29 = 2.416em
-txt30 = 2.500em
-txt31 = 2.583em
-txt32 = 2.666em
-txt38 = 3.166em
-txt40 = 3.333em
-
+cnt()
+	content ""
 
 .main_slider
 	// height 811px
@@ -272,7 +247,9 @@ txt40 = 3.333em
 	padding-top 59px
 	margin auto
 	&.tac
-		width 520px
+		// width 520px
+		// width 75%
+		padding-left 30%
 		text-align left
 	&.tac1
 		width 820px
@@ -283,19 +260,41 @@ txt40 = 3.333em
 		text-align left
 		width 100%
 		display inline-block
-		padding 0 0 25px 10px
+		padding 0 0 23px 10px
+		margin 10px 0 5px 4px
 		border-left 2px solid tit_bor
 
 .row, .row1, row2
 	display block
 	width 100%
-	// overflow auto
+	position relative
 	&:after
 		content ""
 		display block
 		height 0
 		clear both
-.row 
+
+.desc_to_pic
+	text-align left
+	width 100%
+	display inline-block
+	padding 0 0 23px 10px
+	border-left 2px solid tit_bor
+	margin-left 20%
+	&.b
+		padding 23px 0 0 10px
+.row
+	&.lft
+		.small_slider
+			right 0
+
+	&.rght
+		top -117px
+		.small_slider
+			left 0
+		.ar_ar
+			float right
+			margin-top 150px
 	.box, .yacht_img
 		height 420px
 .row1 
@@ -304,22 +303,35 @@ txt40 = 3.333em
 .row2
 	.box, .yacht_img
 		height 600px
-
+.cell30,
 .cell50,
+.cell70,
 .cell100
 	display inline-block
+	position relative
 	margin 0
+	height 100%
 	float left
+	
+.cell30
+	position absolute
+	top 0
+	left 0
+	width 34%
 
 .cell50
 	width 50%
+
+.cell70
+	width 65%
+	margin-left 35%
 
 .cell100
 	width 100%
 
 .banner
 	width 100%
-	max-height 71px
+	height 71px
 	padding 0 0 15px 22%
 	margin-top 50px
 	margin-bottom 20px
@@ -594,7 +606,6 @@ txt40 = 3.333em
 	background: #fff;
 	z-index: 5;
 	width: 100%;
-	max-width: 500px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -796,8 +807,8 @@ div.select
 	padding 154px 0 0 0
 	text-align center
 	li
-		width 8%
-		padding 0 5%
+		width 12%
+		padding 0 3%
 		position relative
 		&:after
 			position absolute
@@ -822,7 +833,7 @@ div.select
 		display inline-block
 		width 100%
 		text-transform uppercase
-		font-size txt16
+		font-size txt15
 		color light_blue
 
 
@@ -879,31 +890,102 @@ div.select
 
 
 
+// arenda
+
+
+.mt40
+	margin-top 45px
+.share
+	width 100%
+
+	a
+		width 20px
+		height 20px
+		display inline-block
+		margin-right 18px
+	.ggl
+		background url(../img/icon/Google_blue.png) 0 0 no-repeat
+	.inst
+		background url(../img/icon/insta_blue.png) 0 0 no-repeat
+	.fb
+		background url(../img/icon/facebook_blue.png) 0 0 no-repeat
 
 
 
 
+.article
+	&.head
+		font-size txt25
+		line-height 35px
 
 
 
 
+.ffy
+	color #000
+	text-decoration underline
+	position absolute
+	bottom 5px
+	padding-left 70px
+	font-size txt18
+	font-weight 700
+	&:hover
+		text-decoration none
+	&:before
+		content ""
+		width 50px
+		height 50px
+		position absolute
+		display inline-block
+		left 0px
+		top -14px
+		background light_blue url() 0 0 no-repeat
+.brand
+	position absolute
+	bottom 0
+	left 10%
 
 
+.small_slider
+	width 110%
+	height 440px
+	img
+		width 100%
+		height 100%
+	.slick-slide
+		height 440px
+		background-size cover
+		background-repeat no-repeat
+	&.bb
+		margin-bottom 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ar_ar
+	width 80%
+	display block
+	margin-top 100px
+	
+	p
+		font-size txt18
+		margin-bottom 30px
+	a
+		font-size txt18
+		margin-top 10px
+		display inline-block
+		color #000
+		text-decoration underline
+		position relative
+		&:after
+			content ""
+			width 16px
+			height 13px
+			position absolute
+			right -50px
+			top 4px
+			background url(../img/arr_grey.png) center center no-repeat
+			opacity 0.5
+		&:hover
+			text-decoration none
+			
 
 
 

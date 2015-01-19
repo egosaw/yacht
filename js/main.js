@@ -55,6 +55,8 @@ $(document).ready(function(){
 						}
 	});
 
+	$('.small_slider').slick({});
+
 
 
 	var slide_text = [],
@@ -81,28 +83,28 @@ $(document).ready(function(){
 
 	$('.s1').hover(
 		function(){
-			$(this).children('span').css('display', 'inline-block').animate({
+			$(this).children('.hide_txt').css('display', 'inline-block').animate({
 				left: "100px",
 				opacity: '1'
 			}, 300)
 		},
 
 		function(){
-			$(this).children('span').css('display', 'none').animate({
+			$(this).children('.hide_txt').css('display', 'none').animate({
 				left: "80px",
 				opacity: '0'
 			}, 300).finish();
 		});
 	$('.banner').hover(
 		function(){
-			$(this).next().children().children('span').css('display', 'inline-block').animate({
+			$(this).next().children().children('.hide_txt').css('display', 'inline-block').animate({
 				left: "100px",
 				opacity: '1'
 			}, 300)
 		},
 
 		function(){
-			$(this).next().children().children('span').css('display', 'none').animate({
+			$(this).next().children().children('.hide_txt').css('display', 'none').animate({
 				left: "80px",
 				opacity: '0'
 			}, 300).finish();
@@ -114,7 +116,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	initialize();
+	// initialize();
 
 	// http://fsanano.github.io/yacht/
 

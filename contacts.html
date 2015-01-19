@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/select-theme-default.css">
+		<link rel="stylesheet" href="css/head_foot.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/select.min.js"></script>
+		<script src="js/main.js"></script>
+
+
+		<style type="text/css">
+			.clogo {
+				width: 150px;
+				top: -200px;
+				position: absolute;
+				display: inline-block;
+				height: 170px;
+				background: url("img/icon/logo_content.png") center 0px no-repeat;
+			}
+			.csocial {
+				margin-left: 20px;
+			}
+			.csocial li {
+				padding: 30px 10px;
+			}
+			.csocial li:first-child {
+				padding: 27px 0px 0px 0px;
+				margin-right: 10px;
+				border-top: 3px solid #e3e6ec;
+			}
+			.c_row {
+				display: block;
+				width: 100%;
+				padding-top: 70px;
+			}
+			.c_block {
+				display: inline-block;
+				margin: 0px 20px;
+			}
+			.c_block:last-child {
+				float: right;
+			}
+			.c_title {
+				display: block;
+				font-size: 32px;
+				font-family: 'BanderaPro';
+				font-weight: bold;
+				letter-spacing: 0.2px;
+				height: 80px;
+			}
+			.c_position {
+				display: block;
+				font-size: 20px;
+				height: 60px;
+				font-family: 'AvenirNextCyrRegular';
+				background: url("img/icon/c_position.png") left 0px no-repeat;
+				padding: 5px 0px 5px 50px;
+				margin: 15px;
+			}
+			.c_map_position {
+				display: block;
+				width: 580px;
+				height: 322px;
+			}
+			.c_ru_map {
+				background: url("img/c_ru_map.png") center 0px no-repeat;
+			}
+			.c_hrv_map {
+				background: url("img/c_hrv_map.png") center 0px no-repeat;
+			}
+			.c_esp_map {
+				background: url("img/c_esp_map.png") center 0px no-repeat;
+			}
+			.c_ita_map {
+				background: url("img/c_ita_map.png") center 0px no-repeat;
+			}
+			.c_phone {
+				display: block;
+				font-size: 20px;
+				font-family: 'AvenirNextCyrRegular';
+				background: url("img/icon/c_phone.png") left 0px no-repeat;
+				padding: 5px 0px 5px 50px;
+				margin: 15px;
+			}
+			.c_mail {
+				display: block;
+				font-size: 20px;
+				font-family: 'AvenirNextCyrRegular';
+				background: url("img/icon/c_mail.png") left 0px no-repeat;
+				padding: 5px 0px 5px 50px;
+				margin: 15px;
+			}
+			.c_skype {
+				display: block;
+				font-size: 20px;
+				font-family: 'AvenirNextCyrRegular';
+				background: url("img/icon/c_skype.png") left 0px no-repeat;
+				padding: 5px 0px 5px 50px;
+				margin: 15px;
+			}
+			.c_skype b, .c_mail b {
+				border-bottom: 1px solid;
+			}
+			.cform {
+				margin: 0 auto;
+				margin-top: 100px;
+				width: 870px;
+				height: 740px;
+				border: 5px solid #edf1f5;
+			}
+			.cform span {
+				font-size: 76px;
+				display: block;
+				height: 100px;
+				text-align: center;
+				margin-top: 50px;
+				margin-bottom: 30px;
+			}
+			.cformtext {
+				width: 600px;
+				height: 60px;
+				margin: 0 auto;
+				margin-top: 20px;
+				background: #edf1f5;
+				padding: 0px 30px;
+				font-family: 'AvenirNextCyrRegular', Arial, Helvetica, sans-serif;
+				font-size: 24px;
+				font-weight: bold;
+			}
+			.cformtextarea {
+				width: 540px;
+				height: 150px;
+				margin: 0 auto;
+				margin-top: 20px;
+				display: block;
+				background: #edf1f5;
+				padding: 15px 30px 60px 30px;
+				font-family: 'AvenirNextCyrRegular', Arial, Helvetica, sans-serif;
+				font-size: 24px;
+				font-weight: bold;
+				resize: none;
+			}
+			.cformbut {
+				width: 100px;
+				height: 60px;
+				display: block;
+				float: right;
+				margin-right: 135px;
+				margin-top: -60px;
+				background: url("img/icon/cformbut.png") center 0px no-repeat;
+			}
+		</style>
+
+
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="main_wrap">
+
+
+
+			<header>
+
+				<div class="scroll">
+					<div class="header">
+
+						<div class="login_in">
+							<a href="" class="sign_in b_line">Войти</a>
+							<span class="line_dis">/</span>
+							<a href="" class="sign_up b_line">Регистрация</a>
+						</div>
+
+						<ul class="social">
+							<li>
+								<a href="" class = "b_line fb"></a>
+							</li>
+							<li>
+								<a href="" class = "b_line ig"></a>
+							</li>
+							<li>
+								<a href="" class = "b_line yt"></a>
+							</li>
+						</ul>
+
+						<a href="" class="logo"></a>
+
+						<div class="head_left">
+							<ul class="mini_menu">
+								<li><a href="" class = "b_line">O нас </a></li>
+								<li><a href="" class = "b_line">Брокерам </a></li>
+								<li><a href="" class = "b_line">English</a></li>
+							</ul>
+							<button class="phone">
+								+7 (495) 721-49-79
+							</button>
+						</div>
+						
+					</div>
+
+
+					<div class="main_menu">
+						<ul class = "fs2">
+							<li>
+								<a href="">аренда/цены</a>
+							</li>
+							<li>
+								<a href="">продажа</a>
+							</li>
+							<li>
+								<a href="">регата</a>
+							</li>
+							<li>
+								<a href="">направления</a>
+							</li>
+							<li>
+								<a href="">новичкам</a>
+							</li>
+							<li>
+								<a href="">инфо</a>
+							</li>
+							<li>
+								<a href="">клуб</a>
+							</li>
+							<li>
+								<a href="">контакты</a>
+							</li>
+						</ul>
+						<form action="" class = "search">
+							<input type="search" autocomplete = "off">
+						</form>
+					</div>
+				</div>
+
+
+			</header>
+
+
+
+
+			<div class="content">
+				<div class="big_title tac">
+					<span class = "fs4"> контакты</span>
+					<span class = "fs5">Контактная <br> информация</span>
+				</div>
+
+				<div class="row">
+					<div class="cell50">
+						<div class="clogo">
+						</div>
+						<ul class="csocial">
+							<li>
+								<a href="">
+									<img src="img/icon/Google_blue.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/icon/insta_blue.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/icon/facebook_blue.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cell50"></div>
+				</div> 
+
+				<div>
+					<div class="c_row">
+						<div class="c_block">
+							<span class="c_title">Представительство в России</span>
+							<span class="c_position">Россия, Москва, Алтуфьевское шоссе,<br>корпус 1 (Бизнесс-центр Алтуфьево)</span>
+							<div class="c_map_position c_ru_map"></div>
+							<span class="c_phone">телефон: <b>+7 (495) 721-49-79</b></span>
+							<span class="c_mail">e-mail: <b>sales@yachtvoyage.ru</b></span>
+							<span class="c_skype">skype: <b>yavoyage</b> (Дмитрий Воронов)</span>
+						</div>
+						<div class="c_block">
+							<span class="c_title">Представительство<br>в Черногории и Хорватии</span>
+							<span class="c_position">Черногория, Тиват, Marina Solila</span>
+							<div class="c_map_position c_hrv_map"></div>
+							<span class="c_phone">телефон: <b>+382 69 587 328</b></span>
+							<span class="c_mail">e-mail: <b>montenegro@yachtvoyage.ru</b></span>
+							<span class="c_skype">skype: <b>yavoyage_mont</b> (Dejan Strbac)</span>
+						</div>
+					</div>
+
+					<div class="c_row">
+						<div class="c_block">
+							<span class="c_title">Представительство в России</span>
+							<span class="c_position">Балеарские острова, Майорка, Пальма-де-Майорка</span>
+							<div class="c_map_position c_esp_map"></div>
+							<span class="c_phone">телефон: <b>+3 4 65 431 90 04</b></span>
+							<span class="c_mail">e-mail: <b>spain@yachtvoyage.com</b></span>
+							<span class="c_skype">skype: <b>yachtvoyage_el</b> (Montserrat Rebenaque)</span>
+						</div>
+						<div class="c_block">
+							<span class="c_title">Представительство в России</span>
+							<span class="c_position">Остров Сардиния, Marina Olbia</span>
+							<div class="c_map_position c_ita_map"></div>
+							<span class="c_phone">телефон: <b>+393 393541990</b></span>
+							<span class="c_mail">e-mail: <b>italy@yachtvoyage.com</b></span>
+							<span class="c_skype">skype: <b>yv-italy</b></span>
+						</div>
+					</div>
+				</div>
+
+				<form class="cform" method="post" action="mail.php">
+					<span>Обратная связь</span>
+					<input class="cformtext" type="text" name="name" placeholder="Введите ваше имя" value="" size="30"/>
+					<input class="cformtext" type="text" name="phone" placeholder="Введите ваш телефон" value="" size="30" />
+					<input class="cformtext" type="text" name="email" placeholder="Введите E-mail" value="" size="30" />
+					<textarea class="cformtextarea" name="mess" rows="3" cols="25">Комментарий</textarea>
+					<input class="cformbut" type="submit" value=""/>
+				</form>
+
+			</div>
+
+
+
+
+
+
+
+
+			<footer>
+				<ul class="fsocial">
+					<li>
+						<a href=""><img src="img/icon/facebook_blue.png" alt=""></a>
+					</li>
+					<li>
+						<a href=""> <img src="img/icon/insta_blue.png" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="img/icon/skype_blue.png" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="img/icon/youtube_blue.png" alt=""></a>
+					</li>
+					<li>
+						<a href=""><img src="img/icon/Google_blue.png" alt=""></a>
+					</li>
+				</ul>
+				<div class="flogo">
+					
+				</div>
+				<div class="info_block">
+
+					<div class="contact">
+						<p>
+							Россия, Москва, 
+							Алтуфьевсое шоссе 48, 
+							корпус 1
+							<br>
+							<br>
+							+7 (495) 721-49-79
+							sales@yachtvoyage.ru
+						</p>
+					</div>
+					<div class="f_menu">
+						<p>Яхты</p>
+						<ul>
+							<li>
+								<a href="">Покупка яхт</a>
+							</li>
+							<li>
+								<a href="">Продажа яхт</a>
+							</li>
+							<li>
+								<a href="">Аренда яхт</a>
+							</li>
+							<li>
+								<a href="">Менеджмент яхт</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f_menu">
+						<p>Направления</p>
+						<ul>
+							<li>
+								<a href="">Италия - Сардиния</a>
+							</li>
+							<li>
+								<a href="">Черногория</a>
+							</li>
+							<li>
+								<a href="">Испания - Майорка</a>
+							</li>
+							<li>
+								<a href="">Хорватия</a>
+							</li>
+							<li>
+								<a href="">Круиз по Европе</a>
+							</li>
+							<li>
+								<a href="">Парусная регата</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f_menu">
+						<p>Путешествия</p>
+						<ul>
+							<li>
+								<a href="">Семейное путешествие</a>
+							</li>
+							<li>
+								<a href="">Молодежная тусовка</a>
+							</li>
+							<li>
+								<a href="">Корпоративные</a>
+							</li>
+							<li>
+								<a href="">Романтические</a>
+							</li>
+							<li>
+								<a href="">Другие</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f_menu">
+						<p>Компания</p>
+						<ul>
+							<li>
+								<a href="">О нас</a>
+							</li>
+							<li>
+								<a href="">Контакты</a>
+							</li>
+							<li>
+								<a href="">Карьера</a>
+							</li>
+							<li>
+								<a href="">Новости</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</footer>
+		</div>
+
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+	</body>
+</html>

@@ -119,6 +119,11 @@ header {
   padding: 0 3.125%;
   min-width: 1280px;
 }
+.narrow_block {
+  width: 75%;
+  display: block;
+  margin: auto;
+}
 .header {
   background-color: #020622;
   position: relative;
@@ -155,8 +160,8 @@ header,
 }
 .fs5 {
   color: #020722;
-  font-size: 63px;
-  font-weight: 900;
+  font-size: 75px;
+  font-weight: 100;
   font-family: 'AvenirNextCyrBold' Arial, Helvetica, sans-serif;
 }
 .fs6,
