@@ -129,14 +129,18 @@ $(document).ready(function(){
 
 
 
+
 window.my_last_y = 0;
 
 window.onscroll = function() {
-	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-	if(window.my_last_y != scrolled)
-		console.log(window.my_last_y+'!='+scrolled);
+	var hght = $('.main_slider .slick-dots').offset().top;
 
-	if(scrolled>= h-50){
+	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+	if(window.my_last_y != scrolled)
+
+
+	if(scrolled>= hght){
 		$('.scroll').css({
 			position:'fixed',
 			top: '-100px',
