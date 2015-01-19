@@ -5,10 +5,10 @@ dis_txt = #5A6682
 txt_grey = #808184
 title_col = #96A0B6
 tit_bor = #E3E6EC
+grey = #fffffd
+grey_txt = #87898c
 
-
-
-
+foot_col = #edf1f5
 
 inner_text = 12px
 txt11 = 0.916em
@@ -38,14 +38,15 @@ txt40 = 3.333em
 
 
 // ============================ PLACEHOLDER CUSOTOM=============================
-input::-webkit-input-placeholder,
-input:-moz-placeholder,
-input::-moz-placeholder,
-input:-ms-input-placeholder,
-input.placeholder{
+// input::-webkit-input-placeholder,
+// input:-moz-placeholder,
+// input::-moz-placeholder,
+// input:-ms-input-placeholder,
+// input.placeholder{
    
-}
-
+// }
+// 
+// ============================ BASE STYLE =============================
 ul,ol
 	margin 0
 	padding 0
@@ -56,6 +57,7 @@ li
 
 p
 	margin 0
+
 input,textarea,select,button
 	border 0
 
@@ -69,16 +71,16 @@ a
 	text-decoration none
 	color #fff
 
-input
-	width 100%
-	height 100%
-	display block
-	background-color transparent
-	margin 0
-	padding-right 25px
-	padding-left 8px
-	box-sizing border-box
-	border 1px solid col_grey
+// input
+// 	width 100%
+// 	height 100%
+// 	display block
+// 	background-color transparent
+// 	margin 0
+// 	padding-right 25px
+// 	padding-left 8px
+// 	box-sizing border-box
+// 	border 1px solid col_grey
 
 
 .none
@@ -86,10 +88,9 @@ input
 
 .fleft
 	float left
+
 .fright
 	float right
-
-// ico classes
 
 
 .btn
@@ -101,25 +102,14 @@ input
 	background-color #fff
 	font-weight 700
 	margin-left 10px
-	&.apply,
-	&.private
-		padding 9px 9px 8px 30px
-	&.private
-		background col_red
-		border-color col_red
-		color #fff
-		&:before
-			width 11px
-			height 13px
-			top 9px
-			left 8px
-			background-position 0 -39px
-	&.apply:before
-		width 10px
-		height 13px
-		top 9px
-		left 9px
-		background-position 0 -23px
+
+.us-sel
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 
 @font-face {
     font-family: 'AvenirNextCyrRegular';
@@ -150,6 +140,16 @@ input
          url('../fonts/BanderaPro.svg#BanderaPro') format('svg');
 }
 @font-face {
+    font-family: 'BanderaProBold';
+    src: url('../fonts/BanderaProBold.eot');
+    src: url('../fonts/BanderaProBold.eot') format('embedded-opentype'),
+         url('../fonts/BanderaProBold.woff2') format('woff2'),
+         url('../fonts/BanderaProBold.woff') format('woff'),
+         url('../fonts/BanderaProBold.ttf') format('truetype'),
+         url('../fonts/BanderaProBold.svg#BanderaProBold') format('svg');
+}
+
+@font-face {
     font-family: 'AvenirNextCyrBold';
     src: url('../fonts/AvenirNextCyrBold.eot');
     src: url('../fonts/AvenirNextCyrBold.eot') format('embedded-opentype'),
@@ -159,30 +159,58 @@ input
          url('../fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold') format('svg');
 }
 
-
 body
 	font-size inner_text
 	color txt_main
-	background #ccc
 	font-family 'AvenirNextCyrRegular', Arial, Helvetica, sans-serif
 
+
+
+// ============================ MAIN PAGE =============================
+header
+	position relative
+	height 150px
+	min-width 1280px
+
+.scroll
+	position absolute
+	width 100%
+	top 0
+	left 0
+	display inline-block
+	z-index 20
+	transition: top 0.3s ease-out 0.3s;
+
 .main_wrap
-	max-width 1600px
+	max-width 100%
 	min-width 1280px
 	display block
 	margin auto
+
+
 .header,
 .content{
 	box-sizing border-box
 	padding 0 3.125%
+	min-width 1280px
 }
+
+
+.narrow_block
+	width 75%
+	display block
+	margin auto
+
+
 .header
-	width 100%
 	background-color dark_blue
 	position relative
 	background-repeat no-repeat
 	height 100px
+	margin-bottom 50px
 	
+
+header,
 .header,
 .main_slider
 	width 100%
@@ -206,8 +234,8 @@ body
 
 
 
-// font style
-
+// ============================ ALL FONTS STYLE =============================
+// 
 .fs1
 	font-size txt14
 	color #fff
@@ -220,7 +248,9 @@ body
 	font-family 'AvenirNextCyrBold' Arial, Helvetica, sans-serif
 
 .fs3
-	font-size 77px
+	// font-size 77px
+	// font-size 55px
+	font-size 5em
 	font-family 'AvenirNextCyrBold' Arial, Helvetica, sans-serif
 	font-weight 900
 .fs4
@@ -229,22 +259,31 @@ body
 	font-size txt14
 .fs5
 	color #020722
-	font-size 63px
-	font-weight 900
+	// font-size 63px
+	font-size 75px
+	font-weight 100
 	font-family 'AvenirNextCyrBold' Arial, Helvetica, sans-serif
 	
-.fs6
-	font-size txt29
+.fs6,
+.fs61
 	color #020722
 	font-weight 700
-
+.fs6
+	font-size txt29
+.fs61
+	font-size txt20
+	margin-top 10px
 .fs7
 	font-size txt14
 	letter-spacing 0.2px
 	text-transform uppercase
 	font-family: 'BanderaPro';
 	color #020722
-
+.fs8
+	font-size txt20
+	font-family: 'BanderaPro';
+	color #020722
+	font-weight 900
 
 .tac
 	text-align center
@@ -266,6 +305,7 @@ body
 
 
 .content
+	width 100%
 	max-width 1600px
 	display block
 	margin auto
@@ -274,8 +314,10 @@ body
 
 
 
-.b_line:hover
+.b_line
 	border-bottom 2px solid light_blue
+	&:hover
+		border-bottom 2px solid transparent
 .login_in
 	display inline-block
 	padding-left 49px
@@ -333,6 +375,10 @@ body
 	height 70px
 	background url(../img/sprite.png) center 0 no-repeat
 
+@keyframes phone {
+    from {padding: 9px 28px}
+    to {padding: 9px 46px 9px 10px}
+}
 .mini_menu
 	display inline-block
 	margin 40px 0 0 25.7%
@@ -355,6 +401,27 @@ body
 	border-radius 3px
 	float right
 	cursor pointer
+	transition 0.7s
+	position relative
+	// transition: top 1s ease-out 1s;
+	&:before
+		content ""
+		width 16px
+		height 13px
+		background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
+		opacity 0
+		position absolute
+		top 0
+		bottom 0
+		margin auto
+		right 28px
+		transition 0.5s
+	&:hover
+		padding: 9px 46px 9px 10px
+		&:before
+			right 15px
+			opacity 1
+
 .head_left
 	width 50%
 	display inline-block
@@ -364,16 +431,22 @@ body
 .main_menu
 	width 100%
 	display block
+	// background-color #f2f2f2
 	background-color #fff
 	text-align center
 	height 50px
-	position relative
+	position absolute
+	top 100px
+	left 0
+	z-index 2
 	li 
 		display inline-block
 		margin 17px 33px 0 33px
 		a
 			font-size inherit
 			color inherit
+			&:hover
+				color light_blue
 	.search
 		position absolute
 		width 16px
@@ -389,143 +462,82 @@ body
 	background-size cover
 	background-repeat no-repeat
 	background-position center center
-.main_slider
-	height 811px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer
 	width 100%
-	display block
-	margin 0 0 40px 0
-	// overflow hidden
-	.slick-slide
-		position relative
-		height 811px
-	.img
-		width 100%
-		height 100%
-		top 0
-		left 0
-		display block
-
-		position absolute
-		z-index -1
-	.slick-dots
-		height 40px
-		bottom -40px
-		background-color #0B0B0B
-	.slide_cont
-		width 1000px
-		margin auto
-		a
-			display block
-	.s_left,
-	.s_right
-		// width 49.5%
-		display inline-block
-	.s_left
-		float left
-		margin-left 110px
-	.s_right
-		float right
-	
-	.l_h1
-		color #fff
-		display block
-		margin auto
-		text-align center
-		margin-top 170px
-		margin-bottom 65px
-		position relative
-		&:before
-			content ""
-			position absolute
-			width 100px
-			height 120px
-			top -111px
-			left 0
-			right 0
-			margin auto
-			background url(../img/sprite.png) 0 -440px no-repeat
-	.title
-		font-size txt26
-		line-height 35px 
-		color #fff
-		font-family: 'BanderaPro';
-		text-transform uppercase
-		padding 0 0 5% 20px
-		height 200%
-		border-left 2px solid #647585
-.slick-prev,
-.slick-next
-	&:hover
-		opacity 1
-
-
-.slick-slider.main_slider
-	margin-bottom 40px
-	
-.big_title
-	padding-top 59px
-	margin auto
-	&.tac
-		width 520px
-		text-align left
-	&.tal
-		padding-left 7%
-	.fs4
-		text-align left
-		width 100%
-		display inline-block
-		padding 0 0 25px 10px
-		border-left 2px solid tit_bor
-
-.row, .row1
-	display block
-	width 100%
+	margin-top 55px
+	padding 106px 0 100px 0
+	background-color foot_col
 	overflow hidden
-.row 
-	.box, .yacht_img
-		height 420px
-.row1 
-	.box, .yacht_img
-		height 380px
-.cell50
-	width 50%
-	// margin 0 -0.2% 0 0
-	display inline-block
-	margin 0
-	float left
-
-.banner
-	width 100%
-	max-height 71px
-	padding 0 0 15px 22%
-	margin-top 50px
-	margin-bottom 20px
 	position relative
+
+.flogo
+	width 23%
+	float left
 	display inline-block
-	box-sizing border-box
-	&:before
-		content ""
-		position absolute
-		left 0
-		top 0
-		bottom 0
-		margin auto
-		display inline-block
-		width 20%
-		height 1px
-		background-color tit_bor
-	.fs7
-		display inline-block
-		margin 4px 0 0 2px
-.box
-	width 100%
-	height 420px
+	// height 100%
+	height 200px
+	background url(../img/sprite.png) center -94px no-repeat
 
 
-.yacht_img
-	width 56%
+.info_block
+	display inline-block
+	width 77%
 	float left
-.yacht_param
-	width 44%
-	float left
-	
+	margin-top 63px
+
+.contact
+	width 150px
+	display inline-block
+	font-size txt14
+.f_menu
+	display inline-block
+	padding 0 0 0 8%
+	// width 155px
+	p
+		font-family: 'AvenirNextCyrBold';
+		font-size txt16
+		margin 0 0 10px 0
+	li
+		display block
+		margin 0 0 10px 0
+		a
+			color #000
+			
+.fsocial
+	position absolute
+	left 22%
+	top 80px
+	li
+		padding 0 10px
+		
+
+
+
+
+
+
+
+
+

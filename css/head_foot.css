@@ -55,28 +55,13 @@ input {
   font-weight: 700;
   margin-left: 10px;
 }
-.btn.apply,
-.btn.private {
-  padding: 9px 9px 8px 30px;
-}
-.btn.private {
-  background: col_red;
-  border-color: col_red;
-  color: #fff;
-}
-.btn.private:before {
-  width: 11px;
-  height: 13px;
-  top: 9px;
-  left: 8px;
-  background-position: 0 -39px;
-}
-.btn.apply:before {
-  width: 10px;
-  height: 13px;
-  top: 9px;
-  left: 9px;
-  background-position: 0 -23px;
+.us-sel {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @font-face {
   font-family: 'AvenirNextCyrRegular';
@@ -94,6 +79,11 @@ input {
   src: url("../fonts/BanderaPro.eot") format('embedded-opentype'), url("../fonts/BanderaPro.woff2") format('woff2'), url("../fonts/BanderaPro.woff") format('woff'), url("../fonts/BanderaPro.ttf") format('truetype'), url("../fonts/BanderaPro.svg#BanderaPro") format('svg');
 }
 @font-face {
+  font-family: 'BanderaProBold';
+  src: url("../fonts/BanderaProBold.eot");
+  src: url("../fonts/BanderaProBold.eot") format('embedded-opentype'), url("../fonts/BanderaProBold.woff2") format('woff2'), url("../fonts/BanderaProBold.woff") format('woff'), url("../fonts/BanderaProBold.ttf") format('truetype'), url("../fonts/BanderaProBold.svg#BanderaProBold") format('svg');
+}
+@font-face {
   font-family: 'AvenirNextCyrBold';
   src: url("../fonts/AvenirNextCyrBold.eot");
   src: url("../fonts/AvenirNextCyrBold.eot") format('embedded-opentype'), url("../fonts/AvenirNextCyrBold.woff2") format('woff2'), url("../fonts/AvenirNextCyrBold.woff") format('woff'), url("../fonts/AvenirNextCyrBold.ttf") format('truetype'), url("../fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold") format('svg');
@@ -101,11 +91,24 @@ input {
 body {
   font-size: 12px;
   color: txt_main;
-  background: #ccc;
   font-family: 'AvenirNextCyrRegular', Arial, Helvetica, sans-serif;
 }
+header {
+  position: relative;
+  height: 150px;
+  min-width: 1280px;
+}
+.scroll {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  z-index: 20;
+  transition: top 0.3s ease-out 0.3s;
+}
 .main_wrap {
-  max-width: 1600px;
+  max-width: 100%;
   min-width: 1280px;
   display: block;
   margin: auto;
@@ -114,14 +117,21 @@ body {
 .content {
   box-sizing: border-box;
   padding: 0 3.125%;
+  min-width: 1280px;
+}
+.narrow_block {
+  width: 75%;
+  display: block;
+  margin: auto;
 }
 .header {
-  width: 100%;
   background-color: #020622;
   position: relative;
   background-repeat: no-repeat;
   height: 100px;
+  margin-bottom: 50px;
 }
+header,
 .header,
 .main_slider {
   width: 100%;
@@ -139,7 +149,7 @@ body {
   font-family: 'AvenirNextCyrBold' Arial, Helvetica, sans-serif;
 }
 .fs3 {
-  font-size: 77px;
+  font-size: 5em;
   font-family: 'AvenirNextCyrBold' Arial, Helvetica, sans-serif;
   font-weight: 900;
 }
@@ -150,14 +160,21 @@ body {
 }
 .fs5 {
   color: #020722;
-  font-size: 63px;
-  font-weight: 900;
+  font-size: 75px;
+  font-weight: 100;
   font-family: 'AvenirNextCyrBold' Arial, Helvetica, sans-serif;
+}
+.fs6,
+.fs61 {
+  color: #020722;
+  font-weight: 700;
 }
 .fs6 {
   font-size: 2.416em;
-  color: #020722;
-  font-weight: 700;
+}
+.fs61 {
+  font-size: 1.666em;
+  margin-top: 10px;
 }
 .fs7 {
   font-size: 1.166em;
@@ -165,6 +182,12 @@ body {
   text-transform: uppercase;
   font-family: 'BanderaPro';
   color: #020722;
+}
+.fs8 {
+  font-size: 1.666em;
+  font-family: 'BanderaPro';
+  color: #020722;
+  font-weight: 900;
 }
 .tac {
   text-align: center;
@@ -176,13 +199,17 @@ body {
   text-align: left;
 }
 .content {
+  width: 100%;
   max-width: 1600px;
   display: block;
   margin: auto;
   background-color: #fff;
 }
-.b_line:hover {
+.b_line {
   border-bottom: 2px solid #0061c2;
+}
+.b_line:hover {
+  border-bottom: 2px solid transparent;
 }
 .login_in {
   display: inline-block;
@@ -275,6 +302,28 @@ body {
   border-radius: 3px;
   float: right;
   cursor: pointer;
+  transition: 0.7s;
+  position: relative;
+}
+.phone:before {
+  content: "";
+  width: 16px;
+  height: 13px;
+  background: url("../img/icon/arrow_link_OnMouse.png") center center no-repeat;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 28px;
+  transition: 0.5s;
+}
+.phone:hover {
+  padding: 9px 46px 9px 10px;
+}
+.phone:hover:before {
+  right: 15px;
+  opacity: 1;
 }
 .head_left {
   width: 50%;
@@ -287,7 +336,10 @@ body {
   background-color: #fff;
   text-align: center;
   height: 50px;
-  position: relative;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 2;
 }
 .main_menu li {
   display: inline-block;
@@ -296,6 +348,9 @@ body {
 .main_menu li a {
   font-size: inherit;
   color: inherit;
+}
+.main_menu li a:hover {
+  color: #0061c2;
 }
 .main_menu .search {
   position: absolute;
@@ -314,158 +369,69 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.main_slider {
-  height: 811px;
+footer {
   width: 100%;
-  display: block;
-  margin: 0 0 40px 0;
-}
-.main_slider .slick-slide {
-  position: relative;
-  height: 811px;
-}
-.main_slider .img {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: block;
-  position: absolute;
-  z-index: -1;
-}
-.main_slider .slick-dots {
-  height: 40px;
-  bottom: -40px;
-  background-color: #0b0b0b;
-}
-.main_slider .slide_cont {
-  width: 1000px;
-  margin: auto;
-}
-.main_slider .slide_cont a {
-  display: block;
-}
-.main_slider .s_left,
-.main_slider .s_right {
-  display: inline-block;
-}
-.main_slider .s_left {
-  float: left;
-  margin-left: 110px;
-}
-.main_slider .s_right {
-  float: right;
-}
-.main_slider .l_h1 {
-  color: #fff;
-  display: block;
-  margin: auto;
-  text-align: center;
-  margin-top: 170px;
-  margin-bottom: 65px;
-  position: relative;
-}
-.main_slider .l_h1:before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 120px;
-  top: -111px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background: url("../img/sprite.png") 0 -440px no-repeat;
-}
-.main_slider .title {
-  font-size: 2.166em;
-  line-height: 35px;
-  color: #fff;
-  font-family: 'BanderaPro';
-  text-transform: uppercase;
-  padding: 0 0 5% 20px;
-  height: 200%;
-  border-left: 2px solid #647585;
-}
-.slick-prev:hover,
-.slick-next:hover {
-  opacity: 1;
-}
-.slick-slider.main_slider {
-  margin-bottom: 40px;
-}
-.big_title {
-  padding-top: 59px;
-  margin: auto;
-}
-.big_title.tac {
-  width: 520px;
-  text-align: left;
-}
-.big_title.tal {
-  padding-left: 7%;
-}
-.big_title .fs4 {
-  text-align: left;
-  width: 100%;
-  display: inline-block;
-  padding: 0 0 25px 10px;
-  border-left: 2px solid #e3e6ec;
-}
-.row,
-.row1 {
-  display: block;
-  width: 100%;
+  margin-top: 55px;
+  padding: 106px 0 100px 0;
+  background-color: #edf1f5;
   overflow: hidden;
-}
-.row .box,
-.row .yacht_img {
-  height: 420px;
-}
-.row1 .box,
-.row1 .yacht_img {
-  height: 380px;
-}
-.cell50 {
-  width: 50%;
-  display: inline-block;
-  margin: 0;
-  float: left;
-}
-.banner {
-  width: 100%;
-  max-height: 71px;
-  padding: 0 0 15px 22%;
-  margin-top: 50px;
-  margin-bottom: 20px;
   position: relative;
-  display: inline-block;
-  box-sizing: border-box;
 }
-.banner:before {
-  content: "";
+.flogo {
+  width: 23%;
+  float: left;
+  display: inline-block;
+  height: 200px;
+  background: url("../img/sprite.png") center -94px no-repeat;
+}
+.info_block {
+  display: inline-block;
+  width: 77%;
+  float: left;
+  margin-top: 63px;
+}
+.contact {
+  width: 150px;
+  display: inline-block;
+  font-size: 1.166em;
+}
+.f_menu {
+  display: inline-block;
+  padding: 0 0 0 8%;
+}
+.f_menu p {
+  font-family: 'AvenirNextCyrBold';
+  font-size: 1.333em;
+  margin: 0 0 10px 0;
+}
+.f_menu li {
+  display: block;
+  margin: 0 0 10px 0;
+}
+.f_menu li a {
+  color: #000;
+}
+.fsocial {
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  display: inline-block;
-  width: 20%;
-  height: 1px;
-  background-color: #e3e6ec;
+  left: 22%;
+  top: 80px;
 }
-.banner .fs7 {
-  display: inline-block;
-  margin: 4px 0 0 2px;
+.fsocial li {
+  padding: 0 10px;
 }
-.box {
-  width: 100%;
-  height: 420px;
+@-webkit-keyframes phone {
+  from {
+    padding: 9px 28px;
+  }
+  to {
+    padding: 9px 46px 9px 10px;
+  }
 }
-.yacht_img {
-  width: 56%;
-  float: left;
-}
-.yacht_param {
-  width: 44%;
-  float: left;
+@keyframes phone {
+  from {
+    padding: 9px 28px;
+  }
+  to {
+    padding: 9px 46px 9px 10px;
+  }
 }

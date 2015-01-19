@@ -1,0 +1,991 @@
+@import normalize
+@import head_foot
+center()
+	top 0
+	left 0
+	right 0
+	bottom 0
+	margin auto 
+	position absolute
+
+cnt()
+	content ""
+
+.main_slider
+	// height 811px
+	width 100%
+	// min-height 768px
+	max-width 1920px
+	display block
+	margin auto
+	margin-bottom 40px
+	overflow hidden
+	.slick-slide
+		position relative
+		// height 811px
+		// height 750px
+		margin-bottom 40px
+	.slick-list,
+	.slick-track,
+	.slick-slide
+		height 100%
+	.img
+		width 100%
+		height 100%
+		top 0
+		left 0
+		display block
+		position absolute
+		z-index -1
+	.slick-dots
+		height 40px
+		bottom 0
+		background-color #0B0B0B
+		
+	.slide_cont
+		width 1000px
+		margin auto
+		.title
+			padding-left 20px
+			margin-left 10%
+		.tit_link
+			margin-left 10%
+			a
+				font-size txt21
+	.s_left,
+	.s_right
+		width 50%
+		display inline-block
+		box-sizing border-box
+		.tit_link
+			a
+				font-size txt18
+
+	.s_left
+		float left
+		padding-left 15%
+		// margin-left 110px
+	.s_right
+		float right
+		padding-left 6%
+	
+	.l_h1
+		color #fff
+		display block
+		margin auto
+		text-align center
+		margin-top 14%
+		margin-bottom 5%
+		position relative
+		&:before
+			content ""
+			position absolute
+			width 100px
+			height 120px
+			top -111px
+			left 0
+			right 0
+			margin auto
+			background url(../img/sprite.png) 0 -440px no-repeat
+	.title
+		font-size txt26
+		line-height 35px 
+		color #fff
+		font-family: 'BanderaPro';
+		text-transform uppercase
+		padding 0 0 5% 20px
+		margin-bottom 25px
+		height 200%
+		opacity 0.8
+		// border-left 2px solid #647585
+		border-left 2px solid rgba(255,255,255, 0.5)
+		&.m18
+			margin-left 18%
+		&.bg1
+			background: url(../img/icon/bg1.png) 30px bottom no-repeat
+		&.bg2
+			background: url(../img/icon/bg2.png) 30px bottom no-repeat
+		&.bg3
+			background: url(../img/icon/bg3.png) 30px bottom no-repeat
+		&.bg4
+			background: url(../img/icon/bg4.png) 30px bottom no-repeat
+		&.bg5
+			background: url(../img/icon/bg5.png) 30px bottom no-repeat
+		&.bg6
+			background: url(../img/icon/bg6.png) 30px bottom no-repeat
+	.slick-dots
+		li
+			width auto
+			padding 0 25px
+		button
+			font-size 12px
+			font-family: 'AvenirNextCyrRegular';
+			width auto
+			height 37px
+			color #737c99
+			border-top 3px solid transparent
+			text-transform uppercase
+			position relative
+			&:hover
+				color #fff
+		li.slick-active button
+			color #fff
+			border-top 3px solid light_blue
+			&:before
+				content ""
+				position absolute
+				width 11px
+				height 6px
+				background url(../img/sprite.png) right -311px no-repeat
+				top - 9px
+				left 0
+				right 0
+				margin auto
+	.slick-prev,
+	.slick-next
+		width 60px
+		height 60px
+		&:before
+			content ''
+			position absolute
+			top 0
+			bottom 0
+			margin auto
+			width: 20px;
+			height: 32px;
+			background-repeat: no-repeat;
+			background-image: url(../img/sprite.png);
+		span
+			position absolute
+			color #fff
+			width 200px 
+			height 20px
+			display inline-block
+			font-size 16px
+			line-height 1
+			font-family: 'AvenirNextCyrLight';
+			top 0
+			bottom 0
+			margin auto
+			transition: top 0.3s ease-out 0.3s;
+		&:hover
+			opacity 1
+	.slick-next:before
+		right 0
+		background-position: right -477px;
+
+	.slick-prev:before
+		left 0
+		background-position: -105px -477px;
+
+	.slick-next:hover
+		&:before
+			animation: leftAnim 1s infinite;
+		span
+			font-size 18px
+	.slick-prev:hover
+		&:before
+			animation: rightAnim 1s infinite;
+		span
+			font-size 18px
+		
+	.slick-prev span
+		left -45px
+		transform:rotate(270deg);
+	.slick-next span
+		right -45px
+		transform:rotate(90deg);
+
+
+@keyframes leftAnim {
+    from {right: 0px;}
+    to {right: -10px;}
+}
+@keyframes rightAnim {
+    from {left: 0px;}
+    to {left: -10px;}
+}
+
+.tit_link
+	width: 100%
+	li
+		width 100%
+		margin-bottom 12px
+		a
+			font-family: 'AvenirNextCyrBold';
+			padding-bottom 1px
+			border-bottom 1px solid #fff
+			position relative
+			&:hover 
+				border-bottom 1px solid #fff
+				&:after
+					opacity 1
+					padding-left 10px
+					transition 0.5s
+					right -30px
+			&:after
+				content ""
+				width 16px
+				height 13px
+				position absolute
+				right -20px
+				top 4px
+				background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
+				opacity 0.5
+		span
+			font-size txt13
+			color #fff
+			display inline-block 
+			width 100%
+			padding-top 5px
+
+
+
+
+
+.big_title
+	padding-top 59px
+	margin auto
+	&.tac
+		// width 520px
+		// width 75%
+		padding-left 30%
+		text-align left
+	&.tac1
+		width 820px
+		text-align left
+	&.tal
+		padding-left 7%
+	.fs4
+		text-align left
+		width 100%
+		display inline-block
+		padding 0 0 23px 10px
+		margin 10px 0 5px 4px
+		border-left 2px solid tit_bor
+
+.row, .row1, row2
+	display block
+	width 100%
+	position relative
+	&:after
+		content ""
+		display block
+		height 0
+		clear both
+
+.desc_to_pic
+	text-align left
+	width 100%
+	display inline-block
+	padding 0 0 23px 10px
+	border-left 2px solid tit_bor
+	margin-left 20%
+	&.b
+		padding 23px 0 0 10px
+.row
+	&.lft
+		.small_slider
+			right 0
+
+	&.rght
+		top -117px
+		.small_slider
+			left 0
+		.ar_ar
+			float right
+			margin-top 150px
+	.box, .yacht_img
+		height 420px
+.row1 
+	.box, .yacht_img
+		height 380px
+.row2
+	.box, .yacht_img
+		height 600px
+.cell30,
+.cell50,
+.cell70,
+.cell100
+	display inline-block
+	position relative
+	margin 0
+	height 100%
+	float left
+	
+.cell30
+	position absolute
+	top 0
+	left 0
+	width 34%
+
+.cell50
+	width 50%
+
+.cell70
+	width 65%
+	margin-left 35%
+
+.cell100
+	width 100%
+
+.banner
+	width 100%
+	height 71px
+	padding 0 0 15px 22%
+	margin-top 50px
+	margin-bottom 20px
+	position relative
+	display inline-block
+	box-sizing border-box
+	&:before
+		content ""
+		position absolute
+		left 0
+		top 0
+		bottom 0
+		margin auto
+		display inline-block
+		width 20%
+		height 1px
+		background-color tit_bor
+	.fs7
+		display inline-block
+		margin 4px 0 0 2px
+.box
+	width 100%
+	height 420px
+	position relative
+	display inline-block
+	&:hover
+		.curtain,
+		.popup1
+			opacity 1
+	&>article
+		display inline-block
+		padding 50px 13% 0 13%
+		color #fff
+		font-size txt16
+	&.new 
+		.popup1
+			background rgba(0,110,217,0.6)
+		.label:before
+			background url(../img/icon/news_and_callendar.png) 0 0 no-repeat
+	&.comm 
+		.popup1
+			background rgba(0,0,20,0.6);
+		.label:before
+			background url(../img/icon/talk.png) 0 0 no-repeat
+.curtain,
+.popup1
+	opacity 0
+	transition 0.4s
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 10
+	box-sizing border-box
+
+.curtain
+	background rgba(0,0,20,0.6)
+	padding 18% 10% 0 10%
+	.p, .article
+		text-align center 
+		color #fff
+		width 100%
+		display inline-block
+	.p
+		font-size 4.5em
+		font-family: 'AvenirNextCyrBold';
+	.article
+		font-family: 'BanderaPro';
+		font-size txt21
+		line-height 30px
+		margin-top 5%
+
+.popup1
+	padding 50px 13% 0 13%
+	span
+		position absolute
+		top 0
+		bottom 0
+		margin auto
+		display inline-block
+		text-align center 
+		width 73%
+		height 20px
+		font-size 2.5em
+		&:before
+			content ""
+			width 16px
+			height 13px
+			background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
+			position absolute
+			top 20px
+			bottom 0
+			margin auto
+			right 5px
+.label
+	position absolute
+	bottom 19px
+	left 50px
+	padding-left 30px
+	color #fff
+	z-index 12
+	&:before
+		content ""
+		width 18px
+		height 18px
+		position absolute
+		left 2px
+		top -1px
+	a
+		text-decoration underline
+		text-transform uppercase
+		color #fff
+		&:hover
+			text-decoration none
+	span
+		text-transform uppercase
+.yacht_img
+	width 56%
+	position relative
+	float left
+.yacht_param
+	height 100%
+	width 44%
+	float left
+	padding 0 4%
+	background-color #edf1f5
+	box-sizing border-box
+	.pic
+		width 100%
+		max-height 172px
+		img
+			width 100%
+	.name
+		color #000
+		display inline-block
+		width 100%
+		margin-bottom 20px
+		// text-align center
+	table
+		width 100%
+		
+		font-size txt13
+		line-height 18.5px
+	td:last-of-type
+		color grey_txt
+		font-weight 100
+		font-family: 'AvenirNextCyrLight';
+		padding-left 12%
+		
+
+
+
+
+
+
+
+.arrow_to_top
+	width 80px
+	height 80px
+	position fixed
+	bottom 50px
+	z-index 15
+	display none
+	right 50px
+	background #fff url(../img/icon/up.png) 0 0 no-repeat
+	&:hover
+		background #fff url(../img/icon/Up_OnMouse.png) 0 0 no-repeat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// custom select
+.yacth_arend
+	padding 10% 14%
+	width 100%
+	height 100%
+	box-sizing border-box
+	.f_line
+		width 100%
+		display block
+		margin-bottom 20px
+		&:after
+			content ""
+			display block
+			height 0
+			clear both
+		select
+			display none
+	.cl_country,
+	.model,
+	.year,
+	.month,
+	.day,
+	.period
+		height 56px
+		display inline-block
+		border 2px solid rgba(255,255,255, 0.6)
+		color #fff
+		background-color transparent
+		font-size txt17
+		border-radius 0
+		box-sizing border-box
+	.cl_country,
+	.model
+		width 100%
+
+	.year,
+	.period
+		// width 37.27%
+		width 36%
+
+	.month,
+	.day
+		width 28%
+	.year, .month
+		margin-right 4%
+	
+	.day,
+	.month,
+	.year
+		float left
+	.f_find
+		float right
+	.f_find
+		width 60%
+		// width 58.18%
+		height 56px
+		background-color #fff
+		text-align center
+		text-transform uppercase
+		color #000
+		font-family: 'AvenirNextCyrBold';
+		font-size txt17
+		position relative
+		&:after
+			content: "";
+			width: 16px;
+			height: 13px;
+			background: light_blue
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			z-index 2
+			margin: auto;
+			right: 34%;
+			transition: 0.5s;
+		&:hover
+			color light_blue
+			&:after
+				right 31%
+				opacity 1
+
+
+.cs-select 
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	background: #fff;
+	z-index: 5;
+	width: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	span
+		display: block;
+		position: relative;
+		cursor: pointer;
+		padding: 1em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		box-sizing border-box
+	.cs-placeholder
+		width 100%
+		&:after
+			right: 1em;
+			width 16px
+			height 13px
+			background url(../img/icon/arrow_form_white.png) 0 0 no-repeat
+		&:hover:after
+			background url(../img/icon/arrow_form_blue.png) 0 0 no-repeat
+	.cs-options
+		max-height 324px
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		border 2px solid transparent
+		width: 100%;
+		display none
+		opacity: 1;
+		overflow-y: scroll;
+		overflow-x hidden
+		background: transparent;
+		visibility: visible;
+		// padding-bottom: 1.25em;
+		pointer-events: none;
+		ul
+			width 100%
+			span
+				padding 1em
+				width 100%
+			li
+				width 100%
+				border-bottom 2px solid #fff
+				background: #020622
+				&:last-of-type
+					border-bottom 0
+				&:hover 
+					background #fff
+	&.cs-active
+		.cs-options
+			border 2px solid #fff
+.cs-select.cs-active .cs-options {
+	visibility: visible;
+	display block
+}
+
+.cs-select > .cs-placeholder:after,
+.cs-select .cs-selected span:after {
+	content ""
+	speak: none;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.cs-active
+	z-index 10
+
+
+
+.cs-select ul li.cs-focus span {
+	background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+	padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+	cursor: default;
+}
+
+.cs-placeholder:hover{
+	background: #fff;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LINK WITH ARROWS
+div.select
+	&.cl_country,
+	&.model,
+	&.year,
+	&.month,
+	&.day
+		color #fff
+		background select_dark
+		padding 10px
+
+.s1, .s2
+	position absolute
+	background-color #fff
+	display inline-block
+	z-index 11
+	&:before
+		content ''
+		display inline-block
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		margin auto
+		// background-color light_blue
+		background url(../img/mini.png) center center no-repeat
+		background-size contain
+		
+	
+.s1
+	width 80px
+	height 80px
+	&:before
+		width 16px
+		height 23px
+	span
+		position absolute
+		color #fff
+		font-size txt20
+		width 600%
+		left 80px
+		display none
+		top 25px
+		opacity 0
+.s2
+	width 50px
+	height 50px
+	&:before
+		width 13px
+		height 20px
+
+.p1
+	top 0
+	left 22%
+.p2
+	bottom 0
+	right 0
+
+
+
+
+
+
+
+
+
+.list_mater
+	padding 154px 0 0 0
+	text-align center
+	li
+		width 12%
+		padding 0 3%
+		position relative
+		&:after
+			position absolute
+			right -5px
+			top 0
+			bottom 0
+			margin auto
+			content ""
+			width 10px
+			height 10px
+			border-radius 10px
+			background-color rgba(255,255,255,0.3)
+		&:last-of-type:after
+			display none
+	.num
+		font-family: 'BanderaProBold';
+		font-size 67px
+		color #fff
+		width 100%
+		display inline-block
+	.num_init
+		display inline-block
+		width 100%
+		text-transform uppercase
+		font-size txt15
+		color light_blue
+
+
+
+
+
+
+.llogo
+	width 100%
+	height 105px
+	margin auto
+	margin-top 40px
+	position relative
+	// background url(../img/sprite.png) center -310px no-repeat
+	background url(../img/icon/Logo_numbs.png) center center no-repeat
+	&:after,
+	&:before
+		content ""
+		position absolute
+		width 31%
+		height 1px
+		background-color rgba(255,255,255,0.3)
+		top 0
+		bottom 0
+		margin auto
+	&:after
+		right 15%
+	&:before
+		left 15%
+		
+
+
+
+
+.message
+	color #fff
+	opacity 0.3
+	text-align center
+	width 100%
+	margin-top 50px
+	font-size txt18
+	font-style italic
+	font-weight 100
+	a
+		text-decoration underline
+
+
+
+
+
+#map-canvas
+	width 100%
+	height 100%
+
+
+
+// arenda
+
+
+.mt40
+	margin-top 45px
+.share
+	width 100%
+
+	a
+		width 20px
+		height 20px
+		display inline-block
+		margin-right 18px
+	.ggl
+		background url(../img/icon/Google_blue.png) 0 0 no-repeat
+	.inst
+		background url(../img/icon/insta_blue.png) 0 0 no-repeat
+	.fb
+		background url(../img/icon/facebook_blue.png) 0 0 no-repeat
+
+
+
+
+.article
+	&.head
+		font-size txt25
+		line-height 35px
+
+
+
+
+.ffy
+	color #000
+	text-decoration underline
+	position absolute
+	bottom 5px
+	padding-left 70px
+	font-size txt18
+	font-weight 700
+	&:hover
+		text-decoration none
+	&:before
+		content ""
+		width 50px
+		height 50px
+		position absolute
+		display inline-block
+		left 0px
+		top -14px
+		background light_blue url() 0 0 no-repeat
+.brand
+	position absolute
+	bottom 0
+	left 10%
+
+
+.small_slider
+	width 110%
+	height 440px
+	img
+		width 100%
+		height 100%
+	.slick-slide
+		height 440px
+		background-size cover
+		background-repeat no-repeat
+	&.bb
+		margin-bottom 0
+
+.ar_ar
+	width 80%
+	display block
+	margin-top 100px
+	
+	p
+		font-size txt18
+		margin-bottom 30px
+	a
+		font-size txt18
+		margin-top 10px
+		display inline-block
+		color #000
+		text-decoration underline
+		position relative
+		&:after
+			content ""
+			width 16px
+			height 13px
+			position absolute
+			right -50px
+			top 4px
+			background url(../img/arr_grey.png) center center no-repeat
+			opacity 0.5
+		&:hover
+			text-decoration none
+			
+
+
+
