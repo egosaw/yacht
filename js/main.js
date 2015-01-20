@@ -29,7 +29,7 @@ $(document).ready(function(){
 		$('.main_slider').height(h-150);
 	}
 
-	$('.main_slider').slick({
+	$('.main_slider').slick({ 
 		dots: true,
 		infinite: true,
 		arrows: true,

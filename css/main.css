@@ -342,7 +342,7 @@ header {
 }
 
 .main_wrap {
-  max-width: 100%;
+  max-width: 1600px;
   min-width: 1280px;
   display: block;
   margin: auto;
@@ -484,7 +484,7 @@ header,
   height: 33px;
   left: 0px;
   top: -8px;
-  background: url("../img/sprite.png") right -339px no-repeat;
+  background: url("../img/sprite.png") right -154px no-repeat;
 }
 
 .sign_up,
@@ -523,15 +523,15 @@ header,
 }
 
 .social li a.fb {
-  background-position: right -387px;
+  background-position: 104px 0;
 }
 
 .social li a.ig {
-  background-position: right -404px;
+  background-position: 1px 0;
 }
 
 .social li a.yt {
-  background-position: right -421px;
+  background-position: 122px 0;
 }
 
 .logo {
@@ -543,7 +543,7 @@ header,
   margin: auto;
   width: 145px;
   height: 70px;
-  background: url("../img/sprite.png") center 0 no-repeat;
+  background: url("../img/sprite.png") center -484px no-repeat;
 }
 
 .mini_menu {
@@ -584,7 +584,7 @@ header,
   content: "";
   width: 16px;
   height: 13px;
-  background: url("../img/icon/arrow_link_OnMouse.png") center center no-repeat;
+  background: url("../img/sprite.png") left -89px no-repeat;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -640,9 +640,13 @@ header,
   position: absolute;
   width: 16px;
   height: 16px;
-  background: url("../img/sprite.png") right -437px no-repeat;
+  background: url("../img/sprite.png") right -105px no-repeat;
   right: 3.1%;
   top: 18px;
+}
+
+.main_menu .search:hover {
+  background: url("../img/sprite.png") right -78px no-repeat;
 }
 
 .main_menu .search input {
@@ -671,7 +675,7 @@ footer {
   float: left;
   display: inline-block;
   height: 200px;
-  background: url("../img/sprite.png") center -94px no-repeat;
+  background: url("../img/sprite.png") center -581px no-repeat;
 }
 
 .info_block {
@@ -715,6 +719,32 @@ footer {
 
 .fsocial li {
   padding: 0 10px;
+}
+
+.fsocial a {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.fsocial a.fb {
+  background: url("../img/sprite.png") 0 -31px no-repeat;
+}
+
+.fsocial a.ig {
+  background: url("../img/sprite.png") -30px -31px no-repeat;
+}
+
+.fsocial a.sk {
+  background: url("../img/sprite.png") -60px -31px no-repeat;
+}
+
+.fsocial a.yt {
+  background: url("../img/sprite.png") -90px -31px no-repeat;
+}
+
+.fsocial a.gp {
+  background: url("../img/sprite.png") -125px -31px no-repeat;
 }
 
 @-webkit-keyframes phone {
@@ -844,7 +874,7 @@ footer {
   left: 0;
   right: 0;
   margin: auto;
-  background: url("../img/sprite.png") 0 -440px no-repeat;
+  background: url("../img/sprite.png") center -937px no-repeat;
 }
 
 .main_slider .title {
@@ -865,27 +895,27 @@ footer {
 }
 
 .main_slider .title.bg1 {
-  background: url("../img/icon/bg1.png") 30px bottom no-repeat;
+  background: url("../img/sprite.png") 5px -1083px no-repeat;
 }
 
 .main_slider .title.bg2 {
-  background: url("../img/icon/bg2.png") 30px bottom no-repeat;
+  background: url("../img/sprite.png") 5px -1200px no-repeat;
 }
 
 .main_slider .title.bg3 {
-  background: url("../img/icon/bg3.png") 30px bottom no-repeat;
+  background: url("../img/sprite.png") 5px -1442px no-repeat;
 }
 
 .main_slider .title.bg4 {
-  background: url("../img/icon/bg4.png") 30px bottom no-repeat;
+  background: url("../img/sprite.png") 25px bottom no-repeat;
 }
 
 .main_slider .title.bg5 {
-  background: url("../img/icon/bg5.png") 30px bottom no-repeat;
+  background: url("../img/sprite.png") 5px -1320px no-repeat;
 }
 
 .main_slider .title.bg6 {
-  background: url("../img/icon/bg6.png") 30px bottom no-repeat;
+  background: url("../img/sprite.png") 5px -1533px no-repeat;
 }
 
 .main_slider .slick-dots li {
@@ -961,8 +991,8 @@ footer {
   top: 0;
   bottom: 0;
   margin: auto;
-  -webkit-transition: top 0.3s ease-out 0.3s;
-  transition: top 0.3s ease-out 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main_slider .slick-prev:hover,
@@ -972,12 +1002,12 @@ footer {
 
 .main_slider .slick-next:before {
   right: 40px;
-  background-position: right -477px;
+  background-position: left -160px;
 }
 
 .main_slider .slick-prev:before {
   left: 40px;
-  background-position: -105px -477px;
+  background-position: left -203px;
 }
 
 .main_slider .slick-next:hover:before {
@@ -1055,7 +1085,7 @@ footer {
   position: absolute;
   right: -20px;
   top: 4px;
-  background: url("../img/icon/arrow_link_OnMouse.png") center center no-repeat;
+  background: url("../img/sprite.png") left -89px no-repeat;
   opacity: 0.5;
 }
 
@@ -1254,6 +1284,10 @@ row2:after {
   background: url("../img/icon/talk.png") 0 0 no-repeat;
 }
 
+.box.comm .s2 {
+  background: url("../img/sprite.png") 0 -337px no-repeat;
+}
+
 .curtain,
 .popup1 {
   opacity: 0;
@@ -1414,11 +1448,11 @@ row2:after {
   z-index: 15;
   display: none;
   right: 50px;
-  background: #fff url("../img/icon/up.png") 0 0 no-repeat;
+  background: #fff url("../img/sprite.png") -30px -155px no-repeat;
 }
 
 .arrow_to_top:hover {
-  background: #fff url("../img/icon/Up_OnMouse.png") 0 0 no-repeat;
+  background: #fff url("../img/sprite.png") -30px -237px no-repeat;
 }
 
 .yacth_arend {
@@ -1511,7 +1545,7 @@ row2:after {
   content: "";
   width: 16px;
   height: 13px;
-  background: #0061c2;
+  background: url("../img/sprite.png") 0 -58px no-repeat;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -1569,11 +1603,11 @@ row2:after {
   right: 1em;
   width: 16px;
   height: 13px;
-  background: url("../img/icon/arrow_form_white.png") 0 0 no-repeat;
+  background: url("../img/sprite.png") 0 -133px no-repeat;
 }
 
 .cs-select .cs-placeholder:hover:after {
-  background: url("../img/icon/arrow_form_blue.png") 0 0 no-repeat;
+  background: url("../img/sprite.png") 0 -111px no-repeat;
 }
 
 .cs-select .cs-options {
@@ -1673,34 +1707,14 @@ div.select.day {
 .s1,
 .s2 {
   position: absolute;
-  background-color: #fff;
   display: inline-block;
   z-index: 11;
-}
-
-.s1:before,
-.s2:before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background: url("../img/mini.png") center center no-repeat;
-  -webkit-background-size: contain;
-  background-size: contain;
 }
 
 .s1 {
   width: 80px;
   height: 80px;
-}
-
-.s1:before {
-  width: 16px;
-  height: 23px;
+  background: url("../img/sprite.png") -30px -73px no-repeat;
 }
 
 .s1 span {
@@ -1717,11 +1731,7 @@ div.select.day {
 .s2 {
   width: 50px;
   height: 50px;
-}
-
-.s2:before {
-  width: 13px;
-  height: 20px;
+  background: url("../img/sprite.png") 0px -391px no-repeat;
 }
 
 .p1 {
@@ -1784,7 +1794,7 @@ div.select.day {
   margin: auto;
   margin-top: 40px;
   position: relative;
-  background: url("../img/icon/Logo_numbs.png") center center no-repeat;
+  background: url("../img/sprite.png") center -800px no-repeat;
 }
 
 .llogo:after,

@@ -1,5 +1,6 @@
 @import normalize
 @import head_foot
+
 center()
 	top 0
 	left 0
@@ -86,7 +87,7 @@ cnt()
 			left 0
 			right 0
 			margin auto
-			background url(../img/sprite.png) 0 -440px no-repeat
+			background url(../img/sprite.png) center -937px no-repeat
 	.title
 		font-size txt26
 		line-height 35px 
@@ -102,17 +103,17 @@ cnt()
 		&.m18
 			margin-left 18%
 		&.bg1
-			background: url(../img/icon/bg1.png) 30px bottom no-repeat
+			background: url(../img/sprite.png) 5px -1083px no-repeat
 		&.bg2
-			background: url(../img/icon/bg2.png) 30px bottom no-repeat
+			background: url(../img/sprite.png) 5px -1200px no-repeat
 		&.bg3
-			background: url(../img/icon/bg3.png) 30px bottom no-repeat
+			background: url(../img/sprite.png) 5px -1442px no-repeat
 		&.bg4
-			background: url(../img/icon/bg4.png) 30px bottom no-repeat
+			background: url(../img/sprite.png) 25px bottom no-repeat
 		&.bg5
-			background: url(../img/icon/bg5.png) 30px bottom no-repeat
+			background: url(../img/sprite.png) 5px -1320px no-repeat
 		&.bg6
-			background: url(../img/icon/bg6.png) 30px bottom no-repeat
+			background: url(../img/sprite.png) 5px -1533px no-repeat
 	.slick-dots
 		li
 			width auto
@@ -169,16 +170,16 @@ cnt()
 			top 0
 			bottom 0
 			margin auto
-			transition: top 0.3s ease-out 0.3s;
+			transition 0.5s
 		&:hover
 			opacity 1
 	.slick-next:before
 		right 40px
-		background-position: right -477px;
+		background-position: left -160px;
 
 	.slick-prev:before
 		left 40px
-		background-position: -105px -477px;
+		background-position: left -203px;
 
 	.slick-next:hover
 		&:before
@@ -236,7 +237,7 @@ cnt()
 				position absolute
 				right -20px
 				top 4px
-				background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
+				background url(../img/sprite.png) left -89px no-repeat
 				opacity 0.5
 		span
 			font-size txt13
@@ -382,6 +383,8 @@ cnt()
 			background rgba(0,0,20,0.8);
 		.label:before
 			background url(../img/icon/talk.png) 0 0 no-repeat
+		.s2
+			background url(../img/sprite.png) 0 -337px no-repeat
 .curtain,
 .popup1
 	opacity 0
@@ -507,9 +510,9 @@ cnt()
 	z-index 15
 	display none
 	right 50px
-	background #fff url(../img/icon/up.png) 0 0 no-repeat
+	background #fff url(../img/sprite.png) -30px -155px no-repeat
 	&:hover
-		background #fff url(../img/icon/Up_OnMouse.png) 0 0 no-repeat
+		background #fff url(../img/sprite.png) -30px -237px no-repeat
 
 
 
@@ -592,7 +595,7 @@ cnt()
 			content: "";
 			width: 16px;
 			height: 13px;
-			background: light_blue
+			background: url(../img/sprite.png) 0 -58px no-repeat
 			opacity: 0;
 			position: absolute;
 			top: 0;
@@ -637,9 +640,9 @@ cnt()
 			right: 1em;
 			width 16px
 			height 13px
-			background url(../img/icon/arrow_form_white.png) 0 0 no-repeat
+			background url(../img/sprite.png) 0 -133px no-repeat
 		&:hover:after
-			background url(../img/icon/arrow_form_blue.png) 0 0 no-repeat
+			background url(../img/sprite.png) 0 -111px no-repeat
 	.cs-options
 		max-height 324px
 		position: absolute;
@@ -759,29 +762,14 @@ div.select
 
 .s1, .s2
 	position absolute
-	background-color #fff
 	display inline-block
 	z-index 11
-	&:before
-		content ''
-		display inline-block
-		position absolute
-		top 0
-		left 0
-		right 0
-		bottom 0
-		margin auto
-		// background-color light_blue
-		background url(../img/mini.png) center center no-repeat
-		background-size contain
-		
+
 	
 .s1
 	width 80px
 	height 80px
-	&:before
-		width 16px
-		height 23px
+	background url(../img/sprite.png) -30px -73px no-repeat
 	span
 		position absolute
 		color #fff
@@ -794,10 +782,8 @@ div.select
 .s2
 	width 50px
 	height 50px
-	&:before
-		width 13px
-		height 20px
-
+	background url(../img/sprite.png) 0px -391px no-repeat
+	
 .p1
 	top 0
 	left 22%
@@ -858,7 +844,7 @@ div.select
 	margin-top 40px
 	position relative
 	// background url(../img/sprite.png) center -310px no-repeat
-	background url(../img/icon/Logo_numbs.png) center center no-repeat
+	background url(../img/sprite.png) center -800px no-repeat
 	&:after,
 	&:before
 		content ""

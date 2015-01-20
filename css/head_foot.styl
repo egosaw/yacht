@@ -183,7 +183,8 @@ header
 	// transition: top 0.1s ease-out 0.1s;
 
 .main_wrap
-	max-width 100%
+	// max-width 100%
+	max-width 1600px
 	min-width 1280px
 	display block
 	margin auto
@@ -333,7 +334,7 @@ header,
 		height 33px
 		left 0px
 		top -8px
-		background url(../img/sprite.png) right -339px no-repeat
+		background url(../img/sprite.png) right -154px no-repeat
 
 .sign_up,
 .sign_in
@@ -359,12 +360,12 @@ header,
 			padding 0 0 3px 0
 			background-image url(../img/sprite.png)
 			&.fb
-				background-position right -387px
+				background-position 104px 0
 			&.ig
-				background-position right -404px
+				background-position 1px 0
 			&.yt
-				background-position right -421px
-
+				background-position 122px 0
+				
 .logo
 	position absolute
 	top 7px
@@ -374,7 +375,7 @@ header,
 	margin auto
 	width 145px
 	height 70px
-	background url(../img/sprite.png) center 0 no-repeat
+	background url(../img/sprite.png) center -484px no-repeat
 
 @keyframes phone {
     from {padding: 9px 28px}
@@ -409,7 +410,7 @@ header,
 		content ""
 		width 16px
 		height 13px
-		background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
+		background url(../img/sprite.png) left -89px no-repeat
 		opacity 0
 		position absolute
 		top 0
@@ -452,9 +453,11 @@ header,
 		position absolute
 		width 16px
 		height 16px
-		background url(../img/sprite.png) right -437px no-repeat
+		background url(../img/sprite.png) right -105px no-repeat
 		right 3.1%
 		top 18px
+		&:hover
+			background url(../img/sprite.png) right -78px no-repeat
 		input
 			display none
 
@@ -499,7 +502,7 @@ footer
 	display inline-block
 	// height 100%
 	height 200px
-	background url(../img/sprite.png) center -94px no-repeat
+	background url(../img/sprite.png) center -581px no-repeat
 
 
 .info_block
@@ -532,8 +535,20 @@ footer
 	top 80px
 	li
 		padding 0 10px
-		
-
+	a
+		width 20px
+		height 20px
+		display inline-block
+		&.fb
+			background url(../img/sprite.png) 0 -31px no-repeat
+		&.ig
+			background url(../img/sprite.png) -30px -31px no-repeat
+		&.sk
+			background url(../img/sprite.png) -60px -31px no-repeat
+		&.yt
+			background url(../img/sprite.png) -90px -31px no-repeat
+		&.gp
+			background url(../img/sprite.png) -125px -31px no-repeat
 
 
 
