@@ -7,7 +7,6 @@ title_col = #96A0B6
 tit_bor = #E3E6EC
 grey = #fffffd
 grey_txt = #87898c
-
 foot_col = #edf1f5
 
 inner_text = 12px
@@ -167,6 +166,14 @@ body
 
 
 // ============================ MAIN PAGE =============================
+
+header,
+.header,
+.main_slider
+	width 100%
+	display block
+
+
 header
 	position relative
 	height 150px
@@ -210,13 +217,6 @@ header
 	background-repeat no-repeat
 	height 100px
 	margin-bottom 50px
-	
-
-header,
-.header,
-.main_slider
-	width 100%
-	display block
 
 
 
@@ -286,7 +286,11 @@ header,
 	font-family: 'BanderaPro';
 	color #020722
 	font-weight 900
-
+.fs9
+	font-size txt17
+	font-weight 700
+	padding-right 15%
+	margin-top 140px
 .tac
 	text-align center
 .tar
@@ -447,6 +451,7 @@ header,
 		a
 			font-size inherit
 			color inherit
+			font-family: 'AvenirNextCyrBold';
 			&:hover
 				color light_blue
 	.search

@@ -287,7 +287,7 @@ cnt()
 	display inline-block
 	padding 0 0 23px 10px
 	border-left 2px solid tit_bor
-	margin-left 20%
+	margin-left 10%
 	&.b
 		padding 23px 0 0 10px
 .row
@@ -310,16 +310,23 @@ cnt()
 .row2
 	.box, .yacht_img
 		height 600px
+.cell25,
 .cell30,
+.cell40,
 .cell50,
+.cell60,
 .cell70,
+.cell75,
 .cell100
 	display inline-block
 	position relative
 	margin 0
 	height 100%
 	float left
-	
+
+.cell40
+	width 40%
+
 .cell30
 	position absolute
 	top 0
@@ -328,11 +335,20 @@ cnt()
 
 .cell50
 	width 50%
+.cell60
+	width 60%
 
 .cell70
 	width 65%
 	margin-left 35%
-
+.cell75
+	width 73%
+	margin-left 25%
+.cell25
+	position absolute
+	top 0
+	left 0
+	width 25%
 .cell100
 	width 100%
 
@@ -359,6 +375,10 @@ cnt()
 	.fs7
 		display inline-block
 		margin 4px 0 0 2px
+	&:hover + .box.apollo 
+		.curtain,
+		.popup1
+			opacity 1
 .box
 	width 100%
 	height 420px
@@ -377,12 +397,19 @@ cnt()
 		.popup1
 			background rgba(0,0,20,0.8);
 		.label:before
-			background url(../img/icon/news_and_callendar.png) 0 0 no-repeat
+			background url(../img/sprite.png) -86px 1px no-repeat
 	&.comm 
 		.popup1
 			background rgba(0,0,20,0.8);
 		.label:before
-			background url(../img/icon/talk.png) 0 0 no-repeat
+			background url(../img/sprite.png) -64px 0 no-repeat
+		.s2
+			background url(../img/sprite.png) 0 -337px no-repeat
+	&.rew
+		.popup1
+			background rgba(0,0,20,0.8);
+		.label:before
+			background url(../img/sprite.png) -112px 1px no-repeat
 		.s2
 			background url(../img/sprite.png) 0 -337px no-repeat
 .curtain,
@@ -962,7 +989,14 @@ div.select
 		background-repeat no-repeat
 	&.bb
 		margin-bottom 0
-
+.video_slider
+	width 100%
+	height 495px
+	margin-bottom 0
+	.slick-slide
+		height 495px
+		background-size cover
+		background-repeat no-repeat
 .ar_ar
 	width 80%
 	display block
@@ -992,4 +1026,46 @@ div.select
 			
 
 
+.big_table
+	width 100%
+	box-sizing border-box
+	margin-left 10%
+	margin-top 30px
 
+	td
+		color #000
+		overflow hidden
+		margin-bottom 15px
+		font-size txt18
+	td:first-of-type
+		width 40%
+		display inline-block
+	td:last-of-type
+		width 58%
+		padding-left 1%
+		display inline-block
+
+.dot
+	position relative
+
+	&:after
+		content ""
+		width 200px
+		position absolute
+		right -205px
+		height 100%
+		background url(../img/dot.png) 0 15px repeat-x
+		
+.comma
+	text-indent 40px 
+	font-style italic
+	position relative
+	&:before
+		content ""
+		position absolute
+		top 40px 
+		left 35px
+		display inline-block
+		width 34px
+		height 26px
+		background  url(../img/sprite.png) right -210px no-repeat

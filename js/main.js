@@ -17,12 +17,14 @@ var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 $(document).ready(function(){
 	
 	if(h<768){
+		$('.header').css('display', 'none');
 		$('.main_slider').height(h-50);
 		$('html, body').animate({
 	        scrollTop: 100
 	    }, 100);
 	}
 	else{
+		$('.header').css('display', 'block');
 		$('html, body').animate({
 	        scrollTop: 0
 	    }, 100);
@@ -33,7 +35,7 @@ $(document).ready(function(){
 		dots: true,
 		infinite: true,
 		arrows: true,
-		initialSlide: 3,
+		initialSlide: 1,
 		prevArrow: '<button type = "button" class = "slick-prev"><span>Клуб</span></button>',
 		nextArrow: '<button type = "button" class = "slick-next"><span>Аренда яхт</span></button>',
 		onAfterChange: function(slider, index){
@@ -56,6 +58,7 @@ $(document).ready(function(){
 	});
 
 	$('.small_slider').slick({});
+	$('.video_slider').slick({});
 
 
 
@@ -133,7 +136,7 @@ $(document).ready(function(){
 window.my_last_y = 0;
 
 window.onscroll = function() {
-	var hght = $('.main_slider .slick-dots').offset().top;
+	// var hght = $('.main_slider .slick-dots').offset().top;
 
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -159,6 +162,8 @@ window.onscroll = function() {
 				position:'fixed',
 				top: '0px',
 			});
+			$('.header').css('display', 'block')
+
 		}
 		else{
 			$('.scroll').css({
