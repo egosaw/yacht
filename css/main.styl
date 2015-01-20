@@ -636,6 +636,11 @@ cnt()
 		box-sizing border-box
 	.cs-placeholder
 		width 100%
+		height 100%
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		&::-webkit-scrollbar
+			display none
+
 		&:after
 			right: 1em;
 			width 16px
@@ -660,6 +665,7 @@ cnt()
 		pointer-events: none;
 		ul
 			width 100%
+			height 100%
 			span
 				padding 1em
 				width 100%
