@@ -278,7 +278,7 @@ clear()
 		margin 10px 0 5px 4px
 		border-left 2px solid tit_bor
 
-.row, .row1, row2
+.row, .row1, .row2
 	display block
 	width 100%
 	position relative
@@ -419,6 +419,11 @@ clear()
 			background url(../img/sprite.png) -112px 1px no-repeat
 		.s2
 			background url(../img/sprite.png) 0 -337px no-repeat
+	&.mandatary,
+	&.addit
+		width 100%
+		padding 0 8%
+		box-sizing border-box
 .curtain,
 .popup1
 	opacity 0
@@ -504,6 +509,7 @@ clear()
 	padding 0 4%
 	background-color #edf1f5
 	box-sizing border-box
+	position relative
 	&.map
 	.pic
 		width 100%
@@ -1086,5 +1092,40 @@ div.select
 	
 .price_list
 	width 100%
+	margin-top 30px
+	box-sizing content-box
+	position relative
+	&.bor:after
+		content ""
+		width 100%
+		height 1px
+		background-color #B9BECE
+		position absolute
+		bottom -20px
+.price_list,
+.depo
+	width 100%
+	margin-top 30px
+	box-sizing content-box
+	position relative
 	td
-		
+		font-size txt15
+		overflow hidden
+		display inline-block
+		margin-bottom 10px
+		box-sizing content-box
+	td:first-of-type
+		width 73%
+	td:last-of-type
+		width 23%
+		padding-left 2%
+		font-weight bold
+
+.depo
+	margin-top 50px
+.addit
+	background-color #707D9B
+	color #fff
+.mandatary
+	background-color #1B3468
+	color #fff
