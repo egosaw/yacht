@@ -15,6 +15,9 @@ var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 $(document).ready(function(){
+	if(location.href == '/'){
+		$('body').addClass('main');
+	}
 	
 	if(h<768){
 		// $('.header').css('display', 'none');
