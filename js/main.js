@@ -17,7 +17,7 @@ var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 $(document).ready(function(){
 	
 	if(h<768){
-		$('.header').css('display', 'none');
+		// $('.header').css('display', 'none');
 		$('.main_slider').height(h-50);
 		$('html, body').animate({
 	        scrollTop: 100

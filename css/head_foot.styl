@@ -161,7 +161,7 @@ a
 body
 	font-size inner_text
 	color txt_main
-	font-family 'AvenirNextCyrRegular', Arial, Helvetica, sans-serif
+	font-family 'AvenirNextCyrRegular', Arial, sans-serif
 
 
 
@@ -178,7 +178,7 @@ header
 	position relative
 	height 150px
 	min-width 1280px
-
+	vertical-align top
 .scroll
 	position absolute
 	width 100%
@@ -247,13 +247,13 @@ header
 	text-transform uppercase
 	color #000
 	font-weight 900
-	font-family 'AvenirNextCyrBold' Arial, Helvetica, sans-serif
+	font-family 'AvenirNextCyrBold' Arial, sans-serif
 
 .fs3
 	// font-size 77px
 	// font-size 55px
 	font-size 5em
-	font-family 'AvenirNextCyrBold' Arial, Helvetica, sans-serif
+	font-family 'AvenirNextCyrBold' Arial, sans-serif
 	font-weight 900
 .fs4
 	text-transform uppercase
@@ -264,7 +264,7 @@ header
 	font-size 63px
 	// font-size 75px
 	font-weight 100
-	font-family 'AvenirNextCyrBold' Arial, Helvetica, sans-serif
+	font-family 'AvenirNextCyrBold' Arial, sans-serif
 	
 .fs6,
 .fs61
@@ -379,6 +379,7 @@ header
 	margin auto
 	width 145px
 	height 70px
+	z-index 2
 	background url(../img/sprite.png) center -484px no-repeat
 
 @keyframes phone {
@@ -400,7 +401,7 @@ header
 	display inline-block
 	font-size txt14
 	color #fff
-	margin 32px 0 0 0
+	margin 32px 8% 0 0
 	padding 9px 28px
 	letter-spacing 0.65px
 	background-color light_blue
@@ -431,8 +432,12 @@ header
 .head_left
 	width 50%
 	display inline-block
-	float right
-	
+	position absolute
+	left 50%
+	top 0
+	&:after
+		clear()
+		
 	
 .main_menu
 	width 100%
