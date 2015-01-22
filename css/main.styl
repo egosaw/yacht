@@ -276,6 +276,9 @@ clear()
 		text-align left
 	&.tal
 		padding-left 7%
+	&.tal1
+		padding-left 15%
+		margin-bottom 50px
 	.fs4
 		text-align left
 		width 100%
@@ -955,7 +958,7 @@ div.select
 .share
 	width 100%
 	position relative
-	:before
+	&:before
 		content ""
 		position absolute
 		height 3px
@@ -968,6 +971,10 @@ div.select
 		height 20px
 		display inline-block
 		margin-right 18px
+		padding-bottom 2px
+		border-bottom 2px solid transparent
+		&:hover
+			border-bottom 2px solid light_blue
 	.ggl
 		background url(../img/icon/Google_blue.png) 0 0 no-repeat
 	.inst
