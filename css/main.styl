@@ -12,13 +12,6 @@ center()
 cnt()
 	content ""
 
-.img
-		width 100%
-		height 100%
-		top 0
-		left 0
-		display block
-		position absolute
 
 clear()
 	content ""
@@ -101,7 +94,7 @@ clear()
 			left 0
 			right 0
 			margin auto
-			background url(../img/sprite.png) center -937px no-repeat
+			background url(/themes/yavo/img/sprite.png) center -937px no-repeat
 	.title
 		font-size txt26
 		line-height 35px 
@@ -117,17 +110,17 @@ clear()
 		&.m18
 			margin-left 18%
 		&.bg1
-			background: url(../img/sprite.png) 5px -1083px no-repeat
+			background: url(/themes/yavo/img/sprite.png) 5px -1083px no-repeat
 		&.bg2
-			background: url(../img/sprite.png) 5px -1200px no-repeat
+			background: url(/themes/yavo/img/sprite.png) 5px -1200px no-repeat
 		&.bg3
-			background: url(../img/sprite.png) 5px -1442px no-repeat
+			background: url(/themes/yavo/img/sprite.png) 5px -1442px no-repeat
 		&.bg4
-			background: url(../img/sprite.png) 25px bottom no-repeat
+			background: url(/themes/yavo/img/sprite.png) 25px bottom no-repeat
 		&.bg5
-			background: url(../img/sprite.png) 5px -1320px no-repeat
+			background: url(/themes/yavo/img/sprite.png) 5px -1320px no-repeat
 		&.bg6
-			background: url(../img/sprite.png) 5px -1533px no-repeat
+			background: url(/themes/yavo/img/sprite.png) 5px -1533px no-repeat
 	.slick-dots
 		li
 			width auto
@@ -151,7 +144,7 @@ clear()
 				position absolute
 				width 11px
 				height 6px
-				background url(../img/sprite.png) right -311px no-repeat
+				background url(/themes/yavo/img/sprite.png) right -311px no-repeat
 				top - 9px
 				left 0
 				right 0
@@ -171,7 +164,7 @@ clear()
 			width: 20px;
 			height: 32px;
 			background-repeat: no-repeat;
-			background-image: url(../img/sprite.png);
+			background-image: url(/themes/yavo/img/sprite.png);
 		span
 			position absolute
 			color #fff
@@ -238,7 +231,21 @@ clear()
 			border-bottom 1px solid #fff
 			position relative
 			&:hover 
-				border-bottom 1px solid transparent
+				border-bottom 1px solid #fff
+				&:after
+					opacity 1
+					padding-left 10px
+					transition 0.5s
+					right -30px
+			&:after
+				content ""
+				width 16px
+				height 13px
+				position absolute
+				right -20px
+				top 4px
+				background url(/themes/yavo/img/sprite.png) left -89px no-repeat
+				opacity 0.5
 		span
 			font-size txt13
 			color #fff
@@ -247,23 +254,6 @@ clear()
 			padding-top 5px
 
 
-
-.ar_link,
-.tit_link li a
-	position relative
-	&:after
-		content ""
-		width 16px
-		height 13px
-		position absolute
-		right -20px
-		top 4px
-		background url(../img/sprite.png) left -89px no-repeat
-		opacity 0.5
-	&:hover:after
-			opacity 1
-			right -30px
-			transition 0.5s
 
 
 
@@ -280,9 +270,6 @@ clear()
 		text-align left
 	&.tal
 		padding-left 7%
-	&.tal1
-		padding-left 15%
-		margin-bottom 50px
 	.fs4
 		text-align left
 		width 100%
@@ -310,25 +297,18 @@ clear()
 	margin-left 10%
 	&.b
 		padding 23px 0 0 10px
-	&.l
-		margin-left 20%
 .row
 	&.lft
 		.small_slider
 			right 0
 
 	&.rght
-		// top -117px
+		top -117px
 		.small_slider
 			left 0
-			top -105px
 		.ar_ar
 			float right
-			margin-top 70px
-		.desc_to_pic
-			position relative
-			z-index 2
-			bottom 105px
+			margin-top 150px
 	.box, .yacht_img
 		height 420px
 .row1 
@@ -424,21 +404,21 @@ clear()
 		.popup1
 			background rgba(0,0,20,0.8);
 		.label:before
-			background url(../img/sprite.png) -86px 1px no-repeat
+			background url(/themes/yavo/img/sprite.png) -86px 1px no-repeat
 	&.comm 
 		.popup1
 			background rgba(0,0,20,0.8);
 		.label:before
-			background url(../img/sprite.png) -64px 0 no-repeat
+			background url(/themes/yavo/img/sprite.png) -64px 0 no-repeat
 		.s2
-			background url(../img/sprite.png) 0 -337px no-repeat
+			background url(/themes/yavo/img/sprite.png) 0 -337px no-repeat
 	&.rew
 		.popup1
 			background rgba(0,0,20,0.8);
 		.label:before
-			background url(../img/sprite.png) -112px 1px no-repeat
+			background url(/themes/yavo/img/sprite.png) -112px 1px no-repeat
 		.s2
-			background url(../img/sprite.png) 0 -337px no-repeat
+			background url(/themes/yavo/img/sprite.png) 0 -337px no-repeat
 	&.mandatary,
 	&.addit
 		width 100%
@@ -490,7 +470,7 @@ clear()
 			content ""
 			width 16px
 			height 13px
-			background url(../img/icon/arrow_link_OnMouse.png) center center no-repeat
+			background url(/themes/yavo/img/icon/arrow_link_OnMouse.png) center center no-repeat
 			position absolute
 			top 20px
 			bottom 0
@@ -570,9 +550,9 @@ clear()
 	z-index 15
 	display none
 	right 50px
-	background #fff url(../img/sprite.png) -30px -155px no-repeat
+	background #fff url(/themes/yavo/img/sprite.png) -30px -155px no-repeat
 	&:hover
-		background #fff url(../img/sprite.png) -30px -237px no-repeat
+		background #fff url(/themes/yavo/img/sprite.png) -30px -237px no-repeat
 
 
 
@@ -655,7 +635,7 @@ clear()
 			content: "";
 			width: 16px;
 			height: 13px;
-			background: url(../img/sprite.png) 0 -58px no-repeat
+			background: url(/themes/yavo/img/sprite.png) 0 -58px no-repeat
 			opacity: 0;
 			position: absolute;
 			top: 0;
@@ -705,9 +685,9 @@ clear()
 			right: 1em;
 			width 16px
 			height 13px
-			background url(../img/sprite.png) 0 -133px no-repeat
+			background url(/themes/yavo/img/sprite.png) 0 -133px no-repeat
 		&:hover:after
-			background url(../img/sprite.png) 0 -111px no-repeat
+			background url(/themes/yavo/img/sprite.png) 0 -111px no-repeat
 	.cs-options
 		max-height 324px
 		position: absolute;
@@ -835,7 +815,7 @@ div.select
 .s1
 	width 80px
 	height 80px
-	background url(../img/sprite.png) -30px -73px no-repeat
+	background url(/themes/yavo/img/sprite.png) -30px -73px no-repeat
 	span
 		position absolute
 		color #fff
@@ -848,7 +828,7 @@ div.select
 .s2
 	width 50px
 	height 50px
-	background url(../img/sprite.png) 0px -391px no-repeat
+	background url(/themes/yavo/img/sprite.png) 0px -391px no-repeat
 	
 .p1
 	top 0
@@ -909,8 +889,8 @@ div.select
 	margin auto
 	margin-top 40px
 	position relative
-	// background url(../img/sprite.png) center -310px no-repeat
-	background url(../img/sprite.png) center -800px no-repeat
+	// background url(/themes/yavo/img/sprite.png) center -310px no-repeat
+	background url(/themes/yavo/img/sprite.png) center -800px no-repeat
 	&:after,
 	&:before
 		content ""
@@ -958,34 +938,22 @@ div.select
 
 
 .mt40
-	margin-top 50px
+	margin-top 45px
 .share
 	width 100%
-	position relative
-	&:before
-		content ""
-		position absolute
-		height 3px
-		width 20px
-		background-color #E3E6EC
-		top -30px
-		left 0
+
 	a
 		width 20px
 		height 20px
 		display inline-block
 		margin-right 18px
-		padding-bottom 2px
-		border-bottom 2px solid transparent
-		&:hover
-			border-bottom 2px solid light_blue
 	.ggl
-		background url(../img/icon/Google_blue.png) 0 0 no-repeat
+		background url(/themes/yavo/img/icon/Google_blue.png) 0 0 no-repeat
 	.inst
-		background url(../img/icon/insta_blue.png) 0 0 no-repeat
+		background url(/themes/yavo/img/icon/insta_blue.png) 0 0 no-repeat
 	.fb
-		background url(../img/icon/facebook_blue.png) 0 0 no-repeat
-	
+		background url(/themes/yavo/img/icon/facebook_blue.png) 0 0 no-repeat
+
 
 
 
@@ -1015,16 +983,11 @@ div.select
 		display inline-block
 		left 0px
 		top -14px
-		background  url(../img/sprite.png) -53px -337px no-repeat
-	&.pdf
-		&:before
-			background  url(../img/sprite.png) -53px -391px no-repeat
-		&:after
-			content 
+		background light_blue url() 0 0 no-repeat
 .brand
 	position absolute
 	bottom 0
-	// left 10%
+	left 10%
 
 
 .small_slider
@@ -1050,7 +1013,7 @@ div.select
 .ar_ar
 	width 80%
 	display block
-	margin-top 70px
+	margin-top 100px
 	
 	p
 		font-size txt18
@@ -1062,15 +1025,14 @@ div.select
 		color #000
 		text-decoration underline
 		position relative
-		font-weight 900
 		&:after
 			content ""
 			width 16px
 			height 13px
 			position absolute
-			right -30px
+			right -50px
 			top 4px
-			background url(../img/arr_grey.png) center center no-repeat
+			background url(/themes/yavo/img/arr_grey.png) center center no-repeat
 			opacity 0.5
 		&:hover
 			text-decoration none
@@ -1105,7 +1067,7 @@ div.select
 		position absolute
 		right -205px
 		height 100%
-		background url(../img/dot.png) 0 15px repeat-x
+		background url(/themes/yavo/img/dot.png) 0 15px repeat-x
 		
 .comma
 	text-indent 40px 
@@ -1119,26 +1081,15 @@ div.select
 		display inline-block
 		width 34px
 		height 26px
-		background  url(../img/sprite.png) right -210px no-repeat
+		background  url(/themes/yavo/img/sprite.png) right -210px no-repeat
 		
 .big_yach
 	width 100%
 	height 100%
 	background-position center center 
-	// background-size cover
-	background-size contain
-	background-repeat no-repeat
+	background-size cover
 	min-height 750px
-	position relative
-	&:before
-		content ""
-		width 116px
-		height 133px
-		position absolute
-		top 0
-		right 0
-		background url(../img/sprite.png) center -482px no-repeat
-		background-size cover
+	
 .price_list
 	width 100%
 	margin-top 30px
@@ -1178,68 +1129,3 @@ div.select
 .mandatary
 	background-color #1B3468
 	color #fff
-	
-.pad
-	padding 0 3.5%
-	box-sizing border-box
-	
-
-
-.small_slider,
-.video_slider
-	.slick-next,
-	.slick-prev
-		z-index 3
-		width 13px
-		height 19px
-		top auto
-		left auto
-		bottom auto
-		right auto
-		&:hover
-			opacity 1
-	&.bb
-		.slider_panel
-			bottom -40px
-		.slick-next,
-		.slick-prev
-			bottom - 42px
-	&.bt
-		.slider_panel
-			top -40px
-		.slick-next,
-		.slick-prev
-			top -42px
-	.slick-prev
-		background transparent url(../img/sprite.png) 0 -266px no-repeat
-		right 130px
-
-	.slick-next
-		background transparent url(../img/sprite.png) 0 -295px no-repeat
-		right 60px
-	.slick-dots
-		bottom 20px
-		button
-			width 15px
-			height 15px
-			background-color #fff
-			border-radius 15px
-			opacity 0.5
-			&:hover
-				opacity 1
-		.slick-active button
-			opacity 1
-	&.bb .slider_panel
-		bottom -40px
-	&.bb .slider_panel
-		bottom -40px
-.slider_panel
-	width 58px
-	position absolute
-	font-weight 800
-	right 73px
-	display inline-block
-	color #000
-	text-align center
-	font-family: 'AvenirNextCyrBold';
-	
