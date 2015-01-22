@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 	}).append('<div class = "slider_panel"><span class="now">1</span>/<span class="count">3</span></div>');
 
-	$('.video_slider').slick({});
+	$('.video_slider').slick({}).append('<div class = "slider_panel"><span class="now">1</span>/<span class="count">3</span></div>');;
 
 
 
