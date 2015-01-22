@@ -2303,10 +2303,12 @@ div.select.day {
 .slider_panel {
   width: 58px;
   position: absolute;
+  font-weight: 800;
   right: 73px;
   display: inline-block;
   color: #000;
   text-align: center;
+  font-family: 'AvenirNextCyrBold';
 }
 
 @-webkit-keyframes leftAnim {
