@@ -906,7 +906,7 @@ footer {
   left: 0;
   right: 0;
   margin: auto;
-  background: url("/themes/yavo/img/sprite.png") center -937px no-repeat;
+  background: url("../img/sprite.png") center -937px no-repeat;
 }
 
 .main_slider .title {
@@ -927,27 +927,27 @@ footer {
 }
 
 .main_slider .title.bg1 {
-  background: url("/themes/yavo/img/sprite.png") 5px -1083px no-repeat;
+  background: url("../img/sprite.png") 5px -1083px no-repeat;
 }
 
 .main_slider .title.bg2 {
-  background: url("/themes/yavo/img/sprite.png") 5px -1200px no-repeat;
+  background: url("../img/sprite.png") 5px -1200px no-repeat;
 }
 
 .main_slider .title.bg3 {
-  background: url("/themes/yavo/img/sprite.png") 5px -1442px no-repeat;
+  background: url("../img/sprite.png") 5px -1442px no-repeat;
 }
 
 .main_slider .title.bg4 {
-  background: url("/themes/yavo/img/sprite.png") 25px bottom no-repeat;
+  background: url("../img/sprite.png") 25px bottom no-repeat;
 }
 
 .main_slider .title.bg5 {
-  background: url("/themes/yavo/img/sprite.png") 5px -1320px no-repeat;
+  background: url("../img/sprite.png") 5px -1320px no-repeat;
 }
 
 .main_slider .title.bg6 {
-  background: url("/themes/yavo/img/sprite.png") 5px -1533px no-repeat;
+  background: url("../img/sprite.png") 5px -1533px no-repeat;
 }
 
 .main_slider .slick-dots li {
@@ -980,7 +980,7 @@ footer {
   position: absolute;
   width: 11px;
   height: 6px;
-  background: url("/themes/yavo/img/sprite.png") right -311px no-repeat;
+  background: url("../img/sprite.png") right -311px no-repeat;
   top: -9px;
   left: 0;
   right: 0;
@@ -1007,7 +1007,7 @@ footer {
   width: 20px;
   height: 32px;
   background-repeat: no-repeat;
-  background-image: url("/themes/yavo/img/sprite.png");
+  background-image: url("../img/sprite.png");
 }
 
 .main_slider .slick-prev span,
@@ -1117,7 +1117,7 @@ footer {
   position: absolute;
   right: -20px;
   top: 4px;
-  background: url("/themes/yavo/img/sprite.png") left -89px no-repeat;
+  background: url("../img/sprite.png") left -89px no-repeat;
   opacity: 0.5;
 }
 
@@ -1337,7 +1337,7 @@ footer {
 }
 
 .box.new .label:before {
-  background: url("/themes/yavo/img/sprite.png") -86px 1px no-repeat;
+  background: url("../img/sprite.png") -86px 1px no-repeat;
 }
 
 .box.comm .popup1 {
@@ -1345,11 +1345,11 @@ footer {
 }
 
 .box.comm .label:before {
-  background: url("/themes/yavo/img/sprite.png") -64px 0 no-repeat;
+  background: url("../img/sprite.png") -64px 0 no-repeat;
 }
 
 .box.comm .s2 {
-  background: url("/themes/yavo/img/sprite.png") 0 -337px no-repeat;
+  background: url("../img/sprite.png") 0 -337px no-repeat;
 }
 
 .box.rew .popup1 {
@@ -1357,11 +1357,11 @@ footer {
 }
 
 .box.rew .label:before {
-  background: url("/themes/yavo/img/sprite.png") -112px 1px no-repeat;
+  background: url("../img/sprite.png") -112px 1px no-repeat;
 }
 
 .box.rew .s2 {
-  background: url("/themes/yavo/img/sprite.png") 0 -337px no-repeat;
+  background: url("../img/sprite.png") 0 -337px no-repeat;
 }
 
 .box.mandatary,
@@ -1435,7 +1435,7 @@ footer {
   content: "";
   width: 16px;
   height: 13px;
-  background: url("/themes/yavo/img/icon/arrow_link_OnMouse.png") center center no-repeat;
+  background: url("../img/icon/arrow_link_OnMouse.png") center center no-repeat;
   position: absolute;
   top: 20px;
   bottom: 0;
@@ -1534,11 +1534,11 @@ footer {
   z-index: 15;
   display: none;
   right: 50px;
-  background: #fff url("/themes/yavo/img/sprite.png") -30px -155px no-repeat;
+  background: #fff url("../img/sprite.png") -30px -155px no-repeat;
 }
 
 .arrow_to_top:hover {
-  background: #fff url("/themes/yavo/img/sprite.png") -30px -237px no-repeat;
+  background: #fff url("../img/sprite.png") -30px -237px no-repeat;
 }
 
 .yacth_arend {
@@ -1634,7 +1634,7 @@ footer {
   content: "";
   width: 16px;
   height: 13px;
-  background: url("/themes/yavo/img/sprite.png") 0 -58px no-repeat;
+  background: url("../img/sprite.png") 0 -58px no-repeat;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -1698,11 +1698,11 @@ footer {
   right: 1em;
   width: 16px;
   height: 13px;
-  background: url("/themes/yavo/img/sprite.png") 0 -133px no-repeat;
+  background: url("../img/sprite.png") 0 -133px no-repeat;
 }
 
 .cs-select .cs-placeholder:hover:after {
-  background: url("/themes/yavo/img/sprite.png") 0 -111px no-repeat;
+  background: url("../img/sprite.png") 0 -111px no-repeat;
 }
 
 .cs-select .cs-options {
@@ -1810,7 +1810,7 @@ div.select.day {
 .s1 {
   width: 80px;
   height: 80px;
-  background: url("/themes/yavo/img/sprite.png") -30px -73px no-repeat;
+  background: url("../img/sprite.png") -30px -73px no-repeat;
 }
 
 .s1 span {
@@ -1827,7 +1827,7 @@ div.select.day {
 .s2 {
   width: 50px;
   height: 50px;
-  background: url("/themes/yavo/img/sprite.png") 0px -391px no-repeat;
+  background: url("../img/sprite.png") 0px -391px no-repeat;
 }
 
 .p1 {
@@ -1890,7 +1890,7 @@ div.select.day {
   margin: auto;
   margin-top: 40px;
   position: relative;
-  background: url("/themes/yavo/img/sprite.png") center -800px no-repeat;
+  background: url("../img/sprite.png") center -800px no-repeat;
 }
 
 .llogo:after,
@@ -1953,15 +1953,15 @@ div.select.day {
 }
 
 .share .ggl {
-  background: url("/themes/yavo/img/icon/Google_blue.png") 0 0 no-repeat;
+  background: url("../img/icon/Google_blue.png") 0 0 no-repeat;
 }
 
 .share .inst {
-  background: url("/themes/yavo/img/icon/insta_blue.png") 0 0 no-repeat;
+  background: url("../img/icon/insta_blue.png") 0 0 no-repeat;
 }
 
 .share .fb {
-  background: url("/themes/yavo/img/icon/facebook_blue.png") 0 0 no-repeat;
+  background: url("../img/icon/facebook_blue.png") 0 0 no-repeat;
 }
 
 .article.head {
@@ -2061,7 +2061,7 @@ div.select.day {
   position: absolute;
   right: -50px;
   top: 4px;
-  background: url("/themes/yavo/img/arr_grey.png") center center no-repeat;
+  background: url("../img/arr_grey.png") center center no-repeat;
   opacity: 0.5;
 }
 
@@ -2106,7 +2106,7 @@ div.select.day {
   position: absolute;
   right: -205px;
   height: 100%;
-  background: url("/themes/yavo/img/dot.png") 0 15px repeat-x;
+  background: url("../img/dot.png") 0 15px repeat-x;
 }
 
 .comma {
@@ -2123,7 +2123,7 @@ div.select.day {
   display: inline-block;
   width: 34px;
   height: 26px;
-  background: url("/themes/yavo/img/sprite.png") right -210px no-repeat;
+  background: url("../img/sprite.png") right -210px no-repeat;
 }
 
 .big_yach {
@@ -2198,6 +2198,170 @@ div.select.day {
 .mandatary {
   background-color: #1b3468;
   color: #fff;
+}
+
+.clogo {
+  width: 150px;
+  top: -200px;
+  position: absolute;
+  display: inline-block;
+  height: 170px;
+  background: url("../img/icon/logo_content.png") center 0px no-repeat;
+}
+
+.csocial {
+  margin-left: 20px;
+}
+
+.csocial li {
+  padding: 30px 10px;
+}
+
+.csocial li:first-child {
+  padding: 27px 0px 0px 0px;
+  margin-right: 10px;
+  border-top: 3px solid #e3e6ec;
+}
+
+.c_row {
+  display: block;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.c_block {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.c_block:last-child {
+  float: right;
+}
+
+.c_title {
+  display: block;
+  font-size: 32px;
+  font-family: 'BanderaPro';
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  height: 80px;
+}
+
+.c_position {
+  display: block;
+  font-size: 20px;
+  height: 60px;
+  font-family: 'AvenirNextCyrRegular';
+  background: url("../img/icon/c_position.png") left 0px no-repeat;
+  padding: 5px 0px 5px 50px;
+  margin: 15px;
+}
+
+.c_map_position {
+  display: block;
+  width: 580px;
+  height: 322px;
+}
+
+.c_ru_map {
+  background: url("../img/c_ru_map.png") center 0px no-repeat;
+}
+
+.c_hrv_map {
+  background: url("../img/c_hrv_map.png") center 0px no-repeat;
+}
+
+.c_esp_map {
+  background: url("../img/c_esp_map.png") center 0px no-repeat;
+}
+
+.c_ita_map {
+  background: url("../img/c_ita_map.png") center 0px no-repeat;
+}
+
+.c_phone {
+  display: block;
+  font-size: 20px;
+  font-family: 'AvenirNextCyrRegular';
+  background: url("../img/icon/c_phone.png") left 0px no-repeat;
+  padding: 5px 0px 5px 50px;
+  margin: 15px;
+}
+
+.c_mail {
+  display: block;
+  font-size: 20px;
+  font-family: 'AvenirNextCyrRegular';
+  background: url("../img/icon/c_mail.png") left 0px no-repeat;
+  padding: 5px 0px 5px 50px;
+  margin: 15px;
+}
+
+.c_skype {
+  display: block;
+  font-size: 20px;
+  font-family: 'AvenirNextCyrRegular';
+  background: url("../img/icon/c_skype.png") left 0px no-repeat;
+  padding: 5px 0px 5px 50px;
+  margin: 15px;
+}
+
+.c_skype b,
+.c_mail b {
+  border-bottom: 1px solid;
+}
+
+.cform {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 870px;
+  height: 740px;
+  border: 5px solid #edf1f5;
+}
+
+.cform span {
+  font-size: 76px;
+  display: block;
+  height: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.cformtext {
+  width: 600px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: #edf1f5;
+  padding: 0px 30px;
+  font-family: 'AvenirNextCyrRegular', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cformtextarea {
+  width: 540px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  background: #edf1f5;
+  padding: 15px 30px 60px 30px;
+  font-family: 'AvenirNextCyrRegular', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  resize: none;
+}
+
+.cformbut {
+  width: 100px;
+  height: 60px;
+  display: block;
+  float: right;
+  margin-right: 135px;
+  margin-top: -60px;
+  background: url("../img/icon/cformbut.png") center 0px no-repeat;
 }
 
 @-webkit-keyframes leftAnim {
