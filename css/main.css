@@ -2366,7 +2366,7 @@ div.select.day {
   position: absolute;
   display: inline-block;
   height: 170px;
-  background: url("img/icon/logo_content.png") center 0px no-repeat;
+  background: url("/themes/yavo/img/icon/logo_content.png") center 0px no-repeat;
 }
 
 .csocial {
@@ -2412,7 +2412,7 @@ div.select.day {
   font-size: 20px;
   height: 60px;
   font-family: 'AvenirNextCyrRegular';
-  background: url("img/icon/c_position.png") left 0px no-repeat;
+  background: url("/themes/yavo/img/icon/c_position.png") left 0px no-repeat;
   padding: 5px 0px 5px 50px;
   margin: 15px;
 }
@@ -2424,26 +2424,26 @@ div.select.day {
 }
 
 .c_ru_map {
-  background: url("img/c_ru_map.png") center 0px no-repeat;
+  background: url("/themes/yavo/img/c_ru_map.png") center 0px no-repeat;
 }
 
 .c_hrv_map {
-  background: url("img/c_hrv_map.png") center 0px no-repeat;
+  background: url("/themes/yavo/img/c_hrv_map.png") center 0px no-repeat;
 }
 
 .c_esp_map {
-  background: url("img/c_esp_map.png") center 0px no-repeat;
+  background: url("/themes/yavo/img/c_esp_map.png") center 0px no-repeat;
 }
 
 .c_ita_map {
-  background: url("img/c_ita_map.png") center 0px no-repeat;
+  background: url("/themes/yavo/img/c_ita_map.png") center 0px no-repeat;
 }
 
 .c_phone {
   display: block;
   font-size: 20px;
   font-family: 'AvenirNextCyrRegular';
-  background: url("img/icon/c_phone.png") left 0px no-repeat;
+  background: url("/themes/yavo/img/icon/c_phone.png") left 0px no-repeat;
   padding: 5px 0px 5px 50px;
   margin: 15px;
 }
@@ -2452,7 +2452,7 @@ div.select.day {
   display: block;
   font-size: 20px;
   font-family: 'AvenirNextCyrRegular';
-  background: url("img/icon/c_mail.png") left 0px no-repeat;
+  background: url("/themes/yavo/img/icon/c_mail.png") left 0px no-repeat;
   padding: 5px 0px 5px 50px;
   margin: 15px;
 }
@@ -2461,7 +2461,7 @@ div.select.day {
   display: block;
   font-size: 20px;
   font-family: 'AvenirNextCyrRegular';
-  background: url("img/icon/c_skype.png") left 0px no-repeat;
+  background: url("/themes/yavo/img/icon/c_skype.png") left 0px no-repeat;
   padding: 5px 0px 5px 50px;
   margin: 15px;
 }
@@ -2521,7 +2521,7 @@ div.select.day {
   float: right;
   margin-right: 135px;
   margin-top: -60px;
-  background: url("img/icon/cformbut.png") center 0px no-repeat;
+  background: url("/themes/yavo/img/icon/cformbut.png") center 0px no-repeat;
 }
 
 @-webkit-keyframes leftAnim {
