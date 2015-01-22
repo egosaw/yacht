@@ -59,8 +59,19 @@ $(document).ready(function(){
 							}
 						}
 	});
+	
+	$('.small_slider').slick({
+		dots: true,
+		infinite: true,
+		arrows: true,
+		onAfterChange: function(slider, index){
+			var count = slider.slideCount;
+			var nowIs = index;
 
-	$('.small_slider').slick({});
+		},
+
+	}).append('<div class = "slider_panel"><span class="now">1</span>/<span class="count">3</span></div>');
+
 	$('.video_slider').slick({});
 
 
