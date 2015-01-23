@@ -474,6 +474,15 @@ header {
   line-height: 30px;
 }
 
+.fs13 {
+  font-size: 1.833em;
+  font-weight: 700;
+}
+
+.fs14 {
+  font-size: 1.5em;
+}
+
 .tac {
   text-align: center;
 }
@@ -2074,6 +2083,11 @@ div.select.day {
   margin-top: 20px;
 }
 
+.ffy.top {
+  bottom: auto;
+  top: 15px;
+}
+
 .brand {
   position: absolute;
   bottom: 30px;
@@ -2323,7 +2337,7 @@ div.select.day {
 
 .small_slider.bb .slider_panel,
 .video_slider.bb .slider_panel {
-  bottom: -40px;
+  bottom: -42px;
 }
 
 .small_slider.bb .slick-next,
@@ -2335,7 +2349,7 @@ div.select.day {
 
 .small_slider.bt .slider_panel,
 .video_slider.bt .slider_panel {
-  top: -40px;
+  top: -42px;
 }
 
 .small_slider.bt .slick-next,
@@ -2381,16 +2395,6 @@ div.select.day {
   opacity: 1;
 }
 
-.small_slider.bb .slider_panel,
-.video_slider.bb .slider_panel {
-  bottom: -40px;
-}
-
-.small_slider.bb .slider_panel,
-.video_slider.bb .slider_panel {
-  bottom: -40px;
-}
-
 .slider_panel {
   width: 58px;
   position: absolute;
@@ -2400,6 +2404,18 @@ div.select.day {
   color: #000;
   text-align: center;
   font-family: 'AvenirNextCyrBold';
+  font-size: 1.25em;
+}
+
+.brand_logo {
+  width: 100%;
+  height: 120px;
+  padding-top: 20px;
+}
+
+.brand_logo img {
+  display: block;
+  margin: auto;
 }
 
 .clogo {
@@ -2545,7 +2561,7 @@ div.select.day {
 .cformtext {
   width: 100%;
   height: 60px;
-  margin: 0 auto;
+  margin: auto;
   background: #edf1f5;
   padding: 0px 30px;
   -webkit-box-sizing: border-box;
@@ -2581,6 +2597,23 @@ div.select.day {
   right: 0;
   bottom: 0;
   background: url("/themes/yavo/img/icon/cformbut.png") center 0px no-repeat;
+}
+
+.answer_true {
+  display: none;
+  color: #008000;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.answer_errors {
+  margin: 10px 0;
+}
+
+.answer_errors p {
+  color: #f00;
+  margin: 0;
+  font-size: 15px;
 }
 
 @-webkit-keyframes leftAnim {
