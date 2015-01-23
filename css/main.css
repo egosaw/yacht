@@ -2040,6 +2040,7 @@ div.select.day {
 
 .mt40 {
   margin-top: 60px;
+  display: inline-block;
 }
 
 .share {
@@ -2456,6 +2457,21 @@ div.select.day {
 .brand_logo img {
   display: block;
   margin: auto;
+}
+
+.inclusive {
+  width: 100%;
+  display: inline-block;
+}
+
+.inclusive li {
+  width: 100%;
+  font-size: 19px;
+}
+
+.inclusive li:before {
+  content: "-";
+  padding: 0 5px;
 }
 
 .clogo {
