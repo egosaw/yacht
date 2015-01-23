@@ -14,7 +14,8 @@ article,
 aside,
 details,
 figcaption,
-figure, footer,
+figure,
+footer,
 header,
 hgroup,
 main,
@@ -2322,7 +2323,7 @@ div.select.day {
 
 .small_slider.bb .slider_panel,
 .video_slider.bb .slider_panel {
-  bottom: -40px;
+  bottom: -42px;
 }
 
 .small_slider.bb .slick-next,
@@ -2334,7 +2335,7 @@ div.select.day {
 
 .small_slider.bt .slider_panel,
 .video_slider.bt .slider_panel {
-  top: -40px;
+  top: -42px;
 }
 
 .small_slider.bt .slick-next,
@@ -2380,16 +2381,6 @@ div.select.day {
   opacity: 1;
 }
 
-.small_slider.bb .slider_panel,
-.video_slider.bb .slider_panel {
-  bottom: -40px;
-}
-
-.small_slider.bb .slider_panel,
-.video_slider.bb .slider_panel {
-  bottom: -40px;
-}
-
 .slider_panel {
   width: 58px;
   position: absolute;
@@ -2399,6 +2390,7 @@ div.select.day {
   color: #000;
   text-align: center;
   font-family: 'AvenirNextCyrBold';
+  font-size: 1.25em;
 }
 
 .clogo {

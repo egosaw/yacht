@@ -291,32 +291,32 @@ a {
 
 @font-face {
   font-family: 'AvenirNextCyrRegular';
-  src: url("../themes/yavo/fonts/AvenirNextCyrRegular.eot");
-  src: url("../themes/yavo/fonts/AvenirNextCyrRegular.eot") format('embedded-opentype'), url("../themes/yavo/fonts/AvenirNextCyrRegular.woff2") format('woff2'), url("../themes/yavo/fonts/AvenirNextCyrRegular.woff") format('woff'), url("../themes/yavo/fonts/AvenirNextCyrRegular.ttf") format('truetype'), url("../themes/yavo/fonts/AvenirNextCyrRegular.svg#AvenirNextCyrRegular") format('svg');
+  src: url("/themes/yavo/fonts/AvenirNextCyrRegular.eot");
+  src: url("/themes/yavo/fonts/AvenirNextCyrRegular.eot") format('embedded-opentype'), url("/themes/yavo/fonts/AvenirNextCyrRegular.woff2") format('woff2'), url("/themes/yavo/fonts/AvenirNextCyrRegular.woff") format('woff'), url("/themes/yavo/fonts/AvenirNextCyrRegular.ttf") format('truetype'), url("/themes/yavo/fonts/AvenirNextCyrRegular.svg#AvenirNextCyrRegular") format('svg');
 }
 
 @font-face {
   font-family: 'AvenirNextCyrLight';
-  src: url("../themes/yavo/fonts/AvenirNextCyrLight.eot");
-  src: url("../themes/yavo/fonts/AvenirNextCyrLight.eot") format('embedded-opentype'), url("../themes/yavo/fonts/AvenirNextCyrLight.woff2") format('woff2'), url("../themes/yavo/fonts/AvenirNextCyrLight.woff") format('woff'), url("../themes/yavo/fonts/AvenirNextCyrLight.ttf") format('truetype'), url("../themes/yavo/fonts/AvenirNextCyrLight.svg#AvenirNextCyrLight") format('svg');
+  src: url("/themes/yavo/fonts/AvenirNextCyrLight.eot");
+  src: url("/themes/yavo/fonts/AvenirNextCyrLight.eot") format('embedded-opentype'), url("/themes/yavo/fonts/AvenirNextCyrLight.woff2") format('woff2'), url("/themes/yavo/fonts/AvenirNextCyrLight.woff") format('woff'), url("/themes/yavo/fonts/AvenirNextCyrLight.ttf") format('truetype'), url("/themes/yavo/fonts/AvenirNextCyrLight.svg#AvenirNextCyrLight") format('svg');
 }
 
 @font-face {
   font-family: 'BanderaPro';
-  src: url("../themes/yavo/fonts/BanderaPro.eot");
-  src: url("../themes/yavo/fonts/BanderaPro.eot") format('embedded-opentype'), url("../themes/yavo/fonts/BanderaPro.woff2") format('woff2'), url("../themes/yavo/fonts/BanderaPro.woff") format('woff'), url("../themes/yavo/fonts/BanderaPro.ttf") format('truetype'), url("../themes/yavo/fonts/BanderaPro.svg#BanderaPro") format('svg');
+  src: url("/themes/yavo/fonts/BanderaPro.eot");
+  src: url("/themes/yavo/fonts/BanderaPro.eot") format('embedded-opentype'), url("/themes/yavo/fonts/BanderaPro.woff2") format('woff2'), url("/themes/yavo/fonts/BanderaPro.woff") format('woff'), url("/themes/yavo/fonts/BanderaPro.ttf") format('truetype'), url("/themes/yavo/fonts/BanderaPro.svg#BanderaPro") format('svg');
 }
 
 @font-face {
   font-family: 'BanderaProBold';
-  src: url("../themes/yavo/fonts/BanderaProBold.eot");
-  src: url("../themes/yavo/fonts/BanderaProBold.eot") format('embedded-opentype'), url("../themes/yavo/fonts/BanderaProBold.woff2") format('woff2'), url("../themes/yavo/fonts/BanderaProBold.woff") format('woff'), url("../themes/yavo/fonts/BanderaProBold.ttf") format('truetype'), url("../themes/yavo/fonts/BanderaProBold.svg#BanderaProBold") format('svg');
+  src: url("/themes/yavo/fonts/BanderaProBold.eot");
+  src: url("/themes/yavo/fonts/BanderaProBold.eot") format('embedded-opentype'), url("/themes/yavo/fonts/BanderaProBold.woff2") format('woff2'), url("/themes/yavo/fonts/BanderaProBold.woff") format('woff'), url("/themes/yavo/fonts/BanderaProBold.ttf") format('truetype'), url("/themes/yavo/fonts/BanderaProBold.svg#BanderaProBold") format('svg');
 }
 
 @font-face {
   font-family: 'AvenirNextCyrBold';
-  src: url("../themes/yavo/fonts/AvenirNextCyrBold.eot");
-  src: url("../themes/yavo/fonts/AvenirNextCyrBold.eot") format('embedded-opentype'), url("../themes/yavo/fonts/AvenirNextCyrBold.woff2") format('woff2'), url("../themes/yavo/fonts/AvenirNextCyrBold.woff") format('woff'), url("../themes/yavo/fonts/AvenirNextCyrBold.ttf") format('truetype'), url("../themes/yavo/fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold") format('svg');
+  src: url("/themes/yavo/fonts/AvenirNextCyrBold.eot");
+  src: url("/themes/yavo/fonts/AvenirNextCyrBold.eot") format('embedded-opentype'), url("/themes/yavo/fonts/AvenirNextCyrBold.woff2") format('woff2'), url("/themes/yavo/fonts/AvenirNextCyrBold.woff") format('woff'), url("/themes/yavo/fonts/AvenirNextCyrBold.ttf") format('truetype'), url("/themes/yavo/fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold") format('svg');
 }
 
 body {
