@@ -261,13 +261,17 @@ header
 	font-size txt14
 	a
 		color title_col
-.fs5
+.fs5,
+.fs51,
+.fs52
 	color #020722
-	font-size 63px
-	// font-size 75px
 	font-weight 100
+	font-size 63px
 	font-family 'AvenirNextCyrBold' Arial, sans-serif
-	
+.fs51
+	font-size 75px
+.fs52
+	font-size 50px
 .fs6,
 .fs61
 	color #020722
@@ -277,6 +281,9 @@ header
 .fs61
 	font-size txt20
 	margin-top 10px
+	&.mt
+		font-size txt22
+		margin-top 20px
 .fs7
 	font-size txt14
 	letter-spacing 0.2px
@@ -288,6 +295,7 @@ header
 	font-family: 'BanderaPro';
 	color #020722
 	font-weight 900
+	
 .fs9
 	font-size txt17
 	font-weight 700
@@ -298,10 +306,12 @@ header
 	font-size txt20
 	color #000
 	margin-top 20px
+	
 .fs11
 	color #020722
 	font-size 30px
 	// font-size 75px
+	margin-bottom 20px
 	font-weight 100
 	font-family: 'BanderaProBold';
 .fs12
@@ -316,6 +326,12 @@ header
 	font-weight 700
 .fs14
 	font-size txt18
+	
+.fs15
+	font-size txt19
+	font-weight 700
+	&:first-of-type
+		margin-top 20px
 .tac
 	text-align center
 .tar

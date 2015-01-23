@@ -408,11 +408,21 @@ header {
   color: #96a0b6;
 }
 
-.fs5 {
+.fs5,
+.fs51,
+.fs52 {
   color: #020722;
-  font-size: 63px;
   font-weight: 100;
+  font-size: 63px;
   font-family: 'AvenirNextCyrBold' Arial, sans-serif;
+}
+
+.fs51 {
+  font-size: 75px;
+}
+
+.fs52 {
+  font-size: 50px;
 }
 
 .fs6,
@@ -428,6 +438,11 @@ header {
 .fs61 {
   font-size: 1.666em;
   margin-top: 10px;
+}
+
+.fs61.mt {
+  font-size: 1.833em;
+  margin-top: 20px;
 }
 
 .fs7 {
@@ -462,6 +477,7 @@ header {
 .fs11 {
   color: #020722;
   font-size: 30px;
+  margin-bottom: 20px;
   font-weight: 100;
   font-family: 'BanderaProBold';
 }
@@ -481,6 +497,15 @@ header {
 
 .fs14 {
   font-size: 1.5em;
+}
+
+.fs15 {
+  font-size: 1.583em;
+  font-weight: 700;
+}
+
+.fs15:first-of-type {
+  margin-top: 20px;
 }
 
 .tac {
@@ -2072,14 +2097,16 @@ div.select.day {
   top: 7px;
 }
 
-.ffy.ar_link.pdf {
+.ffy.ar_link.pdf,
+.ffy.ar {
   position: relative;
   display: inline-block;
   margin-bottom: 50px;
   width: 100%;
 }
 
-.ffy.ar_link.pdf:first-of-type {
+.ffy.ar_link.pdf:first-of-type,
+.ffy.ar:first-of-type {
   margin-top: 20px;
 }
 
