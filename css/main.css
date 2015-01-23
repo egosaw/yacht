@@ -486,7 +486,7 @@ header {
   font-size: 1.416em;
   font-weight: 700;
   font-weight: 100;
-  margin-top: 20px;
+  margin-top: 20;
   line-height: 30px;
 }
 
@@ -506,6 +506,15 @@ header {
 
 .fs15:first-of-type {
   margin-top: 20px;
+}
+
+.fs16 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.fs17 {
+  font-size: 17px;
 }
 
 .tac {
@@ -1227,6 +1236,16 @@ footer {
   border-left: 2px solid #e3e6ec;
 }
 
+.cell30 .fs4 {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  padding: 0 0 23px 10px;
+  margin: 10px 0 5px 4px;
+  border-left: 2px solid #e3e6ec;
+  margin-top: -50px;
+}
+
 .row,
 .row1,
 .row2 {
@@ -1327,6 +1346,10 @@ footer {
 
 .cell50 {
   width: 50%;
+}
+
+.cell50 .cell50 .curtain .p {
+  font-size: 45px;
 }
 
 .cell60 {
