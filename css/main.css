@@ -2557,10 +2557,11 @@ div.select.day {
 }
 
 .cformtextarea {
-  width: 540px;
+  width: 100%;
   height: 150px;
-  margin: 0 auto;
-  margin-top: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   background: #edf1f5;
   padding: 15px 30px 60px 30px;
@@ -2578,7 +2579,7 @@ div.select.day {
   position: absolute;
   z-index: 2;
   right: 0;
-  top: 0;
+  bottom: 0;
   background: url("../img/icon/cformbut.png") center 0px no-repeat;
 }
 
